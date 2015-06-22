@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="RenomeArquivo - 2.0.exe" version="1.0.0.0" publicKeyToken="58992dfadc8e5448" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="RenomeArquivo - 2.0" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="RenomeArquivo - 2.0.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RenomeArquivo - 2.0.exe" size="375296">
+      <assemblyIdentity name="RenomeArquivo - 2.0" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ayVn8rgwKLeCwyS/K9JpKnVPWeY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="configs\erros.txt" size="3">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>VyGMMWtpIeLNYQJ6I4ftwxotlHE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="RenomeArquivo - 2.0.exe.config" size="77">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w7WNgu5MxCvL4DAgISBxgwmhDzU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=FENIX-PC\LucasVinicius" issuerKeyHash="98feb4e8890aec45fc140ff9f12c2abf33015914" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>oAVYZWDWd/MdU03J7aESLJAwTYk=</DigestValue></Reference></SignedInfo><SignatureValue>bjp1vlHz3NvHC34xsmwVm9Bxci9/Cyt9kW0Anh2Tsgfaz5DUQzb+fXWcMk4GWcuqYtdly61cHZQOGS7aSUP7KqKoEYzTzStsfHZECIZfk40fkTEt2mQlEOBWiCod9mm6dunpkgwxNDX+y1tVQb3SiuJzqq/+g8XsF+Lem8D/lJU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>u628nt+ifuV4wCyuzURuY/cd0jcdjQSABhJ02Nm8HlzNkdVsbSS4mIaBLXGDs4mUORJ06DPhmexI+YvaxHsKTGJrho4C4AM6lwvr/mg+R+M4JO80NwYPhg01jfYUw6w0+BekbVVmPxnF1iIZEUAcoVdJfNMVgWCZ7PgqhHuioh0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="894d30902c12a1edc94d531df377d660655805a0" Description="" Url=""><as:assemblyIdentity name="RenomeArquivo - 2.0.exe" version="1.0.0.0" publicKeyToken="58992dfadc8e5448" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=FENIX-PC\LucasVinicius</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>GW74JEejlIxDDon8Qg9aaDVmrc0=</DigestValue></Reference></SignedInfo><SignatureValue>ho2kYBL6k0Rwr1YuxYvm4BRfuMITzM3g+qNDd2teX0o+u2XK2+X6B4AMh/Npxo1IajVxgja+UpBWs5MgbljkREskiSUi/H6dJiY4VkV4zt0kK/ajtqy/k98OtNwMXXSRv4YMsOcWNi0K45PKxZ0XxqCO/nKqqb8YpV5POVV/DpQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>u628nt+ifuV4wCyuzURuY/cd0jcdjQSABhJ02Nm8HlzNkdVsbSS4mIaBLXGDs4mUORJ06DPhmexI+YvaxHsKTGJrho4C4AM6lwvr/mg+R+M4JO80NwYPhg01jfYUw6w0+BekbVVmPxnF1iIZEUAcoVdJfNMVgWCZ7PgqhHuioh0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQZtfjphEewapJTkOu6q6CgjANBgkqhkiG9w0BAQUFADA3MTUwMwYDVQQDHiwARgBFAE4ASQBYAC0AUABDAFwATAB1AGMAYQBzAFYAaQBuAGkAYwBpAHUAczAeFw0xNTA2MTUwMjM1MzlaFw0xNjA2MTQwODM1MzlaMDcxNTAzBgNVBAMeLABGAEUATgBJAFgALQBQAEMAXABMAHUAYwBhAHMAVgBpAG4AaQBjAGkAdQBzMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7rbye36J+5XjALK7NRG5j9x3SNx2NBIAGEnTY2bweXM2R1WxtJLiYhoEtcYOziZQ5EnToM+GZ7Ej5i9rEewpMYmuGjgLgAzqXC+v+aD5H4zgk7zQ3Bg+GDTWN9hTDrDT4F6RtVWY/GcXWIhkRQByhV0l80xWBYJns+CqEe6KiHQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBACCRWKpnVDVPDgJH/wu1s/ZUbfepI4uHu6mwfxqKogNpVHXxLBZYIxYc/FHIle4rmjyOBVXG+I0pTCQUHgBQcaI1BmACCKoQWO4ARubAqX3+6wB1jCBOre12iyjOWM0ZY1zNUgNQWkCyyHwNDcaepUWRZqlA4gGOC5l5mxyzRFbW</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

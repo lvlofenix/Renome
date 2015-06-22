@@ -1,0 +1,61 @@
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.pdb
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.pdb
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
+C:\Users\LucasVinicius\AppData\Local\Temporary Projects\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.AboutBox.resources
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.pdb
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.pdb
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.AboutBox.resources
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csprojResolveAssemblyReference.cache
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.configuracoes.resources
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.pdb
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.pdb
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csprojResolveAssemblyReference.cache
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.AboutBox.resources
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.configuracoes.resources
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
+C:\Users\lucas\Downloads\RenomeArquivo_-_2.0-2015-06-02\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.pdb
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.pdb
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csprojResolveAssemblyReference.cache
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.AboutBox.resources
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.configuracoes.resources
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.config
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.manifest
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.application
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest
+D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.application
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.manifest
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.application
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest
+F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.application
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.pdb
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.manifest
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.application
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.pdb
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csprojResolveAssemblyReference.cache
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.AboutBox.resources
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.configuracoes.resources
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest
+E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.application
