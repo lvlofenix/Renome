@@ -74,15 +74,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classes\etc\email.cs" />
-    <Compile Include="classes\etc\messages.cs" />
-    <Compile Include="classes\rc_aleatorio.cs" />
-    <Compile Include="classes\rc_alphanumerico.cs" />
-    <Compile Include="classes\rc_data.cs" />
-    <Compile Include="classes\rc_nome.cs" />
-    <Compile Include="classes\rc_numerico.cs" />
-    <Compile Include="classes\rc_tamanho.cs" />
-    <Compile Include="classes\rc_tipo.cs" />
+    <Compile Include="classes\checkUp.cs" />
+    <Compile Include="classes\configs\configuracoes.cs" />
+    <Compile Include="classes\configs\email.cs" />
+    <Compile Include="classes\configs\langue_ing.cs" />
+    <Compile Include="classes\configs\messages.cs" />
+    <Compile Include="classes\core\rc_aleatorio.cs" />
+    <Compile Include="classes\core\rc_alphanumerico.cs" />
+    <Compile Include="classes\core\rc_data.cs" />
+    <Compile Include="classes\core\rc_nome.cs" />
+    <Compile Include="classes\core\rc_numerico.cs" />
+    <Compile Include="classes\core\rc_tamanho.cs" />
+    <Compile Include="classes\core\rc_tipo.cs" />
     <Compile Include="formas\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,7 +158,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="configs\erros.txt" />
     <None Include="RenomeArquivo - 2.0_TemporaryKey.pfx" />
     <None Include="Resources\matrix-geek-blue-binary-code.jpg" />
     <None Include="Resources\anchor.png" />

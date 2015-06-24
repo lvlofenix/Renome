@@ -13,6 +13,13 @@ namespace RenomeArquivo___2._0.classes.etc
         Boolean ssl;
         public void enviaEmail(string modo, int renomeados, int falhas, string log, string configs)
         {
+            //tratando o log
+            log = log.Replace(")", ")<p>");
+            log = log.Replace("Caminho: ", "<FONT COLOR=#000080> Caminho: </FONT>");
+            log = log.Replace("Arquivo", "<FONT COLOR=#4682B4>Arquivo</FONT>");
+            log = log.Replace("||", "<FONT COLOR=#800000>||</FONT>");
+            log = log.Replace("Falhou", "<FONT COLOR=#FF0000>Falhou</FONT>");
+            log = log.Replace(" Renomeado com Sucesso!!", "<FONT COLOR=#008000> Renomeado com Sucesso!!</FONT>");
             string line = "";
             System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
             while ((line = file.ReadLine()) != null)

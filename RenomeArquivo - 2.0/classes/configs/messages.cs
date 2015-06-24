@@ -25,12 +25,11 @@ namespace RenomeArquivo___2._0.classes
         public string MinimizeTrayTip = " Nossos Dinossauros treinados estão trabalhando na sua solicitação!";
         public string LabelCancelar = " CANCELAR";
         public string LabelIniciar = "INICIAR";
+        public string LabelAbort = "ABORTAR";
         public string LabelCarregar = "ARQUIVOS CARREGADOS: ";
         public string LabelCarregados = "CARREGAR ARQUIVOS";
-        public string LabelContSucess = "";
+        public string LabelRenomes = "ARQUIVOS RENOMEADOS: ";
+        public string LabelFalhas = "FALHAS: ";
         public string TitleBoxSucess = "SUCESSO!!";
-
-
-
     }
 }

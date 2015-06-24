@@ -42,24 +42,15 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RenomeArquivo - 2.0.exe" size="379392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RenomeArquivo - 2.0.exe" size="379904">
       <assemblyIdentity name="RenomeArquivo - 2.0" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QBQuAHaHDeSrbhwU0929xHSKqFg=</dsig:DigestValue>
+        <dsig:DigestValue>Z3JrGnwgSg2NiTfpTZUaOLpsa/Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="configs\erros.txt" size="3">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>VyGMMWtpIeLNYQJ6I4ftwxotlHE=</dsig:DigestValue>
-    </hash>
-  </file>
 </asmv1:assembly>
