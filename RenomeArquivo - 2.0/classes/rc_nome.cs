@@ -10,29 +10,14 @@ namespace RenomeArquivo___2._0.classes
     {
         public Boolean renome_nome(string caminho, string arquivo, decimal numero, string nome,string tipo)
         {
-            string erro = "";
             try
             {
                 //aplicando o renome.
-                if (System.IO.File.Exists(caminho + @"\" + nome + " - " + numero + tipo))
-                {
-                    int cont = 0;
-                     while (System.IO.File.Exists(caminho + @"\" + "ARQUIVO" + " [" + cont + "]" + tipo))
-                     {
-                        cont++;
-                     }
-                     File.Move(caminho + @"\" + arquivo, caminho + @"\" + "ARQUIVO" + " [" + cont + "]" + tipo);
-                    return true;
-                }
-                else
-                {
-                    File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + " - " + numero + tipo);
-                    return true;
-                }
+                File.Move(caminho + @"\" + arquivo, caminho + @"\"+ nome + " - " + numero + tipo);
+                return true;
             }
-            catch(Exception e)
+            catch
             {
-                erro = e.Message;
                 return false;
             }
         }

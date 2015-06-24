@@ -11,7 +11,6 @@ namespace RenomeArquivo___2._0.classes
     {
         public Boolean renomeData(string caminho, string arquivo,string tipo,string qual, int i)
         {
-            string erro = "";
             try
             {
                 //pegando a data e renomeando arquivo.
@@ -63,9 +62,8 @@ namespace RenomeArquivo___2._0.classes
                     }
                 }
             }
-            catch(Exception e)
+            catch
             {
-                erro = e.Message;
                 return false;
             }
         }

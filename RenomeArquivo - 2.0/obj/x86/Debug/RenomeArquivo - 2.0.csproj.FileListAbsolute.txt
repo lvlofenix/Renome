@@ -36,7 +36,6 @@ F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.fo
 F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
 F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
 F:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
-D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.config
 D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.manifest
 D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.application
 D:\SITES E PROJETOS\C#\02 PROJETOS\RenomeArquivo\RenomeArquivo - 2.0\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest

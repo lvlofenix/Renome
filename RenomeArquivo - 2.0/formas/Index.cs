@@ -46,7 +46,7 @@ namespace RenomeArquivo___2._0
                 Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Enabled = true; });
                 Invoke((MethodInvoker)delegate {lb_carrega_arquivos.ForeColor = Color.Navy;});
                 Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Text = "CARREGAR ARQUIVOS"; });
-                novoLog("CARREGAMENTO DE ARQUIVOS CANCELADO COM SUCESSO!!");
+                novoLog("CARREGAMENTO DE ARQUIVOS CANCELADO COM SUCESSO!!", Color.Red);
                 carrega.Abort();
                 limpa();
             }
@@ -60,7 +60,7 @@ namespace RenomeArquivo___2._0
             int quantos=0;
             string url = caminho.Replace(arquivos[0], "");
             //alimenta string do caminho.
-            novoLog("Caminho: " + url);
+            novoLog("Caminho: " + url,Color.Blue);
             dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Clear(); });
             //alimenta listbox
             for (int i = 0;i<=arquivos.Length-1;i++ )
@@ -70,7 +70,7 @@ namespace RenomeArquivo___2._0
                 DateTime fileCreateDate = File.GetCreationTime(url+arquivos[i]);
                 string data = fileCreateDate + "";
                 dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Add(arquivos[i], tamanhoMB, Path.GetExtension(url+arquivos[i]),data); });
-                novoLog("Arquivo " + arquivos[i] + " Carregado com sucesso");
+                novoLog("Arquivo " + arquivos[i] + " Carregado com sucesso",Color.Green);
                 if (text.IndexOf("CONT = FALSE") == -1)
                 {
                     gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = "ARQUIVOS CARREGADOS: " + i; });
@@ -157,7 +157,7 @@ namespace RenomeArquivo___2._0
                     valor++;
                     if (numerico.renome_numerico(caminho, openFileDialog1.SafeFileNames[i], valor, Path.GetExtension(openFileDialog1.SafeFileNames[i])))
                     {
-                        novoLog("Arquivo "+ openFileDialog1.SafeFileNames[i]+" Renomeado com Sucesso!!");
+                        novoLog("Arquivo "+ openFileDialog1.SafeFileNames[i]+" Renomeado com Sucesso!!",Color.Green);
                         if (text.IndexOf("CONT = FALSE") == -1)
                         {
                             quantos = quantos + 1;
@@ -166,7 +166,7 @@ namespace RenomeArquivo___2._0
                     }
                     else
                     {
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou ");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                         if (text.IndexOf("CONT = FALSE") == -1)
                         {
                             falhas++;
@@ -196,7 +196,7 @@ namespace RenomeArquivo___2._0
                             quantos = quantos + 1;
                             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = "ARQUIVOS RENOMEADOS: " + quantos; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!", Color.Green);
                     }
                     else
                     {
@@ -205,7 +205,7 @@ namespace RenomeArquivo___2._0
                             falhas++;
                             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = "FALHAS: " + falhas; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                     }
                     if (text.IndexOf("BARRA = FALSE") == -1)
                     {
@@ -233,7 +233,7 @@ namespace RenomeArquivo___2._0
                             quantos = quantos + 1;
                             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = "ARQUIVOS RENOMEADOS: " + quantos; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!", Color.Green);
                         if (texto == z)
                         {
                             numero++;
@@ -248,7 +248,7 @@ namespace RenomeArquivo___2._0
                             falhas++;
                             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = "FALHAS: " + falhas; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                     }
                     if (text.IndexOf("BARRA = FALSE") == -1)
                     {
@@ -272,7 +272,7 @@ namespace RenomeArquivo___2._0
                             quantos = quantos + 1;
                             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = "ARQUIVOS RENOMEADOS: " + quantos; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!", Color.Green);
                     }
                     else
                     {
@@ -281,7 +281,7 @@ namespace RenomeArquivo___2._0
                             falhas++;
                             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = "FALHAS: " + falhas; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                     }
                     if (text.IndexOf("BARRA = FALSE") == -1)
                     {
@@ -307,7 +307,7 @@ namespace RenomeArquivo___2._0
                             quantos = quantos + 1;
                             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = "ARQUIVOS RENOMEADOS: " + quantos; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!", Color.Green);
                     }
                     else
                     {
@@ -316,7 +316,7 @@ namespace RenomeArquivo___2._0
                             falhas++;
                             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = "FALHAS: " + falhas; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                     }
                     if (text.IndexOf("BARRA = FALSE") == -1)
                     {
@@ -340,7 +340,7 @@ namespace RenomeArquivo___2._0
                             quantos = quantos + 1;
                             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = "ARQUIVOS RENOMEADOS: " + quantos; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!", Color.Green);
                     }
                     else
                     {
@@ -349,7 +349,7 @@ namespace RenomeArquivo___2._0
                             falhas++;
                             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = "FALHAS: " + falhas; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                     }
                     if (text.IndexOf("BARRA = FALSE") == -1)
                     {
@@ -370,7 +370,7 @@ namespace RenomeArquivo___2._0
                             quantos = quantos + 1;
                             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = "ARQUIVOS RENOMEADOS: " + quantos; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Renomeado com Sucesso!!", Color.Green);
                     }
                     else
                     {
@@ -379,7 +379,7 @@ namespace RenomeArquivo___2._0
                             falhas++;
                             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = "FALHAS: " + falhas; });
                         }
-                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou");
+                        novoLog("Arquivo " + openFileDialog1.SafeFileNames[i] + " Falhou",Color.Red);
                     }
                     if (text.IndexOf("BARRA = FALSE") == -1)
                     {
@@ -417,8 +417,6 @@ namespace RenomeArquivo___2._0
         private void lb_iniciar_Click(object sender, EventArgs e)
         {
             text = File.ReadAllText(@".\conf.cf");
-            
-
             if (dg_lista.RowCount < 2)
             {
             }
@@ -477,7 +475,7 @@ namespace RenomeArquivo___2._0
                 lb_carrega_arquivos.ForeColor = Color.Navy;
                 lb_carrega_arquivos.Text = "CARREGAR ARQUIVOS";
                 lb_iniciar.Enabled = true;
-                novoLog("CARREGAMENTO DE ARQUIVOS CANCELADO COM SUCESSO!!");
+                novoLog("CARREGAMENTO DE ARQUIVOS CANCELADO COM SUCESSO!!",Color.Red);
                 carrega.Abort();
                 limpa();
             }
@@ -500,11 +498,6 @@ namespace RenomeArquivo___2._0
         private void rb_alfa_CheckedChanged(object sender, EventArgs e)
         {
             campoSelecionado();
-        }
-
-        public void organizaGrid()
-        {
-
         }
 
         private void rb_nome_CheckedChanged(object sender, EventArgs e)
@@ -538,7 +531,7 @@ namespace RenomeArquivo___2._0
             configs.ShowDialog();
         }
 
-        public void novoLog(string novo)
+        public void novoLog(string novo, Color cor)
         {
             if(text.IndexOf("LOG = TRUE") == -1)
             {
@@ -546,8 +539,13 @@ namespace RenomeArquivo___2._0
             else 
             {
             cont++;
-            log.Invoke((MethodInvoker)delegate {log.Text = log.Text + Environment.NewLine + cont+ " > "+ novo + " || ("+ DateTime.Now+")"; });
+            novo = Environment.NewLine + cont + " > " + novo;
+            log.Invoke((MethodInvoker)delegate { log.AppendText(novo); });
             log.Invoke((MethodInvoker)delegate { log.SelectionStart = log.Text.Length; });
+            log.Invoke((MethodInvoker)delegate { log.SelectionLength = log.Text.Length+1; });
+            log.Invoke((MethodInvoker)delegate { log.SelectionColor = Color.Black; });
+            log.Invoke((MethodInvoker)delegate { log.AppendText(" || (" + DateTime.Now + ")"); });
+            log.Invoke((MethodInvoker)delegate { log.SelectionColor = cor; });
             log.Invoke((MethodInvoker)delegate { log.ScrollToCaret() ; });
             }
 

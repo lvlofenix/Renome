@@ -10,7 +10,6 @@ namespace RenomeArquivo___2._0.classes
     {
         public Boolean renome_aleatorio(string caminho, string arquivo, string tipo, string qual)
         {
-            string erro = "";
             try
             {
                 Random rd = new Random();
@@ -24,20 +23,8 @@ namespace RenomeArquivo___2._0.classes
                     {
                         numero = numero + chars[rd.Next(0, 9)];
                     }
-                    if (System.IO.File.Exists(caminho + @"\" + numero + tipo))
-                    {
-                        while (System.IO.File.Exists(caminho + @"\" + numero + tipo))
-                        {
-                            numero = chars[rd.Next(0, 9)]+chars[rd.Next(0, 9)]+chars[rd.Next(0, 9)]+chars[rd.Next(0, 9)]+chars[rd.Next(0, 9)]+chars[rd.Next(0, 9)]+"";
-                        }
                     File.Move(caminho + @"\" + arquivo, caminho + @"\" + numero + tipo);
                     return true;
-                    }
-                    else 
-                    {
-                    File.Move(caminho + @"\" + arquivo, caminho + @"\" + numero + tipo);
-                    return true;
-                    }
 
                 }
                 else if (qual == "LETRAS")
@@ -49,20 +36,8 @@ namespace RenomeArquivo___2._0.classes
                     {
                         nome = nome + chars[rd.Next(0, 52)];
                     }
-                    if (System.IO.File.Exists(caminho + @"\" + nome + tipo))
-                    {
-                        while (System.IO.File.Exists(caminho + @"\" + nome + tipo))
-                        {
-                            nome = chars[rd.Next(0, 52)] + chars[rd.Next(0, 52)] + chars[rd.Next(0, 52)] + chars[rd.Next(0, 52)] + chars[rd.Next(0, 52)] + chars[rd.Next(0, 52)]+chars[rd.Next(0, 52)]+"";
-                        }
-                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + tipo);
-                        return true;
-                    }
-                    else
-                    {
-                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + tipo);
-                        return true;
-                    }
+                    File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + tipo);
+                    return true;
                 }
                 else if (qual == "NUMEROS E LETRAS")
                 {
@@ -73,30 +48,16 @@ namespace RenomeArquivo___2._0.classes
                     {
                         nome = nome + chars[rd.Next(0, 56)];
                     }
-                    if (System.IO.File.Exists(caminho + @"\" + nome + tipo))
-                    {
-                        while (System.IO.File.Exists(caminho + @"\" + nome + tipo))
-                        {
-                            nome = chars[rd.Next(0, 56)] + chars[rd.Next(0, 56)] + chars[rd.Next(0, 56)] + chars[rd.Next(0, 56)] + chars[rd.Next(0, 56)] + chars[rd.Next(0, 56)] + chars[rd.Next(0, 56)]+"";
-                        }
-                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + tipo);
-                        return true;
-                    }
-                    else
-                    {
-                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + tipo);
-                        return true;
-                    }
+                    File.Move(caminho + @"\" + arquivo, caminho + @"\" + nome + tipo);
+                    return true;
                 }
                 else
                 {
-                    erro = "Não foi possivel identificar a solicitação para o arquivo: " + caminho + @"\" + arquivo;
                     return false;
                 }
             }
-            catch(Exception e)
+            catch
             {
-                erro = e.Message;
                 return false;
             }
         }

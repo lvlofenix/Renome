@@ -10,7 +10,6 @@ namespace RenomeArquivo___2._0.classes
     {
         public Boolean renome_tamanho(string caminho, string arquivo, string tipo, string qual)
         {
-            string erro = "";
             try
             {
                 string peso = new FileInfo(caminho + @"\" + arquivo).Length + "";
@@ -18,66 +17,26 @@ namespace RenomeArquivo___2._0.classes
                 {
                     //aplicando o renome.
                     peso = Convert.ToInt64(peso) / 1024 + "";
-                    if (System.IO.File.Exists(caminho + @"\" + peso + tipo))
-                    {
-                        int cont = 0;
-                        while (System.IO.File.Exists(caminho + @"\" + peso + " [" + cont + "]" + tipo))
-                        {
-                            cont++;
-                        }
-                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + " [" + cont + "]" + tipo);
-                        return true;
-                    }
-                    else
-                    {
-                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + tipo);
-                        return true;
-                    }
-
+                    File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + tipo);
+                    return true;
                 }
                 else
                 {
                     if (Convert.ToInt32(peso) < 1024)
                     {
-                        peso = (Convert.ToDouble(peso) / 1024) / 1024 + "";
-                        if (System.IO.File.Exists(caminho + @"\" + peso + tipo))
-                        {
-                            int cont = 0;
-                            while (System.IO.File.Exists(caminho + @"\" + peso + " [" + cont + "]" + tipo))
-                            {
-                                cont++;
-                            }
-                            File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + " [" + cont + "]" + tipo);
-                        }
-                        else
-                        {
-                            File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + tipo);
-                        }
+                        peso = (Convert.ToDouble(peso) / 1024) / 1024+ "";
+                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + tipo);
                     }
                     else
                     {
                         peso = (Convert.ToInt64(peso) / 1024f) / 1024f + "";
-                        if (System.IO.File.Exists(caminho + @"\" + peso + tipo))
-                        {
-                            int cont = 0;
-                            while (System.IO.File.Exists(caminho + @"\" + peso + " [" + cont + "]" + tipo))
-                            {
-                                cont++;
-
-                            }
-                            File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + " [" + cont + "]" + tipo);
-                        }
-                        else
-                        {
-                            File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + tipo);
-                        }
+                        File.Move(caminho + @"\" + arquivo, caminho + @"\" + peso + tipo);
                     }
                     return true;
                 }
             }
-            catch(Exception e)
+            catch
             {
-                erro = e.Message;
                 return false;
             }
         }

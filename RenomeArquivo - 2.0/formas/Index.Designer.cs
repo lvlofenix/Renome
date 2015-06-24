@@ -74,16 +74,16 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label15 = new System.Windows.Forms.Label();
             this.dg_lista = new System.Windows.Forms.DataGridView();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.log = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.log = new System.Windows.Forms.RichTextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.gb_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nd_nome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nd_alfa)).BeginInit();
@@ -694,7 +694,7 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dg_lista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_lista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dg_lista.BackgroundColor = System.Drawing.Color.SteelBlue;
+            this.dg_lista.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dg_lista.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dg_lista.CausesValidation = false;
             this.dg_lista.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
@@ -743,23 +743,33 @@
             this.dg_lista.TabIndex = 52;
             this.dg_lista.TabStop = false;
             // 
-            // log
+            // Nome
             // 
-            this.log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.log.BackColor = System.Drawing.Color.Black;
-            this.log.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.log.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.log.Font = new System.Drawing.Font("Lucida Console", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.log.ForeColor = System.Drawing.Color.White;
-            this.log.Location = new System.Drawing.Point(6, 20);
-            this.log.MaxLength = 9999999;
-            this.log.Multiline = true;
-            this.log.Name = "log";
-            this.log.ReadOnly = true;
-            this.log.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.log.Size = new System.Drawing.Size(749, 109);
-            this.log.TabIndex = 55;
+            this.Nome.FillWeight = 210.3354F;
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            // 
+            // Tamanho
+            // 
+            this.Tamanho.FillWeight = 105.1677F;
+            this.Tamanho.HeaderText = "Tamanho";
+            this.Tamanho.Name = "Tamanho";
+            this.Tamanho.ReadOnly = true;
+            // 
+            // Tipo
+            // 
+            this.Tipo.FillWeight = 44.90305F;
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            // 
+            // data
+            // 
+            this.data.FillWeight = 139.5939F;
+            this.data.HeaderText = "Data de Criação";
+            this.data.Name = "data";
+            this.data.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -769,10 +779,22 @@
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(284, 434);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(761, 135);
+            this.groupBox1.Size = new System.Drawing.Size(761, 129);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "LOGS";
+            // 
+            // log
+            // 
+            this.log.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.log.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.log.ForeColor = System.Drawing.Color.Transparent;
+            this.log.Location = new System.Drawing.Point(6, 15);
+            this.log.Name = "log";
+            this.log.ReadOnly = true;
+            this.log.Size = new System.Drawing.Size(749, 108);
+            this.log.TabIndex = 56;
+            this.log.Text = "";
             // 
             // groupBox2
             // 
@@ -807,43 +829,15 @@
             this.pictureBox10.TabStop = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
-            // Nome
-            // 
-            this.Nome.FillWeight = 210.3354F;
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            // 
-            // Tamanho
-            // 
-            this.Tamanho.FillWeight = 105.1677F;
-            this.Tamanho.HeaderText = "Tamanho";
-            this.Tamanho.Name = "Tamanho";
-            this.Tamanho.ReadOnly = true;
-            // 
-            // Tipo
-            // 
-            this.Tipo.FillWeight = 44.90305F;
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            // 
-            // data
-            // 
-            this.data.FillWeight = 139.5939F;
-            this.data.HeaderText = "Data de Criação";
-            this.data.Name = "data";
-            this.data.ReadOnly = true;
-            // 
             // Index
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1053, 589);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dg_lista);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.lb_falha);
@@ -866,7 +860,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nd_numerico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_lista)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -920,7 +913,6 @@
         private System.Windows.Forms.ComboBox cb_aleatorio;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        protected System.Windows.Forms.TextBox log;
         private System.Windows.Forms.DataGridView dg_lista;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -928,6 +920,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tamanho;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
+        private System.Windows.Forms.RichTextBox log;
     }
 }
 

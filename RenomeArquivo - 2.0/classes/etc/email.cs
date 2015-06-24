@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Net.Mime;
 using System.Net.Mail;
-using System.Net.Configuration;
 using System.Net;
 using System.IO;
 
@@ -30,7 +28,6 @@ namespace RenomeArquivo___2._0.classes.etc
                     }
                     else
                     {
-                        System.IO.File.WriteAllText(@".\aneselo.html",log);
                         ssl = true;
                         MailMessage objEmail = new MailMessage();
                         objEmail.From = new MailAddress("renome.feedback@outlook.com");
@@ -48,11 +45,10 @@ namespace RenomeArquivo___2._0.classes.etc
                                         + "<B>_______________________________________________________</B><P>"
                                         + "<B>" + configs + "</B><P>"
                                         + "<B>_______________________________________________________</B><P>"
+                                        +log
                                         + @"</HTML>";
                         objEmail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
                         objEmail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
-                        Attachment anexado = new Attachment(@".\loganex.txt", MediaTypeNames.Application.Octet);
-                        objEmail.Attachments.Add(anexado);
                         SmtpClient objSmtp = new SmtpClient();
                         objSmtp.Host = "smtp.live.com";
                         objSmtp.EnableSsl = ssl;
