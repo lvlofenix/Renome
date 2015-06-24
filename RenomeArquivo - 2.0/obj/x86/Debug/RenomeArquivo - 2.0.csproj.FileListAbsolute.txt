@@ -58,3 +58,17 @@ E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Pr
 E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
 E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest
 E:\RenomeArquivo - 2.0\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.application
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.pdb
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csprojResolveAssemblyReference.cache
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.AboutBox.resources
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.configuracoes.resources
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Index.resources
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.Properties.Resources.resources
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.csproj.GenerateResource.Cache
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe.manifest
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.application
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.exe
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\bin\Debug\RenomeArquivo - 2.0.pdb
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.application
