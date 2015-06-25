@@ -75,14 +75,14 @@ namespace RenomeArquivo___2._0
                 novoLog(arquivos[i]+mensagens.UpSucess,Color.Green);
                 if (text.IndexOf("CONT = FALSE") == -1)
                 {
-                    gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.LabelCarregar + i; });
+                    gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.BtLabelCarregar + i; });
                     quantos = i;
                 }
             }
             if (text.IndexOf("CONT = FALSE") == -1)
             {
                 quantos = quantos + 1;
-                gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.LabelCarregar + quantos; });
+                gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.BtLabelCarregar + quantos; });
             }
             mil = quantos;
             lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.Enabled = true; });
@@ -128,7 +128,7 @@ namespace RenomeArquivo___2._0
         private void limpa()
         {
             dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Clear(); });
-            gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.LabelCarregar + 0; });
+            gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.BtLabelCarregar + 0; });
             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = mensagens.LabelRenomes + 0; });
             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = mensagens.LabelFalhas + 0; });
             nd_numerico.Invoke((MethodInvoker)delegate {nd_numerico.Value = 0;});
@@ -423,12 +423,12 @@ namespace RenomeArquivo___2._0
 
         public void iniciandoTrabalhos()
         {
-            if (lb_iniciar.Text == mensagens.LabelIniciar)
+            if (lb_iniciar.Text == mensagens.BtlabelIniciar )
             {
                 gb_opcoes.Enabled = false;
                 trabalha = new Thread(iniciaProcesso);
                 trabalha.Start();
-                lb_iniciar.Text = mensagens.LabelAbort;
+                lb_iniciar.Text = mensagens.BtlabelAbortar;
                 lb_iniciar.ForeColor = Color.Red;
                 if (mil > 999 & text.IndexOf("TRAY = TRUE") == -1)
                 {
@@ -446,7 +446,7 @@ namespace RenomeArquivo___2._0
                 
                 limpa();
                 gb_opcoes.Invoke((MethodInvoker)delegate { gb_opcoes.Enabled = true; });
-                lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.Text = mensagens.LabelIniciar; });
+                lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.Text = mensagens.BtlabelIniciar; });
                 lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.ForeColor = Color.Green; });
                 trabalha.Abort();
             }
@@ -458,7 +458,7 @@ namespace RenomeArquivo___2._0
             text = File.ReadAllText(@".\conf.cf");
             if (lb_carrega_arquivos.Text == mensagens.LabelCarregados)
             {
-                lb_carrega_arquivos.Text = mensagens.LabelCancelar;
+                lb_carrega_arquivos.Text = mensagens.BtlabelCancelar;
                 lb_carrega_arquivos.ForeColor = Color.Red;
                 carrega = new Thread(pegaCaminho);
                 carrega.ApartmentState = ApartmentState.STA;
@@ -588,6 +588,7 @@ namespace RenomeArquivo___2._0
 
         private void Index_Load(object sender, EventArgs e)
         {
+            lingua();
             checkUp up = new checkUp();
             up.verificaIntegridade();
             nd_numerico.Value = 0;
@@ -620,8 +621,16 @@ namespace RenomeArquivo___2._0
             sobre.Show();
         }
 
-        private void dg_lista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void lingua()
         {
+            //BOTÕES
+            lb_iniciar.Text = mensagens.BtlabelIniciar;
+            lb_carrega_arquivos.Text = mensagens.BtLabelCarregar;
+            lb_limpa.Text = mensagens.BtLabelLimpa;
+            lb_configs.Text = mensagens.BtLabelConfig;
+            lb_sobre.Text = mensagens.BtLabelSobre;
+            gv_lista.Text = mensagens.BtLabelCarregar;
+
 
         }
     }

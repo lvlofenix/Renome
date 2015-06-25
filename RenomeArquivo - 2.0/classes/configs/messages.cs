@@ -9,6 +9,7 @@ namespace RenomeArquivo___2._0.classes
 {
     class messages
     {
+        //Mensagens de LOG
         public string UpCancel = "";
         public string UpSucess = "";
         public string ReSucess = "";
@@ -18,20 +19,26 @@ namespace RenomeArquivo___2._0.classes
         public string ErroDoubleArchive = "";
         public string TotalSucess = "";
         public string TotalFail = "";
+        //Mensagens Tray
         public string MinimizeTrayClick = "";
         public string MinimizeTrayFinish = "";
         public string MinimizeTrayTitle1 = "";
         public string MinimizeTrayTitle2 = "";
         public string MinimizeTrayTitle3 = "";
         public string MinimizeTrayTip = "";
-        public string LabelCancelar = " ";
-        public string LabelIniciar = "";
-        public string LabelAbort = "";
-        public string LabelCarregar = "";
+        //Labels
         public string LabelCarregados = "";
         public string LabelRenomes = "";
         public string LabelFalhas = "";
         public string TitleBoxSucess = "";
+        //Botões Labels
+        public string BtLabelCarregar = "";
+        public string BtlabelIniciar = "";
+        public string BtlabelCancelar = "";
+        public string BtlabelAbortar = "";
+        public string BtLabelLimpa = "";
+        public string BtLabelConfig = "";
+        public string BtLabelSobre = "";
 
         public void qualLang()
         {
@@ -39,6 +46,7 @@ namespace RenomeArquivo___2._0.classes
             text = File.ReadAllText(@".\conf.cf");
             if (text.IndexOf("LANGUE = PTBR") > -1)
             {
+                //LOG
                 UpCancel = " Carregamento de arquivos cancelado.";
                 UpSucess = " Carregado com sucesso.";
                 ReSucess = " Renomeado com sucesso.";
@@ -48,23 +56,31 @@ namespace RenomeArquivo___2._0.classes
                 ErroDoubleArchive = " Arquivo com o mesmo nome já existe na pasta.";
                 TotalSucess = " Arquivos renomeados com sucesso.";
                 TotalFail = " Arquivos que não foi possivel aplicar o renomeamento.";
+                //MINE
                 MinimizeTrayClick = " Clique aqui para esconder ou mostrar a janela!!";
                 MinimizeTrayFinish = " Ufa, terminamos!!";
                 MinimizeTrayTitle1 = " Até cansei...";
                 MinimizeTrayTitle2 = " Não se preocupe!!";
                 MinimizeTrayTitle3 = " É só clicar!!";
                 MinimizeTrayTip = " Nossos Dinossauros treinados estão trabalhando na sua solicitação!";
-                LabelCancelar = " CANCELAR";
-                LabelIniciar = "INICIAR";
-                LabelAbort = "ABORTAR";
-                LabelCarregar = "ARQUIVOS CARREGADOS: ";
-                LabelCarregados = "CARREGAR ARQUIVOS";
+                //BOTOES
+                BtlabelCancelar = " CANCELAR";
+                BtlabelIniciar = "INICIAR";
+                BtlabelAbortar = "ABORTAR";
+                BtLabelCarregar = "CARREGAR ARQUIVOS";
+                BtLabelLimpa = "LIMPAR CAMPOS E LOGS";
+                BtLabelConfig = "CONFIGURAÇÕES";
+                BtLabelSobre = "SOBRE";
+                //LABELS
+                LabelCarregados = "ARQUIVOS CARREGADOS: ";
                 LabelRenomes = "ARQUIVOS RENOMEADOS: ";
                 LabelFalhas = "FALHAS: ";
+                //TITULOS
                 TitleBoxSucess = "SUCESSO!!";
             }
             else
             {
+                //LOG
                 UpCancel = " File upload canceled.";
                 UpSucess = " Successfully loaded.";
                 ReSucess = " Renamed successfully.";
@@ -74,19 +90,26 @@ namespace RenomeArquivo___2._0.classes
                 ErroDoubleArchive = " File with the same name already exists in the folder.";
                 TotalSucess = " Renamed files successfully.";
                 TotalFail = " Files that it was not possible to apply the renaming.";
+                //MINETRAY
                 MinimizeTrayClick = " Click here to hide or show the window!!";
                 MinimizeTrayFinish = " Phew, finished!!";
                 MinimizeTrayTitle1 = " until tired...";
                 MinimizeTrayTitle2 = " Do not worry!!";
                 MinimizeTrayTitle3 = " Just click!!";
                 MinimizeTrayTip = " Our trained Dinosaurs are working on your request!";
-                LabelCancelar = " CANCEL";
-                LabelIniciar = "START";
-                LabelAbort = "ABORT";
-                LabelCarregar = "FILES LOADED: ";
-                LabelCarregados = "LOADING FILES";
+                //BOTÕES
+                BtlabelCancelar = " CANCEL";
+                BtlabelIniciar = "START";
+                BtlabelAbortar = "ABORT";
+                BtLabelCarregar = "LOAD FILES";
+                BtLabelLimpa = "CLEAR CAMPS AND LOGS";
+                BtLabelConfig = "CONFIGURE";
+                BtLabelSobre = "ABOUT";
+                //LABELS
+                LabelCarregados = "FILES LOADED: ";
                 LabelRenomes = "FILES RENAMED: ";
                 LabelFalhas = "FAILURES: ";
+                //TITULOS
                 TitleBoxSucess = "SUCCESS!!";
             }
         }

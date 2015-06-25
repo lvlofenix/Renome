@@ -72,7 +72,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.lb_falha = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lb_configs = new System.Windows.Forms.Label();
             this.dg_lista = new System.Windows.Forms.DataGridView();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,6 +82,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.log = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.gb_opcoes.SuspendLayout();
@@ -91,13 +93,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_lista)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_numerico
             // 
-            this.lb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_numerico.AutoSize = true;
             this.lb_numerico.ForeColor = System.Drawing.Color.Navy;
             this.lb_numerico.Location = new System.Drawing.Point(30, 24);
@@ -108,8 +112,8 @@
             // 
             // lb_alfanumerico
             // 
-            this.lb_alfanumerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_alfanumerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_alfanumerico.AutoSize = true;
             this.lb_alfanumerico.ForeColor = System.Drawing.Color.Navy;
             this.lb_alfanumerico.Location = new System.Drawing.Point(30, 70);
@@ -120,8 +124,8 @@
             // 
             // lb_nome
             // 
-            this.lb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_nome.AutoSize = true;
             this.lb_nome.ForeColor = System.Drawing.Color.Navy;
             this.lb_nome.Location = new System.Drawing.Point(30, 114);
@@ -132,8 +136,8 @@
             // 
             // lb_data
             // 
-            this.lb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_data.AutoSize = true;
             this.lb_data.ForeColor = System.Drawing.Color.Navy;
             this.lb_data.Location = new System.Drawing.Point(30, 154);
@@ -144,8 +148,8 @@
             // 
             // lb_tipo
             // 
-            this.lb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_tipo.AutoSize = true;
             this.lb_tipo.ForeColor = System.Drawing.Color.Navy;
             this.lb_tipo.Location = new System.Drawing.Point(30, 202);
@@ -156,8 +160,8 @@
             // 
             // rb_numerico
             // 
-            this.rb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_numerico.AutoSize = true;
             this.rb_numerico.Location = new System.Drawing.Point(10, 31);
             this.rb_numerico.Name = "rb_numerico";
@@ -169,8 +173,8 @@
             // 
             // rb_alfa
             // 
-            this.rb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_alfa.AutoSize = true;
             this.rb_alfa.Location = new System.Drawing.Point(10, 73);
             this.rb_alfa.Name = "rb_alfa";
@@ -182,8 +186,8 @@
             // 
             // rb_tipo
             // 
-            this.rb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_tipo.AutoSize = true;
             this.rb_tipo.Location = new System.Drawing.Point(10, 204);
             this.rb_tipo.Name = "rb_tipo";
@@ -195,8 +199,8 @@
             // 
             // rb_data
             // 
-            this.rb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_data.AutoSize = true;
             this.rb_data.Location = new System.Drawing.Point(10, 158);
             this.rb_data.Name = "rb_data";
@@ -208,8 +212,8 @@
             // 
             // rb_nome
             // 
-            this.rb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_nome.AutoSize = true;
             this.rb_nome.Location = new System.Drawing.Point(10, 116);
             this.rb_nome.Name = "rb_nome";
@@ -221,8 +225,8 @@
             // 
             // gb_opcoes
             // 
-            this.gb_opcoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.gb_opcoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gb_opcoes.Controls.Add(this.cb_tipo);
             this.gb_opcoes.Controls.Add(this.cb_tamanho);
             this.gb_opcoes.Controls.Add(this.cb_aleatorio);
@@ -262,8 +266,8 @@
             // 
             // cb_tipo
             // 
-            this.cb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_tipo.BackColor = System.Drawing.Color.White;
             this.cb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_tipo.Enabled = false;
@@ -279,8 +283,8 @@
             // 
             // cb_tamanho
             // 
-            this.cb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_tamanho.BackColor = System.Drawing.Color.White;
             this.cb_tamanho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_tamanho.Enabled = false;
@@ -296,8 +300,8 @@
             // 
             // cb_aleatorio
             // 
-            this.cb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_aleatorio.BackColor = System.Drawing.Color.White;
             this.cb_aleatorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_aleatorio.Enabled = false;
@@ -314,8 +318,8 @@
             // 
             // rb_aleatorio
             // 
-            this.rb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_aleatorio.AutoSize = true;
             this.rb_aleatorio.Location = new System.Drawing.Point(10, 293);
             this.rb_aleatorio.Name = "rb_aleatorio";
@@ -327,8 +331,8 @@
             // 
             // lb_aleatorio
             // 
-            this.lb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_aleatorio.AutoSize = true;
             this.lb_aleatorio.ForeColor = System.Drawing.Color.Navy;
             this.lb_aleatorio.Location = new System.Drawing.Point(30, 293);
@@ -339,8 +343,8 @@
             // 
             // rb_tamanho
             // 
-            this.rb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_tamanho.AutoSize = true;
             this.rb_tamanho.Location = new System.Drawing.Point(10, 249);
             this.rb_tamanho.Name = "rb_tamanho";
@@ -352,8 +356,8 @@
             // 
             // lb_tamanho
             // 
-            this.lb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_tamanho.AutoSize = true;
             this.lb_tamanho.ForeColor = System.Drawing.Color.Navy;
             this.lb_tamanho.Location = new System.Drawing.Point(30, 246);
@@ -364,8 +368,8 @@
             // 
             // cb_data
             // 
-            this.cb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_data.AutoCompleteCustomSource.AddRange(new string[] {
             "DE CRIAÇÃO - DD-MM-AA (apenas data)",
             "DE CRIAÇÃO - Domingo, 1 de Março de 2015 (exemplo)",
@@ -385,8 +389,8 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(179, 137);
@@ -409,8 +413,8 @@
             // 
             // nd_nome
             // 
-            this.nd_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.nd_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.nd_nome.BackColor = System.Drawing.Color.White;
             this.nd_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nd_nome.Enabled = false;
@@ -426,8 +430,8 @@
             // 
             // label11
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(30, 132);
@@ -438,8 +442,8 @@
             // 
             // cb_alfa
             // 
-            this.cb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_alfa.AutoCompleteCustomSource.AddRange(new string[] {
             "A",
             "B",
@@ -506,8 +510,8 @@
             // 
             // tb_nome
             // 
-            this.tb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.tb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.tb_nome.BackColor = System.Drawing.Color.White;
             this.tb_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_nome.Enabled = false;
@@ -518,8 +522,8 @@
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(127, 91);
@@ -530,8 +534,8 @@
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(30, 89);
@@ -542,8 +546,8 @@
             // 
             // nd_alfa
             // 
-            this.nd_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.nd_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.nd_alfa.BackColor = System.Drawing.Color.White;
             this.nd_alfa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nd_alfa.Enabled = false;
@@ -559,8 +563,8 @@
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(30, 41);
@@ -571,8 +575,8 @@
             // 
             // nd_numerico
             // 
-            this.nd_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.nd_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.nd_numerico.BackColor = System.Drawing.Color.White;
             this.nd_numerico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nd_numerico.Enabled = false;
@@ -601,22 +605,24 @@
             // 
             this.lb_iniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_iniciar.AutoSize = true;
-            this.lb_iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_iniciar.ForeColor = System.Drawing.Color.Green;
-            this.lb_iniciar.Location = new System.Drawing.Point(59, 74);
+            this.lb_iniciar.Location = new System.Drawing.Point(4, 12);
             this.lb_iniciar.Name = "lb_iniciar";
-            this.lb_iniciar.Size = new System.Drawing.Size(149, 39);
+            this.lb_iniciar.Size = new System.Drawing.Size(139, 37);
             this.lb_iniciar.TabIndex = 42;
             this.lb_iniciar.Text = "INICIAR";
             this.lb_iniciar.Click += new System.EventHandler(this.lb_iniciar_Click);
             // 
             // lb_carrega_arquivos
             // 
-            this.lb_carrega_arquivos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_carrega_arquivos.AutoEllipsis = true;
             this.lb_carrega_arquivos.AutoSize = true;
+            this.lb_carrega_arquivos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lb_carrega_arquivos.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lb_carrega_arquivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_carrega_arquivos.ForeColor = System.Drawing.Color.Navy;
-            this.lb_carrega_arquivos.Location = new System.Drawing.Point(46, 39);
+            this.lb_carrega_arquivos.Location = new System.Drawing.Point(3, 17);
             this.lb_carrega_arquivos.Name = "lb_carrega_arquivos";
             this.lb_carrega_arquivos.Size = new System.Drawing.Size(190, 18);
             this.lb_carrega_arquivos.TabIndex = 41;
@@ -638,8 +644,8 @@
             // 
             // pb_barra
             // 
-            this.pb_barra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pb_barra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pb_barra.Location = new System.Drawing.Point(288, 38);
             this.pb_barra.Name = "pb_barra";
             this.pb_barra.Size = new System.Drawing.Size(532, 22);
@@ -676,22 +682,22 @@
             this.lb_falha.TabIndex = 50;
             this.lb_falha.Text = "FALHAS: 0";
             // 
-            // label15
+            // lb_configs
             // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.Color.Navy;
-            this.label15.Location = new System.Drawing.Point(6, 8);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(123, 15);
-            this.label15.TabIndex = 51;
-            this.label15.Text = "CONFIGURAÇÕES";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+            this.lb_configs.AutoSize = true;
+            this.lb_configs.ForeColor = System.Drawing.Color.Navy;
+            this.lb_configs.Location = new System.Drawing.Point(6, 8);
+            this.lb_configs.Name = "lb_configs";
+            this.lb_configs.Size = new System.Drawing.Size(123, 15);
+            this.lb_configs.TabIndex = 51;
+            this.lb_configs.Text = "CONFIGURAÇÕES";
+            this.lb_configs.Click += new System.EventHandler(this.label15_Click);
             // 
             // dg_lista
             // 
-            this.dg_lista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_lista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dg_lista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_lista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dg_lista.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
@@ -742,7 +748,6 @@
             this.dg_lista.Size = new System.Drawing.Size(757, 362);
             this.dg_lista.TabIndex = 52;
             this.dg_lista.TabStop = false;
-            this.dg_lista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_lista_CellContentClick);
             // 
             // Nome
             // 
@@ -774,8 +779,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.log);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(284, 434);
@@ -800,8 +805,8 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.lb_iniciar);
-            this.groupBox2.Controls.Add(this.lb_carrega_arquivos);
+            this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.Add(this.groupBox4);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(9, 434);
             this.groupBox2.Name = "groupBox2";
@@ -809,6 +814,30 @@
             this.groupBox2.TabIndex = 56;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "AÇÃO";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.lb_iniciar);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(32, 64);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(207, 54);
+            this.groupBox3.TabIndex = 58;
+            this.groupBox3.TabStop = false;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.lb_carrega_arquivos);
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(32, 13);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(207, 43);
+            this.groupBox4.TabIndex = 57;
+            this.groupBox4.TabStop = false;
             // 
             // notifyIcon1
             // 
@@ -840,7 +869,7 @@
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dg_lista);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lb_configs);
             this.Controls.Add(this.lb_falha);
             this.Controls.Add(this.gv_lista);
             this.Controls.Add(this.lb_renome);
@@ -862,7 +891,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_lista)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -909,7 +941,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lb_falha;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lb_configs;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox cb_aleatorio;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -922,6 +954,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
         private System.Windows.Forms.RichTextBox log;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 
