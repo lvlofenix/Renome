@@ -39,6 +39,14 @@ namespace RenomeArquivo___2._0.classes
         public string BtLabelLimpa = "";
         public string BtLabelConfig = "";
         public string BtLabelSobre = "";
+        //check
+        public string CbLabelNum = "";
+        public string CbLabelalpha = "";
+        public string CbLabelNome = "";
+        public string CbLabelRand = "";
+        public string CbLabelData = "";
+        public string CbLabelTipo = "";
+        public string CbLabelTamn = "";
 
         public void qualLang()
         {
@@ -77,6 +85,14 @@ namespace RenomeArquivo___2._0.classes
                 LabelFalhas = "FALHAS: ";
                 //TITULOS
                 TitleBoxSucess = "SUCESSO!!";
+                //CHECKS
+                CbLabelNum = "NUMÉRICO";
+                CbLabelalpha = "ALFANUMÉRICO";
+                CbLabelNome = "NOME";
+                CbLabelData = "DATA";
+                CbLabelTipo = "TIPO";
+                CbLabelTamn = "TAMANHO";
+                CbLabelRand = "ALEATORIO";
             }
             else
             {
@@ -111,6 +127,14 @@ namespace RenomeArquivo___2._0.classes
                 LabelFalhas = "FAILURES: ";
                 //TITULOS
                 TitleBoxSucess = "SUCCESS!!";
+                //CHECK
+                CbLabelNum = "NUMBER";
+                CbLabelalpha = "ALPHANUMERIC";
+                CbLabelNome = "NAME";
+                CbLabelData = "DATE";
+                CbLabelTipo = "TYPE";
+                CbLabelTamn = "LEGNTH";
+                CbLabelRand = "RANDOM";
             }
         }
     }

@@ -629,8 +629,17 @@ namespace RenomeArquivo___2._0
             lb_limpa.Text = mensagens.BtLabelLimpa;
             lb_configs.Text = mensagens.BtLabelConfig;
             lb_sobre.Text = mensagens.BtLabelSobre;
-            gv_lista.Text = mensagens.BtLabelCarregar;
-
+            gv_lista.Text = mensagens.LabelCarregados;
+            lb_renome.Text = mensagens.LabelRenomes;
+            lb_falha.Text = mensagens.LabelFalhas;
+            //CHECKS
+            lb_numerico.Text = mensagens.CbLabelNum;
+            lb_alfanumerico.Text = mensagens.CbLabelalpha;
+            lb_nome.Text = mensagens.CbLabelNome;
+            lb_data.Text = mensagens.CbLabelData;
+            lb_tipo.Text = mensagens.CbLabelTipo;
+            lb_tamanho.Text = mensagens.CbLabelTamn;
+            lb_aleatorio.Text = mensagens.CbLabelRand;
 
         }
     }
