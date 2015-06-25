@@ -30,33 +30,41 @@
         {
             this.lb_ajuda = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb_cont = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pb_tray = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pb_barra = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pb_log = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pb_email = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pb_br = new System.Windows.Forms.PictureBox();
+            this.pb_eua = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pb_cont = new System.Windows.Forms.PictureBox();
-            this.pb_tray = new System.Windows.Forms.PictureBox();
-            this.pb_barra = new System.Windows.Forms.PictureBox();
-            this.pb_log = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_email)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_log)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_email)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_br)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_eua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_ajuda
@@ -89,6 +97,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opções Visuais";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RenomeArquivo___2._0.Properties.Resources.help;
+            this.pictureBox1.Location = new System.Drawing.Point(310, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 48;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
+            // pb_cont
+            // 
+            this.pb_cont.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
+            this.pb_cont.Location = new System.Drawing.Point(22, 24);
+            this.pb_cont.Name = "pb_cont";
+            this.pb_cont.Size = new System.Drawing.Size(16, 16);
+            this.pb_cont.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_cont.TabIndex = 46;
+            this.pb_cont.TabStop = false;
+            this.pb_cont.Click += new System.EventHandler(this.pb_cont_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -99,6 +129,17 @@
             this.label7.Size = new System.Drawing.Size(112, 15);
             this.label7.TabIndex = 45;
             this.label7.Text = "Ativa contadores";
+            // 
+            // pb_tray
+            // 
+            this.pb_tray.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
+            this.pb_tray.Location = new System.Drawing.Point(22, 123);
+            this.pb_tray.Name = "pb_tray";
+            this.pb_tray.Size = new System.Drawing.Size(16, 16);
+            this.pb_tray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_tray.TabIndex = 42;
+            this.pb_tray.TabStop = false;
+            this.pb_tray.Click += new System.EventHandler(this.pb_tray_Click);
             // 
             // label5
             // 
@@ -111,6 +152,17 @@
             this.label5.TabIndex = 41;
             this.label5.Text = "Desativar minimização automatica.";
             // 
+            // pb_barra
+            // 
+            this.pb_barra.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
+            this.pb_barra.Location = new System.Drawing.Point(22, 90);
+            this.pb_barra.Name = "pb_barra";
+            this.pb_barra.Size = new System.Drawing.Size(16, 16);
+            this.pb_barra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_barra.TabIndex = 40;
+            this.pb_barra.TabStop = false;
+            this.pb_barra.Click += new System.EventHandler(this.pb_barra_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -121,6 +173,17 @@
             this.label3.Size = new System.Drawing.Size(168, 15);
             this.label3.TabIndex = 39;
             this.label3.Text = "Ativar barra de progresso";
+            // 
+            // pb_log
+            // 
+            this.pb_log.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
+            this.pb_log.Location = new System.Drawing.Point(22, 55);
+            this.pb_log.Name = "pb_log";
+            this.pb_log.Size = new System.Drawing.Size(16, 16);
+            this.pb_log.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_log.TabIndex = 38;
+            this.pb_log.TabStop = false;
+            this.pb_log.Click += new System.EventHandler(this.pb_log_Click);
             // 
             // label4
             // 
@@ -143,33 +206,10 @@
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(1, 203);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(332, 84);
+            this.groupBox3.Size = new System.Drawing.Size(332, 71);
             this.groupBox3.TabIndex = 47;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ferramentas";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(44, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(244, 15);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Enviar estatísticas de forma anonima";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Enabled = false;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(44, 52);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 15);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "Verificar atualizações";
             // 
             // pictureBox11
             // 
@@ -193,21 +233,102 @@
             this.pb_email.TabStop = false;
             this.pb_email.Click += new System.EventHandler(this.pb_email_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(44, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(244, 15);
+            this.label6.TabIndex = 45;
+            this.label6.Text = "Enviar estatísticas de forma anonima";
+            // 
             // pictureBox10
             // 
             this.pictureBox10.Enabled = false;
             this.pictureBox10.Image = global::RenomeArquivo___2._0.Properties.Resources.accept;
-            this.pictureBox10.Location = new System.Drawing.Point(22, 52);
+            this.pictureBox10.Location = new System.Drawing.Point(22, 43);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(16, 16);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox10.TabIndex = 44;
             this.pictureBox10.TabStop = false;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Enabled = false;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(44, 43);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(145, 15);
+            this.label9.TabIndex = 43;
+            this.label9.Text = "Verificar atualizações";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pb_br);
+            this.groupBox1.Controls.Add(this.pb_eua);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(1, 280);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(332, 65);
+            this.groupBox1.TabIndex = 48;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Idioma";
+            // 
+            // pb_br
+            // 
+            this.pb_br.Image = global::RenomeArquivo___2._0.Properties.Resources.br1;
+            this.pb_br.Location = new System.Drawing.Point(22, 21);
+            this.pb_br.Name = "pb_br";
+            this.pb_br.Size = new System.Drawing.Size(16, 11);
+            this.pb_br.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_br.TabIndex = 51;
+            this.pb_br.TabStop = false;
+            this.pb_br.Click += new System.EventHandler(this.pb_br_Click);
+            // 
+            // pb_eua
+            // 
+            this.pb_eua.Image = global::RenomeArquivo___2._0.Properties.Resources.eua;
+            this.pb_eua.Location = new System.Drawing.Point(22, 43);
+            this.pb_eua.Name = "pb_eua";
+            this.pb_eua.Size = new System.Drawing.Size(16, 11);
+            this.pb_eua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_eua.TabIndex = 48;
+            this.pb_eua.TabStop = false;
+            this.pb_eua.Click += new System.EventHandler(this.pb_eua_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(44, 17);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 15);
+            this.label8.TabIndex = 50;
+            this.label8.Text = "Portugues Brasil";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(44, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 15);
+            this.label1.TabIndex = 48;
+            this.label1.Text = "Ingles";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RenomeArquivo___2._0.Properties.Resources.cancel;
-            this.pictureBox3.Location = new System.Drawing.Point(153, 301);
+            this.pictureBox3.Location = new System.Drawing.Point(152, 355);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(16, 16);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -215,68 +336,14 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pb_cont
-            // 
-            this.pb_cont.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_cont.Location = new System.Drawing.Point(22, 24);
-            this.pb_cont.Name = "pb_cont";
-            this.pb_cont.Size = new System.Drawing.Size(16, 16);
-            this.pb_cont.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pb_cont.TabIndex = 46;
-            this.pb_cont.TabStop = false;
-            this.pb_cont.Click += new System.EventHandler(this.pb_cont_Click);
-            // 
-            // pb_tray
-            // 
-            this.pb_tray.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_tray.Location = new System.Drawing.Point(22, 123);
-            this.pb_tray.Name = "pb_tray";
-            this.pb_tray.Size = new System.Drawing.Size(16, 16);
-            this.pb_tray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pb_tray.TabIndex = 42;
-            this.pb_tray.TabStop = false;
-            this.pb_tray.Click += new System.EventHandler(this.pb_tray_Click);
-            // 
-            // pb_barra
-            // 
-            this.pb_barra.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_barra.Location = new System.Drawing.Point(22, 90);
-            this.pb_barra.Name = "pb_barra";
-            this.pb_barra.Size = new System.Drawing.Size(16, 16);
-            this.pb_barra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pb_barra.TabIndex = 40;
-            this.pb_barra.TabStop = false;
-            this.pb_barra.Click += new System.EventHandler(this.pb_barra_Click);
-            // 
-            // pb_log
-            // 
-            this.pb_log.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_log.Location = new System.Drawing.Point(22, 55);
-            this.pb_log.Name = "pb_log";
-            this.pb_log.Size = new System.Drawing.Size(16, 16);
-            this.pb_log.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pb_log.TabIndex = 38;
-            this.pb_log.TabStop = false;
-            this.pb_log.Click += new System.EventHandler(this.pb_log_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::RenomeArquivo___2._0.Properties.Resources.help;
-            this.pictureBox1.Location = new System.Drawing.Point(310, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 48;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
-            // 
             // configuracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(332, 329);
+            this.ClientSize = new System.Drawing.Size(324, 367);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.groupBox2);
@@ -293,17 +360,21 @@
             this.Load += new System.EventHandler(this.configuracoes_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_log)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_email)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_br)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_eua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_log)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +400,10 @@
         private System.Windows.Forms.PictureBox pb_email;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pb_br;
+        private System.Windows.Forms.PictureBox pb_eua;
     }
 }

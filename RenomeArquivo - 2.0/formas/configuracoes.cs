@@ -99,13 +99,21 @@ namespace RenomeArquivo___2._0.formas
                         pb_email.Image = Properties.Resources.lightbulb;
                     }
                 }
+                 else if (line.Substring(0, 6) == "LANGUE")
+                 {
+                     if (line.Substring(9) == "PTBR")
+                     {
+                         pb_eua.Image = Properties.Resources.eua;
+                         pb_br.Image = Properties.Resources.br1;
+                     }
+                     else
+                     {
+                         pb_eua.Image = Properties.Resources.us;
+                         pb_br.Image = Properties.Resources.br;
+                     }
+                 }
             }
             file.Close();
-        }
-
-        private void pb_turbo_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -261,7 +269,48 @@ namespace RenomeArquivo___2._0.formas
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("A desativação dos retornos visuais fazem o software trabalhar mais rápido.","DESATIVAÇÃO",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("A desativação dos retornos visuais fazem o software trabalhar mais rápido.", "DESATIVAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        private void pb_eua_Click(object sender, EventArgs e)
+        {
+            System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
+            while ((line = file.ReadLine()) != null)
+            {
+                if (line.Substring(0, 6) == "LANGUE")
+                {
+                    string text = File.ReadAllText(@".\conf.cf");
+                    if (line.Substring(9) == "PTBR")
+                    {
+                        pb_br.Image = Properties.Resources.br;
+                        pb_eua.Image = Properties.Resources.us;
+                        text = text.Replace("LANGUE = PTBR", "LANGUE = INGL");
+                        file.Close();
+                        File.WriteAllText(@".\conf.cf", text);
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void pb_br_Click(object sender, EventArgs e)
+        {
+            System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
+            while ((line = file.ReadLine()) != null)
+            {
+                if (line.Substring(0, 6) == "LANGUE")
+                {
+                    string text = File.ReadAllText(@".\conf.cf");
+                    if (line.Substring(9) == "INGL")
+                    {
+                        pb_br.Image = Properties.Resources.br1;
+                        pb_eua.Image = Properties.Resources.eua;
+                        text = text.Replace("LANGUE = INGL", "LANGUE = PTBR");
+                        file.Close();
+                        File.WriteAllText(@".\conf.cf", text);
+                        break;
+                    }
+                }
+            }
         }
     }
 }

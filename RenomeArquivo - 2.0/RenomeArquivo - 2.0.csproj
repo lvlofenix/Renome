@@ -77,7 +77,6 @@
     <Compile Include="classes\checkUp.cs" />
     <Compile Include="classes\configs\configuracoes.cs" />
     <Compile Include="classes\configs\email.cs" />
-    <Compile Include="classes\configs\langue_ing.cs" />
     <Compile Include="classes\configs\messages.cs" />
     <Compile Include="classes\core\rc_aleatorio.cs" />
     <Compile Include="classes\core\rc_alphanumerico.cs" />
@@ -166,6 +165,18 @@
     <None Include="Resources\lightbulb.png" />
     <None Include="Resources\cancel.png" />
     <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\br.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\br.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -16,12 +16,13 @@ namespace RenomeArquivo___2._0
 {
     public partial class Index : Form
     {
+        messages mensagens = new messages();
         public Index()
         {
+            mensagens.qualLang();
             InitializeComponent();
         }
         //threads e variaveis globais
-        messages mensagens = new messages();
         Thread carrega;
         Thread trabalha;
         Thread email;
@@ -329,7 +330,6 @@ namespace RenomeArquivo___2._0
             {
                 modo = lb_data.Text;
                 string qual = "";
-                int controle = 0;
                 cb_tipo.Invoke((MethodInvoker)delegate { qual = cb_tipo.Text; });
                 rc_tipo tipo = new rc_tipo();
                 for (int i = 0; i <= openFileDialog1.SafeFileNames.Length - 1; i++)
@@ -588,6 +588,8 @@ namespace RenomeArquivo___2._0
 
         private void Index_Load(object sender, EventArgs e)
         {
+            checkUp up = new checkUp();
+            up.verificaIntegridade();
             nd_numerico.Value = 0;
             cb_alfa.Text = "A";
             nd_alfa.Value = 0;
@@ -616,6 +618,11 @@ namespace RenomeArquivo___2._0
         {
             AboutBox sobre = new AboutBox();
             sobre.Show();
+        }
+
+        private void dg_lista_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

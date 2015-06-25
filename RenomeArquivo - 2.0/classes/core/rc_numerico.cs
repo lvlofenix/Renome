@@ -8,7 +8,7 @@ namespace RenomeArquivo___2._0.classes
 {
     class rc_numerico
     {
-        public decimal cont;
+        public decimal cont=0;
         public Boolean renome_numerico(string caminho, string arquivo, decimal numero, string tipo)
         {
             //aplicando o renome.
