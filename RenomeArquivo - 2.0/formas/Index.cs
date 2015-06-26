@@ -455,25 +455,7 @@ namespace RenomeArquivo___2._0
         //carrega arquivos
         private void lb_carrega_arquivos_Click(object sender, EventArgs e)
         {
-            text = File.ReadAllText(@".\conf.cf");
-            if (lb_carrega_arquivos.Text == mensagens.LabelCarregados)
-            {
-                lb_carrega_arquivos.Text = mensagens.BtlabelCancelar;
-                lb_carrega_arquivos.ForeColor = Color.Red;
-                carrega = new Thread(pegaCaminho);
-                carrega.ApartmentState = ApartmentState.STA;
-                carrega.Start();
-                lb_iniciar.Enabled = false;
-            }
-            else
-            {
-                lb_carrega_arquivos.ForeColor = Color.Navy;
-                lb_carrega_arquivos.Text = mensagens.LabelCarregados;
-                lb_iniciar.Enabled = true;
-                novoLog(mensagens.UpCancel,Color.Red);
-                carrega.Abort();
-                limpa();
-            }
+
 
         }
 
@@ -632,6 +614,9 @@ namespace RenomeArquivo___2._0
             gv_lista.Text = mensagens.LabelCarregados;
             lb_renome.Text = mensagens.LabelRenomes;
             lb_falha.Text = mensagens.LabelFalhas;
+            lb_inicio1.Text = mensagens.LabelInicio;
+            lb_inicio2.Text = mensagens.LabelInicio;
+            lb_inicio3.Text = mensagens.LabelInicio;
             //CHECKS
             lb_numerico.Text = mensagens.CbLabelNum;
             lb_alfanumerico.Text = mensagens.CbLabelalpha;
@@ -640,7 +625,34 @@ namespace RenomeArquivo___2._0
             lb_tipo.Text = mensagens.CbLabelTipo;
             lb_tamanho.Text = mensagens.CbLabelTamn;
             lb_aleatorio.Text = mensagens.CbLabelRand;
+            //GRIDS
+            gb_opcoes.Text = mensagens.Gopcoes;
+            gb_acao.Text = mensagens.Gacao;
+            gb_log.Text = mensagens.Glog;
 
+        }
+
+        private void lb_carrega_arquivos_Click_1(object sender, EventArgs e)
+        {
+            text = File.ReadAllText(@".\conf.cf");
+            if (lb_carrega_arquivos.Text == mensagens.BtLabelCarregar)
+            {
+                lb_carrega_arquivos.Text = mensagens.BtlabelCancelar;
+                lb_carrega_arquivos.ForeColor = Color.Red;
+                carrega = new Thread(pegaCaminho);
+                carrega.ApartmentState = ApartmentState.STA;
+                carrega.Start();
+                lb_iniciar.Enabled = false;
+            }
+            else
+            {
+                lb_carrega_arquivos.ForeColor = Color.Navy;
+                lb_carrega_arquivos.Text = mensagens.BtlabelCancelar;
+                lb_iniciar.Enabled = true;
+                novoLog(mensagens.UpCancel, Color.Red);
+                carrega.Abort();
+                limpa();
+            }
         }
     }
 }

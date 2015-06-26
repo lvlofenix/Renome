@@ -31,6 +31,7 @@ namespace RenomeArquivo___2._0.classes
         public string LabelRenomes = "";
         public string LabelFalhas = "";
         public string TitleBoxSucess = "";
+        public string LabelInicio = "";
         //Botões Labels
         public string BtLabelCarregar = "";
         public string BtlabelIniciar = "";
@@ -47,6 +48,28 @@ namespace RenomeArquivo___2._0.classes
         public string CbLabelData = "";
         public string CbLabelTipo = "";
         public string CbLabelTamn = "";
+        //GRIDS
+        public string GvLabelNome = "";
+        public string GvLabelTamanho = "";
+        public string GvLabelTipo = "";
+        public string GvLabelData = "";
+        //DIVS
+        public string Gopcoes = "";
+        public string Gacao = "";
+        public string Glog = "";
+        //configurações
+        public string LabelConfig = "";
+        public string Gopsvisu = "";
+        public string Labelativacont = "";
+        public string LabelGeraLog = "";
+        public string LabelAtivBarra = "";
+        public string LabelDesamini = "";
+        public string Gferra = "";
+        public string LabelEnvia = "";
+        public string LabelAtul = "";
+        public string GLangu = "";
+        public string LabelPortu = "";
+        public string LabelUs = "";
 
         public void qualLang()
         {
@@ -83,6 +106,7 @@ namespace RenomeArquivo___2._0.classes
                 LabelCarregados = "ARQUIVOS CARREGADOS: ";
                 LabelRenomes = "ARQUIVOS RENOMEADOS: ";
                 LabelFalhas = "FALHAS: ";
+                LabelInicio = "inicio: ";
                 //TITULOS
                 TitleBoxSucess = "SUCESSO!!";
                 //CHECKS
@@ -93,6 +117,24 @@ namespace RenomeArquivo___2._0.classes
                 CbLabelTipo = "TIPO";
                 CbLabelTamn = "TAMANHO";
                 CbLabelRand = "ALEATORIO";
+                //GRIDS
+                //DIVS
+                Gopcoes = "OPÇÕES";
+                Gacao = "AÇÃO";
+                Glog = "LOGS";
+                //configurações
+                LabelConfig = "CONFIGURAÇÕES";
+                Gopsvisu = "Opções Visuais";
+                Labelativacont = "Ativa contadores";
+                LabelGeraLog = "Gerar logs";
+                LabelAtivBarra = "Ativar barra de progresso";
+                LabelDesamini = "Desativar minimização automatica";
+                Gferra = "Ferramentas";
+                LabelEnvia = "Enviar estatísticas de forma anonima";
+                LabelAtul = "Verificar atualizações";
+                GLangu = "Idioma";
+                LabelPortu = "Portugues Brasil";
+                LabelUs = "Ingles";
             }
             else
             {
@@ -125,6 +167,7 @@ namespace RenomeArquivo___2._0.classes
                 LabelCarregados = "FILES LOADED: ";
                 LabelRenomes = "FILES RENAMED: ";
                 LabelFalhas = "FAILURES: ";
+                LabelInicio = "start:";
                 //TITULOS
                 TitleBoxSucess = "SUCCESS!!";
                 //CHECK
@@ -135,6 +178,24 @@ namespace RenomeArquivo___2._0.classes
                 CbLabelTipo = "TYPE";
                 CbLabelTamn = "LEGNTH";
                 CbLabelRand = "RANDOM";
+                //GRIDS
+                //DIVS
+                Gopcoes = "OPTIONS";
+                Gacao = "ACTION";
+                Glog = "LOGS";
+                //configurações
+                LabelConfig = "SETTINGS";
+                Gopsvisu = "Visual options";
+                Labelativacont = "Active counters";
+                LabelGeraLog = "Generate logs";
+                LabelAtivBarra = "Enable progress bar";
+                LabelDesamini = "Disable automatic minimization";
+                Gferra = "Tools";
+                LabelEnvia = "Send statistics anonymous way";
+                LabelAtul = "Check for Updates";
+                GLangu = "Language";
+                LabelPortu = "Portuguese Brazil";
+                LabelUs = "Ingles";
             }
         }
     }

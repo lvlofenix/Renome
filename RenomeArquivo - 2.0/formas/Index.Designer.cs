@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.lb_numerico = new System.Windows.Forms.Label();
             this.lb_alfanumerico = new System.Windows.Forms.Label();
@@ -55,17 +55,15 @@
             this.label12 = new System.Windows.Forms.Label();
             this.lb_limpa = new System.Windows.Forms.Label();
             this.nd_nome = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lb_inicio3 = new System.Windows.Forms.Label();
             this.cb_alfa = new System.Windows.Forms.ComboBox();
             this.tb_nome = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lb_inicio2 = new System.Windows.Forms.Label();
             this.nd_alfa = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lb_inicio1 = new System.Windows.Forms.Label();
             this.nd_numerico = new System.Windows.Forms.NumericUpDown();
             this.lb_sobre = new System.Windows.Forms.Label();
-            this.lb_iniciar = new System.Windows.Forms.Label();
-            this.lb_carrega_arquivos = new System.Windows.Forms.Label();
             this.lb_renome = new System.Windows.Forms.Label();
             this.pb_barra = new System.Windows.Forms.ProgressBar();
             this.gv_lista = new System.Windows.Forms.Label();
@@ -79,11 +77,11 @@
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gb_log = new System.Windows.Forms.GroupBox();
             this.log = new System.Windows.Forms.RichTextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gb_acao = new System.Windows.Forms.GroupBox();
+            this.lb_carrega_arquivos = new System.Windows.Forms.Label();
+            this.lb_iniciar = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.gb_opcoes.SuspendLayout();
@@ -91,10 +89,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.nd_alfa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nd_numerico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_lista)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.gb_log.SuspendLayout();
+            this.gb_acao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
@@ -236,15 +232,14 @@
             this.gb_opcoes.Controls.Add(this.lb_tamanho);
             this.gb_opcoes.Controls.Add(this.cb_data);
             this.gb_opcoes.Controls.Add(this.label12);
-            this.gb_opcoes.Controls.Add(this.lb_limpa);
             this.gb_opcoes.Controls.Add(this.nd_nome);
-            this.gb_opcoes.Controls.Add(this.label11);
+            this.gb_opcoes.Controls.Add(this.lb_inicio3);
             this.gb_opcoes.Controls.Add(this.cb_alfa);
             this.gb_opcoes.Controls.Add(this.tb_nome);
             this.gb_opcoes.Controls.Add(this.label9);
-            this.gb_opcoes.Controls.Add(this.label8);
+            this.gb_opcoes.Controls.Add(this.lb_inicio2);
             this.gb_opcoes.Controls.Add(this.nd_alfa);
-            this.gb_opcoes.Controls.Add(this.label7);
+            this.gb_opcoes.Controls.Add(this.lb_inicio1);
             this.gb_opcoes.Controls.Add(this.nd_numerico);
             this.gb_opcoes.Controls.Add(this.lb_numerico);
             this.gb_opcoes.Controls.Add(this.rb_nome);
@@ -262,7 +257,6 @@
             this.gb_opcoes.Size = new System.Drawing.Size(270, 390);
             this.gb_opcoes.TabIndex = 12;
             this.gb_opcoes.TabStop = false;
-            this.gb_opcoes.Text = "OPÇÕES";
             // 
             // cb_tipo
             // 
@@ -403,10 +397,11 @@
             // 
             this.lb_limpa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_limpa.AutoSize = true;
+            this.lb_limpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_limpa.ForeColor = System.Drawing.Color.Navy;
-            this.lb_limpa.Location = new System.Drawing.Point(46, 357);
+            this.lb_limpa.Location = new System.Drawing.Point(10, 22);
             this.lb_limpa.Name = "lb_limpa";
-            this.lb_limpa.Size = new System.Drawing.Size(173, 15);
+            this.lb_limpa.Size = new System.Drawing.Size(157, 13);
             this.lb_limpa.TabIndex = 46;
             this.lb_limpa.Text = "LIMPAR CAMPOS E LOGS";
             this.lb_limpa.Click += new System.EventHandler(this.lb_limpa_Click);
@@ -428,17 +423,17 @@
             this.nd_nome.Size = new System.Drawing.Size(67, 21);
             this.nd_nome.TabIndex = 24;
             // 
-            // label11
+            // lb_inicio3
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lb_inicio3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(30, 132);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Inicio: ";
+            this.lb_inicio3.AutoSize = true;
+            this.lb_inicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_inicio3.Location = new System.Drawing.Point(30, 132);
+            this.lb_inicio3.Name = "lb_inicio3";
+            this.lb_inicio3.Size = new System.Drawing.Size(38, 13);
+            this.lb_inicio3.TabIndex = 23;
+            this.lb_inicio3.Text = "Inicio: ";
             // 
             // cb_alfa
             // 
@@ -532,17 +527,17 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "-";
             // 
-            // label8
+            // lb_inicio2
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lb_inicio2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(30, 89);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Inicio: ";
+            this.lb_inicio2.AutoSize = true;
+            this.lb_inicio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_inicio2.Location = new System.Drawing.Point(30, 89);
+            this.lb_inicio2.Name = "lb_inicio2";
+            this.lb_inicio2.Size = new System.Drawing.Size(38, 13);
+            this.lb_inicio2.TabIndex = 18;
+            this.lb_inicio2.Text = "Inicio: ";
             // 
             // nd_alfa
             // 
@@ -561,17 +556,17 @@
             this.nd_alfa.Size = new System.Drawing.Size(116, 21);
             this.nd_alfa.TabIndex = 17;
             // 
-            // label7
+            // lb_inicio1
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lb_inicio1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 41);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Inicio: ";
+            this.lb_inicio1.AutoSize = true;
+            this.lb_inicio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_inicio1.Location = new System.Drawing.Point(30, 41);
+            this.lb_inicio1.Name = "lb_inicio1";
+            this.lb_inicio1.Size = new System.Drawing.Size(38, 13);
+            this.lb_inicio1.TabIndex = 14;
+            this.lb_inicio1.Text = "Inicio: ";
             // 
             // nd_numerico
             // 
@@ -594,41 +589,12 @@
             // 
             this.lb_sobre.AutoSize = true;
             this.lb_sobre.ForeColor = System.Drawing.Color.Navy;
-            this.lb_sobre.Location = new System.Drawing.Point(131, 9);
+            this.lb_sobre.Location = new System.Drawing.Point(135, 9);
             this.lb_sobre.Name = "lb_sobre";
             this.lb_sobre.Size = new System.Drawing.Size(54, 15);
             this.lb_sobre.TabIndex = 36;
             this.lb_sobre.Text = "SOBRE";
             this.lb_sobre.Click += new System.EventHandler(this.lb_sobre_Click);
-            // 
-            // lb_iniciar
-            // 
-            this.lb_iniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lb_iniciar.AutoSize = true;
-            this.lb_iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_iniciar.ForeColor = System.Drawing.Color.Green;
-            this.lb_iniciar.Location = new System.Drawing.Point(4, 12);
-            this.lb_iniciar.Name = "lb_iniciar";
-            this.lb_iniciar.Size = new System.Drawing.Size(139, 37);
-            this.lb_iniciar.TabIndex = 42;
-            this.lb_iniciar.Text = "INICIAR";
-            this.lb_iniciar.Click += new System.EventHandler(this.lb_iniciar_Click);
-            // 
-            // lb_carrega_arquivos
-            // 
-            this.lb_carrega_arquivos.AutoEllipsis = true;
-            this.lb_carrega_arquivos.AutoSize = true;
-            this.lb_carrega_arquivos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb_carrega_arquivos.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.lb_carrega_arquivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_carrega_arquivos.ForeColor = System.Drawing.Color.Navy;
-            this.lb_carrega_arquivos.Location = new System.Drawing.Point(3, 17);
-            this.lb_carrega_arquivos.Name = "lb_carrega_arquivos";
-            this.lb_carrega_arquivos.Size = new System.Drawing.Size(190, 18);
-            this.lb_carrega_arquivos.TabIndex = 41;
-            this.lb_carrega_arquivos.Text = "CARREGAR ARQUIVOS";
-            this.lb_carrega_arquivos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lb_carrega_arquivos.Click += new System.EventHandler(this.lb_carrega_arquivos_Click);
             // 
             // lb_renome
             // 
@@ -676,7 +642,7 @@
             this.lb_falha.AutoSize = true;
             this.lb_falha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_falha.ForeColor = System.Drawing.Color.White;
-            this.lb_falha.Location = new System.Drawing.Point(876, 48);
+            this.lb_falha.Location = new System.Drawing.Point(823, 48);
             this.lb_falha.Name = "lb_falha";
             this.lb_falha.Size = new System.Drawing.Size(65, 15);
             this.lb_falha.TabIndex = 50;
@@ -705,28 +671,28 @@
             this.dg_lista.CausesValidation = false;
             this.dg_lista.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dg_lista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
             this.dg_lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dg_lista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
             this.Tamanho,
             this.Tipo,
             this.data});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dg_lista.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dg_lista.DefaultCellStyle = dataGridViewCellStyle47;
             this.dg_lista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dg_lista.GridColor = System.Drawing.Color.Black;
             this.dg_lista.Location = new System.Drawing.Point(288, 66);
@@ -734,14 +700,14 @@
             this.dg_lista.Name = "dg_lista";
             this.dg_lista.ReadOnly = true;
             this.dg_lista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
             this.dg_lista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dg_lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_lista.ShowEditingIcon = false;
@@ -777,21 +743,22 @@
             this.data.Name = "data";
             this.data.ReadOnly = true;
             // 
-            // groupBox1
+            // gb_log
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.gb_log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.log);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(284, 434);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(761, 129);
-            this.groupBox1.TabIndex = 36;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "LOGS";
+            this.gb_log.Controls.Add(this.log);
+            this.gb_log.ForeColor = System.Drawing.Color.White;
+            this.gb_log.Location = new System.Drawing.Point(284, 434);
+            this.gb_log.Name = "gb_log";
+            this.gb_log.Size = new System.Drawing.Size(761, 129);
+            this.gb_log.TabIndex = 36;
+            this.gb_log.TabStop = false;
             // 
             // log
             // 
+            this.log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.log.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.log.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.log.ForeColor = System.Drawing.Color.Black;
@@ -802,42 +769,48 @@
             this.log.TabIndex = 56;
             this.log.Text = "";
             // 
-            // groupBox2
+            // gb_acao
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.groupBox4);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(9, 434);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(270, 129);
-            this.groupBox2.TabIndex = 56;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "AÇÃO";
+            this.gb_acao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gb_acao.Controls.Add(this.lb_carrega_arquivos);
+            this.gb_acao.Controls.Add(this.lb_iniciar);
+            this.gb_acao.Controls.Add(this.lb_limpa);
+            this.gb_acao.ForeColor = System.Drawing.Color.White;
+            this.gb_acao.Location = new System.Drawing.Point(9, 434);
+            this.gb_acao.Name = "gb_acao";
+            this.gb_acao.Size = new System.Drawing.Size(270, 129);
+            this.gb_acao.TabIndex = 56;
+            this.gb_acao.TabStop = false;
             // 
-            // groupBox3
+            // lb_carrega_arquivos
             // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.lb_carrega_arquivos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.lb_iniciar);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(32, 64);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(207, 54);
-            this.groupBox3.TabIndex = 58;
-            this.groupBox3.TabStop = false;
+            this.lb_carrega_arquivos.AutoSize = true;
+            this.lb_carrega_arquivos.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lb_carrega_arquivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_carrega_arquivos.ForeColor = System.Drawing.Color.Navy;
+            this.lb_carrega_arquivos.Location = new System.Drawing.Point(7, 46);
+            this.lb_carrega_arquivos.Name = "lb_carrega_arquivos";
+            this.lb_carrega_arquivos.Size = new System.Drawing.Size(190, 18);
+            this.lb_carrega_arquivos.TabIndex = 43;
+            this.lb_carrega_arquivos.Text = "CARREGAR ARQUIVOS";
+            this.lb_carrega_arquivos.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_carrega_arquivos.Click += new System.EventHandler(this.lb_carrega_arquivos_Click_1);
             // 
-            // groupBox4
+            // lb_iniciar
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.Controls.Add(this.lb_carrega_arquivos);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(32, 13);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(207, 43);
-            this.groupBox4.TabIndex = 57;
-            this.groupBox4.TabStop = false;
+            this.lb_iniciar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_iniciar.AutoSize = true;
+            this.lb_iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_iniciar.ForeColor = System.Drawing.Color.Green;
+            this.lb_iniciar.Location = new System.Drawing.Point(59, 81);
+            this.lb_iniciar.Name = "lb_iniciar";
+            this.lb_iniciar.Size = new System.Drawing.Size(158, 42);
+            this.lb_iniciar.TabIndex = 42;
+            this.lb_iniciar.Text = "INICIAR";
+            this.lb_iniciar.Click += new System.EventHandler(this.lb_iniciar_Click);
             // 
             // notifyIcon1
             // 
@@ -865,9 +838,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1053, 589);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gb_log);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gb_acao);
             this.Controls.Add(this.dg_lista);
             this.Controls.Add(this.lb_configs);
             this.Controls.Add(this.lb_falha);
@@ -889,12 +862,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nd_alfa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nd_numerico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_lista)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.gb_log.ResumeLayout(false);
+            this.gb_acao.ResumeLayout(false);
+            this.gb_acao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -914,15 +884,15 @@
         private System.Windows.Forms.RadioButton rb_data;
         private System.Windows.Forms.RadioButton rb_nome;
         private System.Windows.Forms.GroupBox gb_opcoes;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_inicio1;
         private System.Windows.Forms.NumericUpDown nd_numerico;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown nd_nome;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lb_inicio3;
         private System.Windows.Forms.ComboBox cb_alfa;
         private System.Windows.Forms.TextBox tb_nome;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_inicio2;
         private System.Windows.Forms.NumericUpDown nd_alfa;
         private System.Windows.Forms.ComboBox cb_tipo;
         private System.Windows.Forms.ComboBox cb_tamanho;
@@ -932,8 +902,6 @@
         private System.Windows.Forms.Label lb_tamanho;
         private System.Windows.Forms.ComboBox cb_data;
         private System.Windows.Forms.Label lb_sobre;
-        private System.Windows.Forms.Label lb_iniciar;
-        private System.Windows.Forms.Label lb_carrega_arquivos;
         private System.Windows.Forms.Label lb_renome;
         private System.Windows.Forms.Label lb_limpa;
         private System.Windows.Forms.ProgressBar pb_barra;
@@ -944,8 +912,8 @@
         private System.Windows.Forms.Label lb_configs;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox cb_aleatorio;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gb_log;
+        private System.Windows.Forms.GroupBox gb_acao;
         private System.Windows.Forms.DataGridView dg_lista;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -954,8 +922,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
         private System.Windows.Forms.RichTextBox log;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label lb_iniciar;
+        private System.Windows.Forms.Label lb_carrega_arquivos;
     }
 }
 

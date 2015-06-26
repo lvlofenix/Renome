@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
+using RenomeArquivo___2._0.classes.configs;
+using RenomeArquivo___2._0.classes;
 
 namespace RenomeArquivo___2._0.formas
 {
@@ -14,6 +16,7 @@ namespace RenomeArquivo___2._0.formas
     {
         string line = "";
         System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
+        messages mensagens = new messages();
 
         public configuracoes()
         {
@@ -105,6 +108,7 @@ namespace RenomeArquivo___2._0.formas
                      {
                          pb_eua.Image = Properties.Resources.eua;
                          pb_br.Image = Properties.Resources.br1;
+
                      }
                      else
                      {
@@ -114,6 +118,24 @@ namespace RenomeArquivo___2._0.formas
                  }
             }
             file.Close();
+            lingua();
+        }
+
+        private void lingua()
+        {
+            mensagens.qualLang();
+            lb_ajuda.Text = mensagens.LabelConfig;
+            gb_opcoes.Text = mensagens.Gopsvisu;
+            lb_ativcont.Text = mensagens.Labelativacont;
+            lb_geralog.Text = mensagens.LabelGeraLog;
+            lb_ativabarr.Text = mensagens.LabelAtivBarra;
+            lb_desamin.Text = mensagens.LabelDesamini;
+            gb_ferram.Text = mensagens.Gferra;
+            lb_enviaesta.Text = mensagens.LabelEnvia;
+            lb_verifiatua.Text = mensagens.LabelAtul;
+            gb_idioma.Text = mensagens.GLangu;
+            lb_ptbr.Text = mensagens.LabelPortu;
+            lb_us.Text = mensagens.LabelUs;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

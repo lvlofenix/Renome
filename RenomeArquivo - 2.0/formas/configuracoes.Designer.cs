@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             this.lb_ajuda = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gb_opcoes = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pb_cont = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lb_ativcont = new System.Windows.Forms.Label();
             this.pb_tray = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lb_desamin = new System.Windows.Forms.Label();
             this.pb_barra = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb_ativabarr = new System.Windows.Forms.Label();
             this.pb_log = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lb_geralog = new System.Windows.Forms.Label();
+            this.gb_ferram = new System.Windows.Forms.GroupBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pb_email = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lb_enviaesta = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lb_verifiatua = new System.Windows.Forms.Label();
+            this.gb_idioma = new System.Windows.Forms.GroupBox();
             this.pb_br = new System.Windows.Forms.PictureBox();
             this.pb_eua = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_ptbr = new System.Windows.Forms.Label();
+            this.lb_us = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.groupBox2.SuspendLayout();
+            this.gb_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_log)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.gb_ferram.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_email)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.gb_idioma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_br)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_eua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,30 +72,30 @@
             this.lb_ajuda.AutoSize = true;
             this.lb_ajuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_ajuda.ForeColor = System.Drawing.Color.White;
-            this.lb_ajuda.Location = new System.Drawing.Point(42, 9);
+            this.lb_ajuda.Location = new System.Drawing.Point(77, 9);
             this.lb_ajuda.Name = "lb_ajuda";
             this.lb_ajuda.Size = new System.Drawing.Size(269, 31);
             this.lb_ajuda.TabIndex = 36;
             this.lb_ajuda.Text = "CONFIGURAÇÕES";
             // 
-            // groupBox2
+            // gb_opcoes
             // 
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.pb_cont);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.pb_tray);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.pb_barra);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.pb_log);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(1, 43);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(332, 155);
-            this.groupBox2.TabIndex = 41;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opções Visuais";
+            this.gb_opcoes.Controls.Add(this.pictureBox1);
+            this.gb_opcoes.Controls.Add(this.pb_cont);
+            this.gb_opcoes.Controls.Add(this.lb_ativcont);
+            this.gb_opcoes.Controls.Add(this.pb_tray);
+            this.gb_opcoes.Controls.Add(this.lb_desamin);
+            this.gb_opcoes.Controls.Add(this.pb_barra);
+            this.gb_opcoes.Controls.Add(this.lb_ativabarr);
+            this.gb_opcoes.Controls.Add(this.pb_log);
+            this.gb_opcoes.Controls.Add(this.lb_geralog);
+            this.gb_opcoes.ForeColor = System.Drawing.Color.White;
+            this.gb_opcoes.Location = new System.Drawing.Point(14, 43);
+            this.gb_opcoes.Name = "gb_opcoes";
+            this.gb_opcoes.Size = new System.Drawing.Size(332, 155);
+            this.gb_opcoes.TabIndex = 41;
+            this.gb_opcoes.TabStop = false;
+            this.gb_opcoes.Text = "Opções Visuais";
             // 
             // pictureBox1
             // 
@@ -119,16 +119,16 @@
             this.pb_cont.TabStop = false;
             this.pb_cont.Click += new System.EventHandler(this.pb_cont_Click);
             // 
-            // label7
+            // lb_ativcont
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(44, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 15);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "Ativa contadores";
+            this.lb_ativcont.AutoSize = true;
+            this.lb_ativcont.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ativcont.ForeColor = System.Drawing.Color.White;
+            this.lb_ativcont.Location = new System.Drawing.Point(44, 24);
+            this.lb_ativcont.Name = "lb_ativcont";
+            this.lb_ativcont.Size = new System.Drawing.Size(112, 15);
+            this.lb_ativcont.TabIndex = 45;
+            this.lb_ativcont.Text = "Ativa contadores";
             // 
             // pb_tray
             // 
@@ -141,16 +141,16 @@
             this.pb_tray.TabStop = false;
             this.pb_tray.Click += new System.EventHandler(this.pb_tray_Click);
             // 
-            // label5
+            // lb_desamin
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(44, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 15);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "Desativar minimização automatica.";
+            this.lb_desamin.AutoSize = true;
+            this.lb_desamin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_desamin.ForeColor = System.Drawing.Color.White;
+            this.lb_desamin.Location = new System.Drawing.Point(44, 123);
+            this.lb_desamin.Name = "lb_desamin";
+            this.lb_desamin.Size = new System.Drawing.Size(232, 15);
+            this.lb_desamin.TabIndex = 41;
+            this.lb_desamin.Text = "Desativar minimização automatica.";
             // 
             // pb_barra
             // 
@@ -163,16 +163,16 @@
             this.pb_barra.TabStop = false;
             this.pb_barra.Click += new System.EventHandler(this.pb_barra_Click);
             // 
-            // label3
+            // lb_ativabarr
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(44, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 15);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "Ativar barra de progresso";
+            this.lb_ativabarr.AutoSize = true;
+            this.lb_ativabarr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ativabarr.ForeColor = System.Drawing.Color.White;
+            this.lb_ativabarr.Location = new System.Drawing.Point(44, 90);
+            this.lb_ativabarr.Name = "lb_ativabarr";
+            this.lb_ativabarr.Size = new System.Drawing.Size(168, 15);
+            this.lb_ativabarr.TabIndex = 39;
+            this.lb_ativabarr.Text = "Ativar barra de progresso";
             // 
             // pb_log
             // 
@@ -185,36 +185,36 @@
             this.pb_log.TabStop = false;
             this.pb_log.Click += new System.EventHandler(this.pb_log_Click);
             // 
-            // label4
+            // lb_geralog
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(44, 55);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 15);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Gerar logs";
+            this.lb_geralog.AutoSize = true;
+            this.lb_geralog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_geralog.ForeColor = System.Drawing.Color.White;
+            this.lb_geralog.Location = new System.Drawing.Point(44, 55);
+            this.lb_geralog.Name = "lb_geralog";
+            this.lb_geralog.Size = new System.Drawing.Size(74, 15);
+            this.lb_geralog.TabIndex = 37;
+            this.lb_geralog.Text = "Gerar logs";
             // 
-            // groupBox3
+            // gb_ferram
             // 
-            this.groupBox3.Controls.Add(this.pictureBox11);
-            this.groupBox3.Controls.Add(this.pb_email);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.pictureBox10);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(1, 203);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(332, 71);
-            this.groupBox3.TabIndex = 47;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Ferramentas";
+            this.gb_ferram.Controls.Add(this.pictureBox11);
+            this.gb_ferram.Controls.Add(this.pb_email);
+            this.gb_ferram.Controls.Add(this.lb_enviaesta);
+            this.gb_ferram.Controls.Add(this.pictureBox10);
+            this.gb_ferram.Controls.Add(this.lb_verifiatua);
+            this.gb_ferram.ForeColor = System.Drawing.Color.White;
+            this.gb_ferram.Location = new System.Drawing.Point(14, 203);
+            this.gb_ferram.Name = "gb_ferram";
+            this.gb_ferram.Size = new System.Drawing.Size(332, 71);
+            this.gb_ferram.TabIndex = 47;
+            this.gb_ferram.TabStop = false;
+            this.gb_ferram.Text = "Ferramentas";
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::RenomeArquivo___2._0.Properties.Resources.help;
-            this.pictureBox11.Location = new System.Drawing.Point(294, 20);
+            this.pictureBox11.Location = new System.Drawing.Point(310, 20);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(16, 16);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -233,16 +233,16 @@
             this.pb_email.TabStop = false;
             this.pb_email.Click += new System.EventHandler(this.pb_email_Click);
             // 
-            // label6
+            // lb_enviaesta
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(44, 21);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(244, 15);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Enviar estatísticas de forma anonima";
+            this.lb_enviaesta.AutoSize = true;
+            this.lb_enviaesta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_enviaesta.ForeColor = System.Drawing.Color.White;
+            this.lb_enviaesta.Location = new System.Drawing.Point(44, 21);
+            this.lb_enviaesta.Name = "lb_enviaesta";
+            this.lb_enviaesta.Size = new System.Drawing.Size(244, 15);
+            this.lb_enviaesta.TabIndex = 45;
+            this.lb_enviaesta.Text = "Enviar estatísticas de forma anonima";
             // 
             // pictureBox10
             // 
@@ -255,31 +255,31 @@
             this.pictureBox10.TabIndex = 44;
             this.pictureBox10.TabStop = false;
             // 
-            // label9
+            // lb_verifiatua
             // 
-            this.label9.AutoSize = true;
-            this.label9.Enabled = false;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(44, 43);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(145, 15);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "Verificar atualizações";
+            this.lb_verifiatua.AutoSize = true;
+            this.lb_verifiatua.Enabled = false;
+            this.lb_verifiatua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_verifiatua.ForeColor = System.Drawing.Color.White;
+            this.lb_verifiatua.Location = new System.Drawing.Point(44, 43);
+            this.lb_verifiatua.Name = "lb_verifiatua";
+            this.lb_verifiatua.Size = new System.Drawing.Size(145, 15);
+            this.lb_verifiatua.TabIndex = 43;
+            this.lb_verifiatua.Text = "Verificar atualizações";
             // 
-            // groupBox1
+            // gb_idioma
             // 
-            this.groupBox1.Controls.Add(this.pb_br);
-            this.groupBox1.Controls.Add(this.pb_eua);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(1, 280);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(332, 65);
-            this.groupBox1.TabIndex = 48;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Idioma";
+            this.gb_idioma.Controls.Add(this.pb_br);
+            this.gb_idioma.Controls.Add(this.pb_eua);
+            this.gb_idioma.Controls.Add(this.lb_ptbr);
+            this.gb_idioma.Controls.Add(this.lb_us);
+            this.gb_idioma.ForeColor = System.Drawing.Color.White;
+            this.gb_idioma.Location = new System.Drawing.Point(14, 280);
+            this.gb_idioma.Name = "gb_idioma";
+            this.gb_idioma.Size = new System.Drawing.Size(332, 65);
+            this.gb_idioma.TabIndex = 48;
+            this.gb_idioma.TabStop = false;
+            this.gb_idioma.Text = "Idioma";
             // 
             // pb_br
             // 
@@ -303,32 +303,32 @@
             this.pb_eua.TabStop = false;
             this.pb_eua.Click += new System.EventHandler(this.pb_eua_Click);
             // 
-            // label8
+            // lb_ptbr
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(44, 17);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(113, 15);
-            this.label8.TabIndex = 50;
-            this.label8.Text = "Portugues Brasil";
+            this.lb_ptbr.AutoSize = true;
+            this.lb_ptbr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ptbr.ForeColor = System.Drawing.Color.White;
+            this.lb_ptbr.Location = new System.Drawing.Point(44, 17);
+            this.lb_ptbr.Name = "lb_ptbr";
+            this.lb_ptbr.Size = new System.Drawing.Size(113, 15);
+            this.lb_ptbr.TabIndex = 50;
+            this.lb_ptbr.Text = "Portugues Brasil";
             // 
-            // label1
+            // lb_us
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(44, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 15);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "Ingles";
+            this.lb_us.AutoSize = true;
+            this.lb_us.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_us.ForeColor = System.Drawing.Color.White;
+            this.lb_us.Location = new System.Drawing.Point(44, 39);
+            this.lb_us.Name = "lb_us";
+            this.lb_us.Size = new System.Drawing.Size(46, 15);
+            this.lb_us.TabIndex = 48;
+            this.lb_us.Text = "Ingles";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RenomeArquivo___2._0.Properties.Resources.cancel;
-            this.pictureBox3.Location = new System.Drawing.Point(152, 355);
+            this.pictureBox3.Location = new System.Drawing.Point(324, 356);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(16, 16);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -341,12 +341,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(324, 367);
+            this.ClientSize = new System.Drawing.Size(359, 377);
             this.ControlBox = false;
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.gb_idioma);
+            this.Controls.Add(this.gb_ferram);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gb_opcoes);
             this.Controls.Add(this.lb_ajuda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -358,20 +358,20 @@
             this.ShowInTaskbar = false;
             this.Text = "configuracoes";
             this.Load += new System.EventHandler(this.configuracoes_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gb_opcoes.ResumeLayout(false);
+            this.gb_opcoes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_log)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gb_ferram.ResumeLayout(false);
+            this.gb_ferram.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_email)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb_idioma.ResumeLayout(false);
+            this.gb_idioma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_br)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_eua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -383,26 +383,26 @@
         #endregion
 
         private System.Windows.Forms.Label lb_ajuda;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gb_opcoes;
         private System.Windows.Forms.PictureBox pb_log;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lb_geralog;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pb_barra;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb_ativabarr;
         private System.Windows.Forms.PictureBox pb_cont;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lb_ativcont;
         private System.Windows.Forms.PictureBox pb_tray;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lb_desamin;
+        private System.Windows.Forms.GroupBox gb_ferram;
+        private System.Windows.Forms.Label lb_enviaesta;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lb_verifiatua;
         private System.Windows.Forms.PictureBox pb_email;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox gb_idioma;
+        private System.Windows.Forms.Label lb_ptbr;
+        private System.Windows.Forms.Label lb_us;
         private System.Windows.Forms.PictureBox pb_br;
         private System.Windows.Forms.PictureBox pb_eua;
     }
