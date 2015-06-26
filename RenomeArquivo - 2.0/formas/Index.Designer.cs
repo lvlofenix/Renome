@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.lb_numerico = new System.Windows.Forms.Label();
             this.lb_alfanumerico = new System.Windows.Forms.Label();
@@ -53,7 +53,6 @@
             this.lb_tamanho = new System.Windows.Forms.Label();
             this.cb_data = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.lb_limpa = new System.Windows.Forms.Label();
             this.nd_nome = new System.Windows.Forms.NumericUpDown();
             this.lb_inicio3 = new System.Windows.Forms.Label();
             this.cb_alfa = new System.Windows.Forms.ComboBox();
@@ -63,6 +62,7 @@
             this.nd_alfa = new System.Windows.Forms.NumericUpDown();
             this.lb_inicio1 = new System.Windows.Forms.Label();
             this.nd_numerico = new System.Windows.Forms.NumericUpDown();
+            this.lb_limpa = new System.Windows.Forms.Label();
             this.lb_sobre = new System.Windows.Forms.Label();
             this.lb_renome = new System.Windows.Forms.Label();
             this.pb_barra = new System.Windows.Forms.ProgressBar();
@@ -254,7 +254,7 @@
             this.gb_opcoes.ForeColor = System.Drawing.Color.White;
             this.gb_opcoes.Location = new System.Drawing.Point(9, 38);
             this.gb_opcoes.Name = "gb_opcoes";
-            this.gb_opcoes.Size = new System.Drawing.Size(270, 390);
+            this.gb_opcoes.Size = new System.Drawing.Size(270, 358);
             this.gb_opcoes.TabIndex = 12;
             this.gb_opcoes.TabStop = false;
             // 
@@ -392,19 +392,6 @@
             this.label12.Size = new System.Drawing.Size(10, 13);
             this.label12.TabIndex = 25;
             this.label12.Text = "-";
-            // 
-            // lb_limpa
-            // 
-            this.lb_limpa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lb_limpa.AutoSize = true;
-            this.lb_limpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_limpa.ForeColor = System.Drawing.Color.Navy;
-            this.lb_limpa.Location = new System.Drawing.Point(10, 22);
-            this.lb_limpa.Name = "lb_limpa";
-            this.lb_limpa.Size = new System.Drawing.Size(157, 13);
-            this.lb_limpa.TabIndex = 46;
-            this.lb_limpa.Text = "LIMPAR CAMPOS E LOGS";
-            this.lb_limpa.Click += new System.EventHandler(this.lb_limpa_Click);
             // 
             // nd_nome
             // 
@@ -585,6 +572,19 @@
             this.nd_numerico.Size = new System.Drawing.Size(193, 21);
             this.nd_numerico.TabIndex = 13;
             // 
+            // lb_limpa
+            // 
+            this.lb_limpa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_limpa.AutoSize = true;
+            this.lb_limpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_limpa.ForeColor = System.Drawing.Color.Navy;
+            this.lb_limpa.Location = new System.Drawing.Point(10, 22);
+            this.lb_limpa.Name = "lb_limpa";
+            this.lb_limpa.Size = new System.Drawing.Size(157, 13);
+            this.lb_limpa.TabIndex = 46;
+            this.lb_limpa.Text = "LIMPAR CAMPOS E LOGS";
+            this.lb_limpa.Click += new System.EventHandler(this.lb_limpa_Click);
+            // 
             // lb_sobre
             // 
             this.lb_sobre.AutoSize = true;
@@ -671,28 +671,28 @@
             this.dg_lista.CausesValidation = false;
             this.dg_lista.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.dg_lista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dg_lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dg_lista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
             this.Tamanho,
             this.Tipo,
             this.data});
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dg_lista.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dg_lista.DefaultCellStyle = dataGridViewCellStyle2;
             this.dg_lista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dg_lista.GridColor = System.Drawing.Color.Black;
             this.dg_lista.Location = new System.Drawing.Point(288, 66);
@@ -700,18 +700,18 @@
             this.dg_lista.Name = "dg_lista";
             this.dg_lista.ReadOnly = true;
             this.dg_lista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dg_lista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dg_lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_lista.ShowEditingIcon = false;
-            this.dg_lista.Size = new System.Drawing.Size(757, 362);
+            this.dg_lista.Size = new System.Drawing.Size(757, 330);
             this.dg_lista.TabIndex = 52;
             this.dg_lista.TabStop = false;
             // 
@@ -749,7 +749,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gb_log.Controls.Add(this.log);
             this.gb_log.ForeColor = System.Drawing.Color.White;
-            this.gb_log.Location = new System.Drawing.Point(284, 434);
+            this.gb_log.Location = new System.Drawing.Point(288, 402);
             this.gb_log.Name = "gb_log";
             this.gb_log.Size = new System.Drawing.Size(761, 129);
             this.gb_log.TabIndex = 36;
@@ -776,7 +776,7 @@
             this.gb_acao.Controls.Add(this.lb_iniciar);
             this.gb_acao.Controls.Add(this.lb_limpa);
             this.gb_acao.ForeColor = System.Drawing.Color.White;
-            this.gb_acao.Location = new System.Drawing.Point(9, 434);
+            this.gb_acao.Location = new System.Drawing.Point(12, 402);
             this.gb_acao.Name = "gb_acao";
             this.gb_acao.Size = new System.Drawing.Size(270, 129);
             this.gb_acao.TabIndex = 56;
@@ -837,7 +837,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1053, 589);
+            this.ClientSize = new System.Drawing.Size(1053, 543);
             this.Controls.Add(this.gb_log);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.gb_acao);

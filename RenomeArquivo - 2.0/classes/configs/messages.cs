@@ -70,6 +70,22 @@ namespace RenomeArquivo___2._0.classes
         public string GLangu = "";
         public string LabelPortu = "";
         public string LabelUs = "";
+        //text box
+        public string TbDuvajud = "";
+        public string TbDuvVisu = "";
+        public string TbDuvTitle = "";
+        //members list box
+        public string MlDateI = "";
+        public string MlDateII = "";
+        public string MlRandI = "";
+        public string MlRandII = "";
+        public string MlRandIII = "";
+        public string MlTamaKb = "";
+        public string MlTamaMb = "";
+        public string MlTipI = "";
+        public string MlTipII = "";
+
+
 
         public void qualLang()
         {
@@ -135,6 +151,20 @@ namespace RenomeArquivo___2._0.classes
                 GLangu = "Idioma";
                 LabelPortu = "Portugues Brasil";
                 LabelUs = "Ingles";
+                //text box
+                TbDuvajud = "Envia informações de uso do software de forma anonima para ajudar a identificar problemas e melhorias.";
+                TbDuvTitle = "Posso ajudar??";
+                TbDuvVisu = "A desativação dos retornos visuais fazem o software trabalhar mais rápido.";
+                //members list box
+                MlDateI = "DE CRIAÇÃO: DD-MM-AAAA";
+                MlDateII = "DE CRIAÇÃO:  DD-MM-AA HH:MM:SS";
+                MlRandI = "NUMEROS";
+                MlRandII = "LETRAS";
+                MlRandIII = "NUMEROS E LETRAS";
+                MlTamaKb = "KB'S";
+                MlTamaMb = "MB'S";
+                MlTipI = "MODO GENERICO";
+                MlTipII = "COMPLETO";
             }
             else
             {
@@ -196,6 +226,20 @@ namespace RenomeArquivo___2._0.classes
                 GLangu = "Language";
                 LabelPortu = "Portuguese Brazil";
                 LabelUs = "Ingles";
+                //text box
+                TbDuvajud = "Send usage information from anonymous way software to help identify problems and improvements.";
+                TbDuvTitle = "Help-me!!";
+                TbDuvVisu = "Disabling the visual returns make the software work faster.";
+                //members list box
+                MlDateI = "CREATION: DD-MM-YYYY";
+                MlDateII = "CREATION: DD-MM-YY HH: MM: SS";
+                MlRandI = "NUMBERS";
+                MlRandII = "LETTERS";
+                MlRandIII = "NUMBERS AND LETTERS";
+                MlTamaKb = "KB'S";
+                MlTamaMb = "MB'S";
+                MlTipI = "GENERAL WAY";
+                MlTipII = "COMPLETE";
             }
         }
     }

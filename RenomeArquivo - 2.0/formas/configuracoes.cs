@@ -31,7 +31,7 @@ namespace RenomeArquivo___2._0.formas
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Envia informações de uso do software de forma anonima para ajudar a identificar problemas e melhorias.","INFORMAÇÕES ANONIMAS DE USO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensagens.TbDuvajud, mensagens.TbDuvTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void configuracoes_Load(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace RenomeArquivo___2._0.formas
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Desativa recursos do softwares para focar no desempenho. \n \r Ajuda a melhorar o tempo para grandes quantidades de arquivos.", "MODO TURBO!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensagens.TbDuvVisu, mensagens.TbDuvTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void pb_email_Click(object sender, EventArgs e)
@@ -291,7 +291,7 @@ namespace RenomeArquivo___2._0.formas
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("A desativação dos retornos visuais fazem o software trabalhar mais rápido.", "DESATIVAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensagens.TbDuvVisu, mensagens.TbDuvTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void pb_eua_Click(object sender, EventArgs e)
         {
