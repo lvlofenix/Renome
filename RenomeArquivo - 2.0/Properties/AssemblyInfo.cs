@@ -6,12 +6,12 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Renome 2.0")]
-[assembly: AssemblyDescription("Renome 2.0 Software Desenvolvido por Lucas Vinicius. em caso de duvidas, sugestões ou criticas lucas.vinicius@outlook.com")]
+[assembly: AssemblyTitle("Renome 2.0 Beta")]
+[assembly: AssemblyDescription("https://github.com/lvlofenix/Renome")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Binary Fallen")]
-[assembly: AssemblyProduct("RenomeArquivo - 2.0")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Lucas Vinicius")]
+[assembly: AssemblyProduct("Renome 2.0 Beta")]
+[assembly: AssemblyCopyright("GitHub")]
 [assembly: AssemblyTrademark("2.0")]
 [assembly: AssemblyCulture("")]
 

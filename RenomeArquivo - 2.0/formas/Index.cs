@@ -17,8 +17,10 @@ namespace RenomeArquivo___2._0
     public partial class Index : Form
     {
         messages mensagens = new messages();
+        checkUp check = new checkUp();
         public Index()
         {
+            check.verificaIntegridade();
             mensagens.qualLang();
             InitializeComponent();
         }
@@ -26,13 +28,13 @@ namespace RenomeArquivo___2._0
         Thread carrega;
         Thread trabalha;
         Thread email;
-        int falhas = 0;
+        int falhas;
         int mil;
-        Boolean aviso = false;
-        string modo = "";
-        int quants = 0;
-        int cont = 0;
+        string modo;
+        int quants;
+        int cont;
         string text;
+
         //MEOTODOS
         //pega o caminho dos arquivosCONF
         [STAThread]
@@ -40,7 +42,7 @@ namespace RenomeArquivo___2._0
         {
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                alimentador(openFileDialog1.SafeFileNames, openFileDialog1.FileName);
+                alimentador(openFileDialog1.SafeFileNames, openFileDialog1.FileName.Replace(openFileDialog1.SafeFileName,""));
             }
             else
             {
@@ -55,23 +57,21 @@ namespace RenomeArquivo___2._0
         }
 
         //alimenta a lista e as strings de controle
-        
         private void alimentador(string[] arquivos, string caminho)
         {
             FileInfo tamanho;
             int quantos=0;
-            string url = caminho.Replace(arquivos[0], "");
             //alimenta string do caminho.
-            novoLog(mensagens.LogUrl + url, Color.Blue);
+            novoLog(mensagens.LogUrl + caminho, Color.Blue);
             dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Clear(); });
             //alimenta listbox
             for (int i = 0;i<=arquivos.Length-1;i++ )
             {
-                tamanho = new FileInfo(url+arquivos[i]);
+                tamanho = new FileInfo(caminho+arquivos[i]);
                 float tamanhoMB = (tamanho.Length / 1014f) / 1014f;
-                DateTime fileCreateDate = File.GetCreationTime(url+arquivos[i]);
+                DateTime fileCreateDate = File.GetCreationTime(caminho+arquivos[i]);
                 string data = fileCreateDate + "";
-                dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Add(arquivos[i], tamanhoMB, Path.GetExtension(url+arquivos[i]),data); });
+                dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Add(arquivos[i], tamanhoMB, Path.GetExtension(caminho+arquivos[i]),data); });
                 novoLog(arquivos[i]+mensagens.UpSucess,Color.Green);
                 if (text.IndexOf("CONT = FALSE") == -1)
                 {
@@ -404,8 +404,9 @@ namespace RenomeArquivo___2._0
                 email email = new email();
                 email.enviaEmail(modo, quants, falhas, logaas, text);
             }
-            catch
+            catch(Exception e)
             {
+                MessageBox.Show(e.Message);
             }
         }
 
@@ -543,7 +544,14 @@ namespace RenomeArquivo___2._0
             notifyIcon1.BalloonTipTitle = mensagens.MinimizeTrayTitle1;
             notifyIcon1.ShowBalloonTip(500);
             this.Invoke((MethodInvoker)delegate { this.Visible = true; });
-            MessageBox.Show(quants + mensagens.TotalSucess, mensagens.TitleBoxSucess, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (quants == 0 & falhas == 0)
+            {
+                MessageBox.Show(mensagens.TotalSucess, mensagens.TitleBoxSucess, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(quants + mensagens.TotalSucess, mensagens.TitleBoxSucess, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             email = new Thread(enviaestatic);
             email.Start();
             iniciandoTrabalhos();
@@ -552,10 +560,12 @@ namespace RenomeArquivo___2._0
         private void Index_Load(object sender, EventArgs e)
         {
             lingua();
-            checkUp up = new checkUp();
-            up.verificaIntegridade();
             nd_numerico.Value = 0;
             cb_alfa.Text = "A";
+            cb_data.Text = mensagens.MlDateI;
+            cb_tipo.Text = mensagens.MlTipI;
+            cb_aleatorio.Text = mensagens.MlRandI;
+            cb_tamanho.Text = mensagens.MlTamaMb;
             nd_alfa.Value = 0;
             tb_nome.Enabled = false;
             nd_nome.Value = 0;
@@ -564,7 +574,7 @@ namespace RenomeArquivo___2._0
         //minetray
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Visible = false;
+            this.Visible = true;
             notifyIcon1.Visible = false;
         }
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -624,7 +634,7 @@ namespace RenomeArquivo___2._0
             else
             {
                 lb_carrega_arquivos.ForeColor = Color.Navy;
-                lb_carrega_arquivos.Text = mensagens.BtlabelCancelar;
+                lb_carrega_arquivos.Text = mensagens.BtLabelCarregar;
                 lb_iniciar.Enabled = true;
                 novoLog(mensagens.UpCancel, Color.Red);
                 carrega.Abort();

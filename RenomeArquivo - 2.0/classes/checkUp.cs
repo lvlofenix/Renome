@@ -13,7 +13,18 @@ namespace RenomeArquivo___2._0.classes
         {
             try
             {
-                System.IO.StreamReader file = new System.IO.StreamReader(@".\codf.cf");
+                if (!System.IO.File.Exists(@".\conf.cf"))
+                {
+                    string configs = "##CONFIGS##" + Environment.NewLine +
+                    "TURBO = FALSE" + Environment.NewLine +
+                    "CONT = TRUE" + Environment.NewLine +
+                    "LOG = TRUE" + Environment.NewLine +
+                    "BARRA = TRUE" + Environment.NewLine +
+                    "TRAY = FALSE" + Environment.NewLine +
+                    "EMAIL = TRUE" + Environment.NewLine +
+                    "LANGUE = PTBR";
+                    System.IO.File.WriteAllText(@".\conf.cf", configs);
+                }
             }
             catch
             {

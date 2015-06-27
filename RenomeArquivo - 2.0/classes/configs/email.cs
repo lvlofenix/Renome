@@ -15,7 +15,7 @@ namespace RenomeArquivo___2._0.classes.etc
         {
             //variaveis e instancias utilizadas
             string arquivo = @".\log.html";
-            Attachment anexo = new Attachment(arquivo, System.Net.Mime.MediaTypeNames.Application.Octet);
+           
             System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
             MailMessage objEmail = new MailMessage();
             SmtpClient objSmtp = new SmtpClient();
@@ -31,6 +31,7 @@ namespace RenomeArquivo___2._0.classes.etc
             log = log+"</BODY></HTML>";
             //EXPORTANDO LOG PARA HTML
             System.IO.File.WriteAllText(@".\log.html", log);
+            Attachment anexo = new Attachment(arquivo, System.Net.Mime.MediaTypeNames.Application.Octet);
             string line = "";
             while ((line = file.ReadLine()) != null)
             {

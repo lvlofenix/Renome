@@ -341,7 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(359, 377);
+            this.ClientSize = new System.Drawing.Size(355, 373);
             this.ControlBox = false;
             this.Controls.Add(this.gb_idioma);
             this.Controls.Add(this.gb_ferram);
@@ -349,14 +349,15 @@
             this.Controls.Add(this.gb_opcoes);
             this.Controls.Add(this.lb_ajuda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "configuracoes";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "configuracoes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "  ";
             this.Load += new System.EventHandler(this.configuracoes_Load);
             this.gb_opcoes.ResumeLayout(false);
             this.gb_opcoes.PerformLayout();
