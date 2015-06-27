@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
-using RenomeArquivo___2._0.classes;
 using System.IO;
+using RenomeArquivo___2._0.classes;
 using RenomeArquivo___2._0.formas;
 using RenomeArquivo___2._0.classes.etc;
 
@@ -47,7 +47,7 @@ namespace RenomeArquivo___2._0
                 lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.Enabled = true; });
                 Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Enabled = true; });
                 Invoke((MethodInvoker)delegate {lb_carrega_arquivos.ForeColor = Color.Navy;});
-                Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Text = mensagens.LabelCarregados; });
+                Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Text = mensagens.BtLabelCarregar; });
                 novoLog(mensagens.UpCancel, Color.Red);
                 carrega.Abort();
                 limpa();
@@ -75,20 +75,20 @@ namespace RenomeArquivo___2._0
                 novoLog(arquivos[i]+mensagens.UpSucess,Color.Green);
                 if (text.IndexOf("CONT = FALSE") == -1)
                 {
-                    gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.BtLabelCarregar + i; });
+                    gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.LabelCarregados + i; });
                     quantos = i;
                 }
             }
             if (text.IndexOf("CONT = FALSE") == -1)
             {
                 quantos = quantos + 1;
-                gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.BtLabelCarregar + quantos; });
+                gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.LabelCarregados + quantos; });
             }
             mil = quantos;
             lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.Enabled = true; });
             lb_carrega_arquivos.Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Enabled = true; });
             lb_carrega_arquivos.ForeColor = Color.Navy;
-            lb_carrega_arquivos.Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Text = mensagens.LabelCarregados; });
+            lb_carrega_arquivos.Invoke((MethodInvoker)delegate { lb_carrega_arquivos.Text = mensagens.BtLabelCarregar; });
             carrega.Abort();
         }
 
@@ -128,7 +128,7 @@ namespace RenomeArquivo___2._0
         private void limpa()
         {
             dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Clear(); });
-            gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.BtLabelCarregar + 0; });
+            gv_lista.Invoke((MethodInvoker)delegate { gv_lista.Text = mensagens.LabelCarregados+ 0; });
             lb_renome.Invoke((MethodInvoker)delegate { lb_renome.Text = mensagens.LabelRenomes + 0; });
             lb_falha.Invoke((MethodInvoker)delegate { lb_falha.Text = mensagens.LabelFalhas + 0; });
             nd_numerico.Invoke((MethodInvoker)delegate {nd_numerico.Value = 0;});
@@ -168,7 +168,8 @@ namespace RenomeArquivo___2._0
                     }
                     else
                     {
-                        novoLog(openFileDialog1.SafeFileNames[i] + mensagens.ReFail,Color.Red);
+                        novoLog(openFileDialog1.SafeFileNames[i] + mensagens.ReFail +" - "+numerico.erro,Color.Red);
+
                         if (text.IndexOf("CONT = FALSE") == -1)
                         {
                             falhas++;
@@ -398,12 +399,13 @@ namespace RenomeArquivo___2._0
         {
             try
             {
+                string logaas="";
+                log.Invoke((MethodInvoker)delegate { logaas = log.Text; });
                 email email = new email();
-                email.enviaEmail(modo, quants, falhas, log.Text, text);
+                email.enviaEmail(modo, quants, falhas, logaas, text);
             }
-            catch(Exception e)
+            catch
             {
-                MessageBox.Show(e.Message);
             }
         }
 
@@ -517,12 +519,12 @@ namespace RenomeArquivo___2._0
             {
             cont++;
             novo = Environment.NewLine + cont + " > " + novo;
+            log.Invoke((MethodInvoker)delegate { log.SelectionColor = cor; });
             log.Invoke((MethodInvoker)delegate { log.AppendText(novo); });
             log.Invoke((MethodInvoker)delegate { log.SelectionStart = log.Text.Length; });
             log.Invoke((MethodInvoker)delegate { log.SelectionLength = log.Text.Length+1; });
             log.Invoke((MethodInvoker)delegate { log.SelectionColor = Color.Black; });
-            log.Invoke((MethodInvoker)delegate { log.AppendText(" || (" + DateTime.Now + ")"); });
-            log.Invoke((MethodInvoker)delegate { log.SelectionColor = cor; });
+            log.Invoke((MethodInvoker)delegate { log.AppendText("\t(" + DateTime.Now + ")"); });
             log.Invoke((MethodInvoker)delegate { log.ScrollToCaret() ; });
             }
 
@@ -547,27 +549,6 @@ namespace RenomeArquivo___2._0
             iniciandoTrabalhos();
         }
 
-        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (this.Visible == true)
-            {
-                this.Visible = false;
-            }
-            else
-            {
-                this.Visible = true;
-                notifyIcon1.Visible = false;
-                if (aviso == false)
-                {
-                    notifyIcon1.BalloonTipText = mensagens.MinimizeTrayClick;
-                    notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                    notifyIcon1.BalloonTipTitle = mensagens.MinimizeTrayTitle3;
-                    notifyIcon1.ShowBalloonTip(500);
-                    aviso = true;
-                }               
-            }
-        }
-
         private void Index_Load(object sender, EventArgs e)
         {
             lingua();
@@ -580,22 +561,18 @@ namespace RenomeArquivo___2._0
             nd_nome.Value = 0;
         }
 
+        //minetray
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Visible = false;
+            notifyIcon1.Visible = false;
+        }
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            if (aviso)
-            {
-                notifyIcon1.BalloonTipText = mensagens.MinimizeTrayClick;
-                notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                notifyIcon1.BalloonTipTitle = mensagens.MinimizeTrayTitle2;
-                notifyIcon1.ShowBalloonTip(500);
-            }
-            else
-            {
-
-            }
-            notifyIcon1.Visible = true;
             this.Visible = false;
+            notifyIcon1.Visible = true;
         }
+        //minetray
 
         private void lb_sobre_Click(object sender, EventArgs e)
         {

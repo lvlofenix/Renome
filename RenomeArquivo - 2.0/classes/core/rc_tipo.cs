@@ -8,6 +8,7 @@ namespace RenomeArquivo___2._0.classes
 {
     class rc_tipo
     {
+        public string erro = "";
         public Boolean renome_tipo(string caminho, string arquivo,string qual, string tipo)
         {
             //aplicando o renome.
@@ -125,8 +126,9 @@ namespace RenomeArquivo___2._0.classes
                     }
                 }
             }
-            catch
+            catch(Exception e)
             {
+                erro = e.Message;
                 return false;
             }
         }

@@ -20,11 +20,11 @@ namespace RenomeArquivo___2._0.classes
         public string TotalSucess = "";
         public string TotalFail = "";
         //Mensagens Tray
-        public string MinimizeTrayClick = "";
+        //public string MinimizeTrayClick = "";
         public string MinimizeTrayFinish = "";
         public string MinimizeTrayTitle1 = "";
         public string MinimizeTrayTitle2 = "";
-        public string MinimizeTrayTitle3 = "";
+        //public string MinimizeTrayTitle3 = "";
         public string MinimizeTrayTip = "";
         //Labels
         public string LabelCarregados = "";
@@ -104,11 +104,11 @@ namespace RenomeArquivo___2._0.classes
                 TotalSucess = " Arquivos renomeados com sucesso.";
                 TotalFail = " Arquivos que não foi possivel aplicar o renomeamento.";
                 //MINE
-                MinimizeTrayClick = " Clique aqui para esconder ou mostrar a janela!!";
+                //MinimizeTrayClick = " Clique aqui para esconder ou mostrar a janela!!";
                 MinimizeTrayFinish = " Ufa, terminamos!!";
                 MinimizeTrayTitle1 = " Até cansei...";
                 MinimizeTrayTitle2 = " Não se preocupe!!";
-                MinimizeTrayTitle3 = " É só clicar!!";
+                //MinimizeTrayTitle3 = " É só clicar!!";
                 MinimizeTrayTip = " Nossos Dinossauros treinados estão trabalhando na sua solicitação!";
                 //BOTOES
                 BtlabelCancelar = " CANCELAR";
@@ -179,11 +179,11 @@ namespace RenomeArquivo___2._0.classes
                 TotalSucess = " Renamed files successfully.";
                 TotalFail = " Files that it was not possible to apply the renaming.";
                 //MINETRAY
-                MinimizeTrayClick = " Click here to hide or show the window!!";
+                //MinimizeTrayClick = " Click here to hide or show the window!!";
                 MinimizeTrayFinish = " Phew, finished!!";
                 MinimizeTrayTitle1 = " until tired...";
                 MinimizeTrayTitle2 = " Do not worry!!";
-                MinimizeTrayTitle3 = " Just click!!";
+                //MinimizeTrayTitle3 = " Just click!!";
                 MinimizeTrayTip = " Our trained Dinosaurs are working on your request!";
                 //BOTÕES
                 BtlabelCancelar = " CANCEL";

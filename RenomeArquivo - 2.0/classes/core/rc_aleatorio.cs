@@ -8,6 +8,7 @@ namespace RenomeArquivo___2._0.classes
 {
     class rc_aleatorio
     {
+        public string erro = "";
         public Boolean renome_aleatorio(string caminho, string arquivo, string tipo, string qual)
         {
             try
@@ -56,8 +57,9 @@ namespace RenomeArquivo___2._0.classes
                     return false;
                 }
             }
-            catch
+            catch (Exception e)
             {
+                erro = e.Message;
                 return false;
             }
         }

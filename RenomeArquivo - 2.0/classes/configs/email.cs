@@ -13,15 +13,25 @@ namespace RenomeArquivo___2._0.classes.etc
         Boolean ssl;
         public void enviaEmail(string modo, int renomeados, int falhas, string log, string configs)
         {
+            //variaveis e instancias utilizadas
+            string arquivo = @".\log.html";
+            Attachment anexo = new Attachment(arquivo, System.Net.Mime.MediaTypeNames.Application.Octet);
+            System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
+            MailMessage objEmail = new MailMessage();
+            SmtpClient objSmtp = new SmtpClient();
+
             //tratando o log
+            log = "<HTML><BODY>" + log;
             log = log.Replace(")", ")<p>");
             log = log.Replace("Caminho: ", "<FONT COLOR=#000080> Caminho: </FONT>");
             log = log.Replace("Arquivo", "<FONT COLOR=#4682B4>Arquivo</FONT>");
             log = log.Replace("||", "<FONT COLOR=#800000>||</FONT>");
             log = log.Replace("Falhou", "<FONT COLOR=#FF0000>Falhou</FONT>");
             log = log.Replace(" Renomeado com Sucesso!!", "<FONT COLOR=#008000> Renomeado com Sucesso!!</FONT>");
+            log = log+"</BODY></HTML>";
+            //EXPORTANDO LOG PARA HTML
+            System.IO.File.WriteAllText(@".\log.html", log);
             string line = "";
-            System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
             while ((line = file.ReadLine()) != null)
             {
                 if (line.Substring(0, 5) == "EMAIL")
@@ -36,7 +46,6 @@ namespace RenomeArquivo___2._0.classes.etc
                     else
                     {
                         ssl = true;
-                        MailMessage objEmail = new MailMessage();
                         objEmail.From = new MailAddress("renome.feedback@outlook.com");
                         //objEmail.ReplyTo = "";    
                         objEmail.To.Add("renome.feedback@outlook.com");
@@ -52,11 +61,10 @@ namespace RenomeArquivo___2._0.classes.etc
                                         + "<B>_______________________________________________________</B><P>"
                                         + "<B>" + configs + "</B><P>"
                                         + "<B>_______________________________________________________</B><P>"
-                                        +log
                                         + @"</HTML>";
                         objEmail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
                         objEmail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
-                        SmtpClient objSmtp = new SmtpClient();
+                        objEmail.Attachments.Add(anexo);
                         objSmtp.Host = "smtp.live.com";
                         objSmtp.EnableSsl = ssl;
                         objSmtp.Port = 587;

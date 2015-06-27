@@ -96,8 +96,8 @@
             // 
             // lb_numerico
             // 
-            this.lb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_numerico.AutoSize = true;
             this.lb_numerico.ForeColor = System.Drawing.Color.Navy;
             this.lb_numerico.Location = new System.Drawing.Point(30, 24);
@@ -108,8 +108,8 @@
             // 
             // lb_alfanumerico
             // 
-            this.lb_alfanumerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_alfanumerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_alfanumerico.AutoSize = true;
             this.lb_alfanumerico.ForeColor = System.Drawing.Color.Navy;
             this.lb_alfanumerico.Location = new System.Drawing.Point(30, 70);
@@ -120,8 +120,8 @@
             // 
             // lb_nome
             // 
-            this.lb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_nome.AutoSize = true;
             this.lb_nome.ForeColor = System.Drawing.Color.Navy;
             this.lb_nome.Location = new System.Drawing.Point(30, 114);
@@ -132,8 +132,8 @@
             // 
             // lb_data
             // 
-            this.lb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_data.AutoSize = true;
             this.lb_data.ForeColor = System.Drawing.Color.Navy;
             this.lb_data.Location = new System.Drawing.Point(30, 154);
@@ -144,8 +144,8 @@
             // 
             // lb_tipo
             // 
-            this.lb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_tipo.AutoSize = true;
             this.lb_tipo.ForeColor = System.Drawing.Color.Navy;
             this.lb_tipo.Location = new System.Drawing.Point(30, 202);
@@ -156,8 +156,8 @@
             // 
             // rb_numerico
             // 
-            this.rb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_numerico.AutoSize = true;
             this.rb_numerico.Location = new System.Drawing.Point(10, 31);
             this.rb_numerico.Name = "rb_numerico";
@@ -169,8 +169,8 @@
             // 
             // rb_alfa
             // 
-            this.rb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_alfa.AutoSize = true;
             this.rb_alfa.Location = new System.Drawing.Point(10, 73);
             this.rb_alfa.Name = "rb_alfa";
@@ -182,8 +182,8 @@
             // 
             // rb_tipo
             // 
-            this.rb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_tipo.AutoSize = true;
             this.rb_tipo.Location = new System.Drawing.Point(10, 204);
             this.rb_tipo.Name = "rb_tipo";
@@ -195,8 +195,8 @@
             // 
             // rb_data
             // 
-            this.rb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_data.AutoSize = true;
             this.rb_data.Location = new System.Drawing.Point(10, 158);
             this.rb_data.Name = "rb_data";
@@ -208,8 +208,8 @@
             // 
             // rb_nome
             // 
-            this.rb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_nome.AutoSize = true;
             this.rb_nome.Location = new System.Drawing.Point(10, 116);
             this.rb_nome.Name = "rb_nome";
@@ -221,8 +221,8 @@
             // 
             // gb_opcoes
             // 
-            this.gb_opcoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gb_opcoes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.gb_opcoes.Controls.Add(this.cb_tipo);
             this.gb_opcoes.Controls.Add(this.cb_tamanho);
             this.gb_opcoes.Controls.Add(this.cb_aleatorio);
@@ -260,8 +260,8 @@
             // 
             // cb_tipo
             // 
-            this.cb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_tipo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_tipo.BackColor = System.Drawing.Color.White;
             this.cb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_tipo.Enabled = false;
@@ -277,8 +277,8 @@
             // 
             // cb_tamanho
             // 
-            this.cb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_tamanho.BackColor = System.Drawing.Color.White;
             this.cb_tamanho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_tamanho.Enabled = false;
@@ -294,8 +294,8 @@
             // 
             // cb_aleatorio
             // 
-            this.cb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_aleatorio.BackColor = System.Drawing.Color.White;
             this.cb_aleatorio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_aleatorio.Enabled = false;
@@ -312,8 +312,8 @@
             // 
             // rb_aleatorio
             // 
-            this.rb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_aleatorio.AutoSize = true;
             this.rb_aleatorio.Location = new System.Drawing.Point(10, 293);
             this.rb_aleatorio.Name = "rb_aleatorio";
@@ -325,8 +325,8 @@
             // 
             // lb_aleatorio
             // 
-            this.lb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_aleatorio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_aleatorio.AutoSize = true;
             this.lb_aleatorio.ForeColor = System.Drawing.Color.Navy;
             this.lb_aleatorio.Location = new System.Drawing.Point(30, 293);
@@ -337,8 +337,8 @@
             // 
             // rb_tamanho
             // 
-            this.rb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.rb_tamanho.AutoSize = true;
             this.rb_tamanho.Location = new System.Drawing.Point(10, 249);
             this.rb_tamanho.Name = "rb_tamanho";
@@ -350,8 +350,8 @@
             // 
             // lb_tamanho
             // 
-            this.lb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_tamanho.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_tamanho.AutoSize = true;
             this.lb_tamanho.ForeColor = System.Drawing.Color.Navy;
             this.lb_tamanho.Location = new System.Drawing.Point(30, 246);
@@ -362,8 +362,8 @@
             // 
             // cb_data
             // 
-            this.cb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_data.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_data.AutoCompleteCustomSource.AddRange(new string[] {
             "DE CRIAÇÃO - DD-MM-AA (apenas data)",
             "DE CRIAÇÃO - Domingo, 1 de Março de 2015 (exemplo)",
@@ -383,8 +383,8 @@
             // 
             // label12
             // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(179, 137);
@@ -395,8 +395,8 @@
             // 
             // nd_nome
             // 
-            this.nd_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.nd_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.nd_nome.BackColor = System.Drawing.Color.White;
             this.nd_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nd_nome.Enabled = false;
@@ -412,8 +412,8 @@
             // 
             // lb_inicio3
             // 
-            this.lb_inicio3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_inicio3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_inicio3.AutoSize = true;
             this.lb_inicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_inicio3.Location = new System.Drawing.Point(30, 132);
@@ -424,8 +424,8 @@
             // 
             // cb_alfa
             // 
-            this.cb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.cb_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.cb_alfa.AutoCompleteCustomSource.AddRange(new string[] {
             "A",
             "B",
@@ -492,8 +492,8 @@
             // 
             // tb_nome
             // 
-            this.tb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tb_nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.tb_nome.BackColor = System.Drawing.Color.White;
             this.tb_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tb_nome.Enabled = false;
@@ -504,8 +504,8 @@
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(127, 91);
@@ -516,8 +516,8 @@
             // 
             // lb_inicio2
             // 
-            this.lb_inicio2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_inicio2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_inicio2.AutoSize = true;
             this.lb_inicio2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_inicio2.Location = new System.Drawing.Point(30, 89);
@@ -528,8 +528,8 @@
             // 
             // nd_alfa
             // 
-            this.nd_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.nd_alfa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.nd_alfa.BackColor = System.Drawing.Color.White;
             this.nd_alfa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nd_alfa.Enabled = false;
@@ -545,8 +545,8 @@
             // 
             // lb_inicio1
             // 
-            this.lb_inicio1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lb_inicio1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_inicio1.AutoSize = true;
             this.lb_inicio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_inicio1.Location = new System.Drawing.Point(30, 41);
@@ -557,8 +557,8 @@
             // 
             // nd_numerico
             // 
-            this.nd_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.nd_numerico.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
             this.nd_numerico.BackColor = System.Drawing.Color.White;
             this.nd_numerico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nd_numerico.Enabled = false;
@@ -610,9 +610,9 @@
             // 
             // pb_barra
             // 
-            this.pb_barra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pb_barra.Location = new System.Drawing.Point(288, 38);
+            this.pb_barra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pb_barra.Location = new System.Drawing.Point(288, 44);
             this.pb_barra.Name = "pb_barra";
             this.pb_barra.Size = new System.Drawing.Size(532, 22);
             this.pb_barra.TabIndex = 47;
@@ -661,9 +661,9 @@
             // 
             // dg_lista
             // 
-            this.dg_lista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_lista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dg_lista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_lista.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dg_lista.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
@@ -695,7 +695,7 @@
             this.dg_lista.DefaultCellStyle = dataGridViewCellStyle2;
             this.dg_lista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dg_lista.GridColor = System.Drawing.Color.Black;
-            this.dg_lista.Location = new System.Drawing.Point(288, 66);
+            this.dg_lista.Location = new System.Drawing.Point(288, 72);
             this.dg_lista.MultiSelect = false;
             this.dg_lista.Name = "dg_lista";
             this.dg_lista.ReadOnly = true;
@@ -711,7 +711,7 @@
             this.dg_lista.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dg_lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_lista.ShowEditingIcon = false;
-            this.dg_lista.Size = new System.Drawing.Size(757, 330);
+            this.dg_lista.Size = new System.Drawing.Size(757, 324);
             this.dg_lista.TabIndex = 52;
             this.dg_lista.TabStop = false;
             // 
@@ -745,8 +745,8 @@
             // 
             // gb_log
             // 
-            this.gb_log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gb_log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.gb_log.Controls.Add(this.log);
             this.gb_log.ForeColor = System.Drawing.Color.White;
             this.gb_log.Location = new System.Drawing.Point(288, 402);
@@ -757,10 +757,11 @@
             // 
             // log
             // 
-            this.log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.log.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.log.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.log.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.log.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.log.ForeColor = System.Drawing.Color.Black;
             this.log.Location = new System.Drawing.Point(6, 15);
             this.log.Name = "log";
@@ -784,9 +785,9 @@
             // 
             // lb_carrega_arquivos
             // 
-            this.lb_carrega_arquivos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lb_carrega_arquivos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.lb_carrega_arquivos.AutoSize = true;
             this.lb_carrega_arquivos.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lb_carrega_arquivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

@@ -8,6 +8,7 @@ namespace RenomeArquivo___2._0.classes
 {
     class rc_nome
     {
+        public string erro = "";
         public Boolean renome_nome(string caminho, string arquivo, decimal numero, string nome,string tipo)
         {
             try
@@ -16,8 +17,9 @@ namespace RenomeArquivo___2._0.classes
                 File.Move(caminho + @"\" + arquivo, caminho + @"\"+ nome + " - " + numero + tipo);
                 return true;
             }
-            catch
+            catch (Exception e)
             {
+                erro = e.Message;
                 return false;
             }
         }

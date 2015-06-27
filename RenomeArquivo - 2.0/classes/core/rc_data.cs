@@ -9,6 +9,7 @@ namespace RenomeArquivo___2._0.classes
 {
     class rc_data
     {
+        public string erro = "";
         public Boolean renomeData(string caminho, string arquivo,string tipo,string qual, int i)
         {
             try
@@ -62,8 +63,9 @@ namespace RenomeArquivo___2._0.classes
                     }
                 }
             }
-            catch
+            catch (Exception e)
             {
+                erro = e.Message;
                 return false;
             }
         }
