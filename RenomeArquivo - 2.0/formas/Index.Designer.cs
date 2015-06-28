@@ -80,9 +80,12 @@
             this.gb_log = new System.Windows.Forms.GroupBox();
             this.log = new System.Windows.Forms.RichTextBox();
             this.gb_acao = new System.Windows.Forms.GroupBox();
+            this.pb_carregaarqu = new System.Windows.Forms.PictureBox();
+            this.pb_limpacampo = new System.Windows.Forms.PictureBox();
             this.lb_carrega_arquivos = new System.Windows.Forms.Label();
             this.lb_iniciar = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pb_logerro = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.gb_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nd_nome)).BeginInit();
@@ -91,6 +94,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dg_lista)).BeginInit();
             this.gb_log.SuspendLayout();
             this.gb_acao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_carregaarqu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_limpacampo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logerro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
@@ -578,7 +584,7 @@
             this.lb_limpa.AutoSize = true;
             this.lb_limpa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_limpa.ForeColor = System.Drawing.Color.Navy;
-            this.lb_limpa.Location = new System.Drawing.Point(10, 22);
+            this.lb_limpa.Location = new System.Drawing.Point(29, 23);
             this.lb_limpa.Name = "lb_limpa";
             this.lb_limpa.Size = new System.Drawing.Size(157, 13);
             this.lb_limpa.TabIndex = 46;
@@ -773,6 +779,8 @@
             // gb_acao
             // 
             this.gb_acao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gb_acao.Controls.Add(this.pb_carregaarqu);
+            this.gb_acao.Controls.Add(this.pb_limpacampo);
             this.gb_acao.Controls.Add(this.lb_carrega_arquivos);
             this.gb_acao.Controls.Add(this.lb_iniciar);
             this.gb_acao.Controls.Add(this.lb_limpa);
@@ -783,6 +791,28 @@
             this.gb_acao.TabIndex = 56;
             this.gb_acao.TabStop = false;
             // 
+            // pb_carregaarqu
+            // 
+            this.pb_carregaarqu.Enabled = false;
+            this.pb_carregaarqu.Image = global::RenomeArquivo___2._0.Properties.Resources.resultset_next;
+            this.pb_carregaarqu.Location = new System.Drawing.Point(7, 46);
+            this.pb_carregaarqu.Name = "pb_carregaarqu";
+            this.pb_carregaarqu.Size = new System.Drawing.Size(16, 16);
+            this.pb_carregaarqu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_carregaarqu.TabIndex = 48;
+            this.pb_carregaarqu.TabStop = false;
+            // 
+            // pb_limpacampo
+            // 
+            this.pb_limpacampo.Enabled = false;
+            this.pb_limpacampo.Image = global::RenomeArquivo___2._0.Properties.Resources.resultset_next;
+            this.pb_limpacampo.Location = new System.Drawing.Point(7, 20);
+            this.pb_limpacampo.Name = "pb_limpacampo";
+            this.pb_limpacampo.Size = new System.Drawing.Size(16, 16);
+            this.pb_limpacampo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_limpacampo.TabIndex = 47;
+            this.pb_limpacampo.TabStop = false;
+            // 
             // lb_carrega_arquivos
             // 
             this.lb_carrega_arquivos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -792,7 +822,7 @@
             this.lb_carrega_arquivos.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.lb_carrega_arquivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_carrega_arquivos.ForeColor = System.Drawing.Color.Navy;
-            this.lb_carrega_arquivos.Location = new System.Drawing.Point(7, 46);
+            this.lb_carrega_arquivos.Location = new System.Drawing.Point(26, 46);
             this.lb_carrega_arquivos.Name = "lb_carrega_arquivos";
             this.lb_carrega_arquivos.Size = new System.Drawing.Size(190, 18);
             this.lb_carrega_arquivos.TabIndex = 43;
@@ -821,6 +851,18 @@
             this.notifyIcon1.Text = "Renome 2.0";
             this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
             // 
+            // pb_logerro
+            // 
+            this.pb_logerro.Image = global::RenomeArquivo___2._0.Properties.Resources.exclamation;
+            this.pb_logerro.Location = new System.Drawing.Point(1029, 50);
+            this.pb_logerro.Name = "pb_logerro";
+            this.pb_logerro.Size = new System.Drawing.Size(16, 16);
+            this.pb_logerro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_logerro.TabIndex = 49;
+            this.pb_logerro.TabStop = false;
+            this.pb_logerro.Visible = false;
+            this.pb_logerro.Click += new System.EventHandler(this.pb_logerro_Click);
+            // 
             // pictureBox10
             // 
             this.pictureBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -839,6 +881,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1053, 543);
+            this.Controls.Add(this.pb_logerro);
             this.Controls.Add(this.gb_log);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.gb_acao);
@@ -866,6 +909,9 @@
             this.gb_log.ResumeLayout(false);
             this.gb_acao.ResumeLayout(false);
             this.gb_acao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_carregaarqu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_limpacampo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logerro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -925,6 +971,9 @@
         private System.Windows.Forms.RichTextBox log;
         private System.Windows.Forms.Label lb_iniciar;
         private System.Windows.Forms.Label lb_carrega_arquivos;
+        private System.Windows.Forms.PictureBox pb_carregaarqu;
+        private System.Windows.Forms.PictureBox pb_limpacampo;
+        private System.Windows.Forms.PictureBox pb_logerro;
     }
 }
 

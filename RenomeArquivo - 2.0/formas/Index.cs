@@ -18,6 +18,12 @@ namespace RenomeArquivo___2._0
     {
         messages mensagens = new messages();
         checkUp check = new checkUp();
+        VisuErro telaerro;
+        DateTime fileCreateDate;
+        FileInfo tamanho;
+        Thread carrega;
+        Thread trabalha;
+        Thread email;
         public Index()
         {
             check.verificaIntegridade();
@@ -25,15 +31,14 @@ namespace RenomeArquivo___2._0
             InitializeComponent();
         }
         //threads e variaveis globais
-        Thread carrega;
-        Thread trabalha;
-        Thread email;
+        float tamanhomb;
         int falhas;
         int mil;
         string modo;
         int quants;
         int cont;
         string text;
+        string[,] griderro;
 
         //MEOTODOS
         //pega o caminho dos arquivosCONF
@@ -42,6 +47,7 @@ namespace RenomeArquivo___2._0
         {
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                limpa();
                 alimentador(openFileDialog1.SafeFileNames, openFileDialog1.FileName.Replace(openFileDialog1.SafeFileName,""));
             }
             else
@@ -59,7 +65,6 @@ namespace RenomeArquivo___2._0
         //alimenta a lista e as strings de controle
         private void alimentador(string[] arquivos, string caminho)
         {
-            FileInfo tamanho;
             int quantos=0;
             //alimenta string do caminho.
             novoLog(mensagens.LogUrl + caminho, Color.Blue);
@@ -69,8 +74,8 @@ namespace RenomeArquivo___2._0
             {
                 tamanho = new FileInfo(caminho+arquivos[i]);
                 float tamanhoMB = (tamanho.Length / 1014f) / 1014f;
-                DateTime fileCreateDate = File.GetCreationTime(caminho+arquivos[i]);
-                string data = fileCreateDate + "";
+                fileCreateDate = File.GetCreationTime(caminho+arquivos[i]);
+                string data = Convert.ToString(fileCreateDate);
                 dg_lista.Invoke((MethodInvoker)delegate { dg_lista.Rows.Add(arquivos[i], tamanhoMB, Path.GetExtension(caminho+arquivos[i]),data); });
                 novoLog(arquivos[i]+mensagens.UpSucess,Color.Green);
                 if (text.IndexOf("CONT = FALSE") == -1)
@@ -147,7 +152,7 @@ namespace RenomeArquivo___2._0
             falhas = 0;
             pb_barra.Invoke((MethodInvoker)delegate {pb_barra.Maximum = openFileDialog1.SafeFileNames.Length - 1;});
             string caminho = openFileDialog1.FileName.Replace(openFileDialog1.SafeFileNames[0], "");
-
+            griderro = new string[openFileDialog1.SafeFileNames.Length, 6];
             //renomeando de forma numerica
             if (rb_numerico.Checked)
             {
@@ -168,8 +173,14 @@ namespace RenomeArquivo___2._0
                     }
                     else
                     {
+                        tamanho = new FileInfo(caminho + openFileDialog1.SafeFileNames[i]);
+                        griderro[i, 0] = openFileDialog1.SafeFileNames[i];
+                        griderro[i, 1] = numerico.erro;
+                        griderro[i, 2] = Convert.ToString(valor);
+                        griderro[i, 3] = Convert.ToString(tamanhomb = (tamanho.Length / 1024f) / 1024f);
+                        griderro[i, 4] = Path.GetExtension(openFileDialog1.SafeFileNames[i]);
+                        griderro[i, 5] = Convert.ToString(fileCreateDate = File.GetCreationTime(caminho + openFileDialog1.SafeFileNames[i])) ;
                         novoLog(openFileDialog1.SafeFileNames[i] + mensagens.ReFail +" - "+numerico.erro,Color.Red);
-
                         if (text.IndexOf("CONT = FALSE") == -1)
                         {
                             falhas++;
@@ -446,8 +457,6 @@ namespace RenomeArquivo___2._0
             }
             else
             {
-                
-                limpa();
                 gb_opcoes.Invoke((MethodInvoker)delegate { gb_opcoes.Enabled = true; });
                 lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.Text = mensagens.BtlabelIniciar; });
                 lb_iniciar.Invoke((MethodInvoker)delegate { lb_iniciar.ForeColor = Color.Green; });
@@ -552,6 +561,14 @@ namespace RenomeArquivo___2._0
             {
                 MessageBox.Show(quants + mensagens.TotalSucess, mensagens.TitleBoxSucess, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            if (falhas > 0)
+            {
+                pb_logerro.Invoke((MethodInvoker)delegate { pb_logerro.Visible = true; });
+            }
+            else
+            {
+                pb_logerro.Invoke((MethodInvoker)delegate { pb_logerro.Visible = false; });
+            }
             email = new Thread(enviaestatic);
             email.Start();
             iniciandoTrabalhos();
@@ -640,6 +657,12 @@ namespace RenomeArquivo___2._0
                 carrega.Abort();
                 limpa();
             }
+        }
+
+        private void pb_logerro_Click(object sender, EventArgs e)
+        {
+            telaerro = new VisuErro(griderro);
+            telaerro.ShowDialog();
         }
     }
 }
