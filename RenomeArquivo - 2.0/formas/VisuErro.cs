@@ -26,5 +26,10 @@ namespace RenomeArquivo___2._0.formas
                 i++;
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

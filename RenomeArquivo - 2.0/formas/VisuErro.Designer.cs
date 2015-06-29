@@ -38,14 +38,18 @@
             this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pb_logerro = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_listaerro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logerro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dg_listaerro
             // 
-            this.dg_listaerro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dg_listaerro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dg_listaerro.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dg_listaerro.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dg_listaerro.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
@@ -95,7 +99,7 @@
             this.dg_listaerro.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dg_listaerro.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_listaerro.ShowEditingIcon = false;
-            this.dg_listaerro.Size = new System.Drawing.Size(946, 384);
+            this.dg_listaerro.Size = new System.Drawing.Size(946, 351);
             this.dg_listaerro.TabIndex = 53;
             this.dg_listaerro.TabStop = false;
             // 
@@ -141,13 +145,38 @@
             this.data.Name = "data";
             this.data.ReadOnly = true;
             // 
+            // pb_logerro
+            // 
+            this.pb_logerro.Image = global::RenomeArquivo___2._0.Properties.Resources.exclamation;
+            this.pb_logerro.Location = new System.Drawing.Point(12, 358);
+            this.pb_logerro.Name = "pb_logerro";
+            this.pb_logerro.Size = new System.Drawing.Size(16, 16);
+            this.pb_logerro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pb_logerro.TabIndex = 54;
+            this.pb_logerro.TabStop = false;
+            this.pb_logerro.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::RenomeArquivo___2._0.Properties.Resources.cancel;
+            this.pictureBox1.Location = new System.Drawing.Point(914, 358);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // VisuErro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(946, 384);
+            this.ClientSize = new System.Drawing.Size(942, 380);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_logerro);
             this.Controls.Add(this.dg_listaerro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -159,7 +188,10 @@
             this.Text = "VisuErro";
             this.Load += new System.EventHandler(this.VisuErro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_listaerro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_logerro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -172,5 +204,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tamanho;
         private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn data;
+        private System.Windows.Forms.PictureBox pb_logerro;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

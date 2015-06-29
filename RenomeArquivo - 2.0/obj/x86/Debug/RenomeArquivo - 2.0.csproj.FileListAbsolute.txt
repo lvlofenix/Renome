@@ -101,3 +101,4 @@ D:\SITES E PROJETOS\C#\02 PROJETOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\Reno
 D:\SITES E PROJETOS\C#\02 PROJETOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.exe.manifest
 D:\SITES E PROJETOS\C#\02 PROJETOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo - 2.0.application
 D:\SITES E PROJETOS\C#\02 PROJETOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.VisuErro.resources
+D:\PESSOAL PESSOAL!! ESSA PASTA É UMA PASTA PESSOAL TEMPORARIA. OK\ARQUIVOS\Renome\RenomeArquivo - 2.0\obj\x86\Debug\RenomeArquivo___2._0.formas.VisuErro.resources
