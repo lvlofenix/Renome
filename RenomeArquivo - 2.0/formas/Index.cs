@@ -426,10 +426,7 @@ namespace RenomeArquivo___2._0
         private void lb_iniciar_Click(object sender, EventArgs e)
         {
             text = File.ReadAllText(@".\conf.cf");
-            if (dg_lista.RowCount < 2)
-            {
-            }
-            else
+            if (dg_lista.RowCount >= 2)
             {
                 iniciandoTrabalhos();
             }

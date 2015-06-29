@@ -118,6 +118,7 @@ namespace RenomeArquivo___2._0.formas
                  }
             }
             file.Close();
+            file.Dispose();
             lingua();
         }
 
