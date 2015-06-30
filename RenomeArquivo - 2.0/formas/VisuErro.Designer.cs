@@ -155,6 +155,7 @@
             this.pb_logerro.TabIndex = 54;
             this.pb_logerro.TabStop = false;
             this.pb_logerro.Visible = false;
+            this.pb_logerro.Click += new System.EventHandler(this.pb_logerro_Click);
             // 
             // pictureBox1
             // 
@@ -173,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(942, 380);
+            this.ClientSize = new System.Drawing.Size(938, 376);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pb_logerro);

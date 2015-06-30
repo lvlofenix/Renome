@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.IO;
-using System.Windows.Forms;
 
 namespace RenomeArquivo___2._0.classes
 {
     class rc_data
     {
-        public string erro = "";
+        public string erro = null;
         public Boolean renomeData(string caminho, string arquivo,string tipo,string qual, int i)
         {
             try
             {
                 //pegando a data e renomeando arquivo.
                 DateTime fileCreateDate = File.GetCreationTime(caminho + @"\" + arquivo);
-                string data = fileCreateDate + "";
-                string datahora="";
+                string data = fileCreateDate.ToString();
+                string datahora = null;
                 //tirando os caracteres especiais da hora e data.
                 data = data.Replace("/", "");
                 data = data.Replace(":", "");

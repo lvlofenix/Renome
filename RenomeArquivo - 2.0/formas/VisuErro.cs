@@ -31,5 +31,10 @@ namespace RenomeArquivo___2._0.formas
         {
             this.Close();
         }
+
+        private void pb_logerro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -415,9 +415,9 @@ namespace RenomeArquivo___2._0
                 email email = new email();
                 email.enviaEmail(modo, quants, falhas, logaas, text);
             }
-            catch(Exception e)
+            catch
             {
-                MessageBox.Show(e.Message);
+                
             }
         }
 
