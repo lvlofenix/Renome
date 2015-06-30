@@ -141,6 +141,7 @@ namespace RenomeArquivo___2._0
             nd_nome.Invoke((MethodInvoker)delegate {nd_nome.Value = 0;});
             cb_alfa.Invoke((MethodInvoker)delegate {cb_alfa.ResetText();});
             pb_barra.Invoke((MethodInvoker)delegate { pb_barra.Value = 0; });
+            pb_logerro.Invoke((MethodInvoker)delegate {pb_logerro.Visible = false;});
         }
 
         //faz a verificação de qual modo vai ser e inicia a classe correta
@@ -441,7 +442,7 @@ namespace RenomeArquivo___2._0
                 trabalha.Start();
                 lb_iniciar.Text = mensagens.BtlabelAbortar;
                 lb_iniciar.ForeColor = Color.Red;
-                if (mil > 999 & text.IndexOf("TRAY = TRUE") == -1)
+                if (mil > 999 & text.IndexOf("TRAY = FALSE") == -1)
                 {
                     notifyIcon1.Visible = true;
                     this.Visible = false;
@@ -558,7 +559,7 @@ namespace RenomeArquivo___2._0
             {
                 MessageBox.Show(quants + mensagens.TotalSucess, mensagens.TitleBoxSucess, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (falhas > 0)
+            if (falhas > 0 & text.IndexOf("RELAE = TRUE") > -1)
             {
                 pb_logerro.Invoke((MethodInvoker)delegate { pb_logerro.Visible = true; });
             }

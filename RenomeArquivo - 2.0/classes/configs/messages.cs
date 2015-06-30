@@ -20,11 +20,9 @@ namespace RenomeArquivo___2._0.classes
         public string TotalSucess = "";
         public string TotalFail = "";
         //Mensagens Tray
-        //public string MinimizeTrayClick = "";
         public string MinimizeTrayFinish = "";
         public string MinimizeTrayTitle1 = "";
         public string MinimizeTrayTitle2 = "";
-        //public string MinimizeTrayTitle3 = "";
         public string MinimizeTrayTip = "";
         //Labels
         public string LabelCarregados = "";
@@ -70,6 +68,7 @@ namespace RenomeArquivo___2._0.classes
         public string GLangu = "";
         public string LabelPortu = "";
         public string LabelUs = "";
+        public string LabelRela = "";
         //text box
         public string TbDuvajud = "";
         public string TbDuvVisu = "";
@@ -84,6 +83,8 @@ namespace RenomeArquivo___2._0.classes
         public string MlTamaMb = "";
         public string MlTipI = "";
         public string MlTipII = "";
+        //traducao alert
+        public string Mbstradu = "";
 
 
 
@@ -144,13 +145,14 @@ namespace RenomeArquivo___2._0.classes
                 Labelativacont = "Ativa contadores";
                 LabelGeraLog = "Gerar logs";
                 LabelAtivBarra = "Ativar barra de progresso";
-                LabelDesamini = "Desativar minimização automatica";
+                LabelDesamini = "Ativar minimização automatica";
                 Gferra = "Ferramentas";
                 LabelEnvia = "Enviar estatísticas de forma anonima";
                 LabelAtul = "Verificar atualizações";
                 GLangu = "Idioma";
                 LabelPortu = "Portugues Brasil";
                 LabelUs = "Ingles";
+                LabelRela = "Ativar relatório de erros.";
                 //text box
                 TbDuvajud = "Envia informações de uso do software de forma anonima para ajudar a identificar problemas e melhorias.";
                 TbDuvTitle = "Posso ajudar??";
@@ -165,6 +167,8 @@ namespace RenomeArquivo___2._0.classes
                 MlTamaMb = "MB'S";
                 MlTipI = "MODO GENERICO";
                 MlTipII = "COMPLETO";
+                //messagebox
+                Mbstradu = "Reinicie o software para aplicar as alterações.";
             }
             else
             {
@@ -219,13 +223,14 @@ namespace RenomeArquivo___2._0.classes
                 Labelativacont = "Active counters";
                 LabelGeraLog = "Generate logs";
                 LabelAtivBarra = "Enable progress bar";
-                LabelDesamini = "Disable automatic minimization";
+                LabelDesamini = "Automatic minimization";
                 Gferra = "Tools";
                 LabelEnvia = "Send statistics anonymous way";
                 LabelAtul = "Check for Updates";
                 GLangu = "Language";
                 LabelPortu = "Portuguese Brazil";
                 LabelUs = "Ingles";
+                LabelRela = "Enable error reporting.";
                 //text box
                 TbDuvajud = "Send usage information from anonymous way software to help identify problems and improvements.";
                 TbDuvTitle = "Help-me!!";
@@ -240,6 +245,8 @@ namespace RenomeArquivo___2._0.classes
                 MlTamaMb = "MB'S";
                 MlTipI = "GENERAL WAY";
                 MlTipII = "COMPLETE";
+                //messagebox
+                Mbstradu = "Restart software to apply the changes.";
             }
         }
     }

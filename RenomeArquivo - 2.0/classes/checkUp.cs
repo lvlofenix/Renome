@@ -20,9 +20,10 @@ namespace RenomeArquivo___2._0.classes
                     "CONT = TRUE" + Environment.NewLine +
                     "LOG = TRUE" + Environment.NewLine +
                     "BARRA = TRUE" + Environment.NewLine +
-                    "TRAY = FALSE" + Environment.NewLine +
+                    "TRAY = TRUE" + Environment.NewLine +
                     "EMAIL = TRUE" + Environment.NewLine +
-                    "LANGUE = PTBR";
+                    "LANGUE = PTBR" + Environment.NewLine +
+                    "RELAE = TRUE";
                     System.IO.File.WriteAllText(@".\conf.cf", configs);
                 }
             }

@@ -116,6 +116,18 @@ namespace RenomeArquivo___2._0.formas
                          pb_br.Image = Properties.Resources.br;
                      }
                  }
+                 else if (line.Substring(0, 5) == "RELAE")
+                 {
+                     if (line.Substring(8) == "FALSE")
+                     {
+                         pb_rela.Image = Properties.Resources.lightbulb_off;
+
+                     }
+                     else
+                     {
+                         pb_rela.Image = Properties.Resources.lightbulb;
+                     }
+                 }
             }
             file.Close();
             file.Dispose();
@@ -137,6 +149,7 @@ namespace RenomeArquivo___2._0.formas
             gb_idioma.Text = mensagens.GLangu;
             lb_ptbr.Text = mensagens.LabelPortu;
             lb_us.Text = mensagens.LabelUs;
+            lb_reporterro.Text = mensagens.LabelRela;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -236,6 +249,7 @@ namespace RenomeArquivo___2._0.formas
                 pb_eua.Image = Properties.Resources.us;
                 text = text.Replace("LANGUE = PTBR", "LANGUE = INGL");
                 File.WriteAllText(@".\conf.cf", text);
+                MessageBox.Show(mensagens.Mbstradu);
             }
         }
 
@@ -247,6 +261,26 @@ namespace RenomeArquivo___2._0.formas
                 pb_eua.Image = Properties.Resources.eua;
                 text = text.Replace("LANGUE = INGL", "LANGUE = PTBR");
                 file.Close();
+                File.WriteAllText(@".\conf.cf", text);
+                MessageBox.Show(mensagens.Mbstradu);
+            }
+        }
+
+        private void pb_rela_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(text.IndexOf("RELAE = FALSE") + "");
+            MessageBox.Show(text.IndexOf("RELAE = TRUE") + "");
+            if (text.IndexOf("RELAE = FALSE") != -1)
+            {
+                pb_rela.Image = Properties.Resources.lightbulb;
+                text = text.Replace("RELAE = FALSE", "RELAE = TRUE");
+                File.WriteAllText(@".\conf.cf", text);
+            }
+                
+            else if (text.IndexOf("RELAE = TRUE") != -1)
+            {
+                pb_rela.Image = Properties.Resources.lightbulb_off;
+                text = text.Replace("RELAE = TRUE", "RELAE = FALSE");
                 File.WriteAllText(@".\conf.cf", text);
             }
         }

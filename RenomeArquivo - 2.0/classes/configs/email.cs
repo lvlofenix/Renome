@@ -15,11 +15,9 @@ namespace RenomeArquivo___2._0.classes.etc
         {
             //variaveis e instancias utilizadas
             string arquivo = @".\log.html";
-           
-            System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
+            string configas = File.ReadAllText(@".\conf.cf");
             MailMessage objEmail = new MailMessage();
             SmtpClient objSmtp = new SmtpClient();
-
             //tratando o log
             log = "<HTML><BODY>" + log;
             log = log.Replace(")", ")<p>");
@@ -32,49 +30,33 @@ namespace RenomeArquivo___2._0.classes.etc
             //EXPORTANDO LOG PARA HTML
             System.IO.File.WriteAllText(@".\log.html", log);
             Attachment anexo = new Attachment(arquivo, System.Net.Mime.MediaTypeNames.Application.Octet);
-            string line = "";
-            while ((line = file.ReadLine()) != null)
+            if(configas.IndexOf("EMAIL = TRUE") > -1)
             {
-                if (line.Substring(0, 5) == "EMAIL")
-                {
-                    string text = File.ReadAllText(@".\conf.cf");
-                    if (line.Substring(8) == "FALSE")
-                    {
-                        file.Close();
-                        break;
-                        
-                    }
-                    else
-                    {
-                        ssl = true;
-                        objEmail.From = new MailAddress("renome.feedback@outlook.com");
-                        //objEmail.ReplyTo = "";    
-                        objEmail.To.Add("renome.feedback@outlook.com");
-                        //objEmail.Bcc.Add("Email oculto");
-                        objEmail.Priority = MailPriority.Normal;
-                        objEmail.IsBodyHtml = true;
-                        objEmail.Subject = "RENOME INFORMATIVO DE USO : " + DateTime.Now.ToShortDateString() + " as " + DateTime.Now.ToShortTimeString();
-                        objEmail.Body = "<HTML>"
-                                        + "<H3><B>USER:</B> <FONT COLOR=#F23D00>" + Environment.MachineName + "</FONT><P>"
-                                        + "<B>ARCHIVES:</B> <FONT COLOR=#F23D00>" + renomeados + "</FONT><P>"
-                                        + "<B>FALHAS:</B> <FONT COLOR=#F23D00>" + falhas + "</FONT><P>"
-                                        + "<B>MOD:</B> <FONT COLOR=#F23D00>" + modo + @"</H3></FONT><P>"
-                                        + "<B>_______________________________________________________</B><P>"
-                                        + "<B>" + configs + "</B><P>"
-                                        + "<B>_______________________________________________________</B><P>"
-                                        + @"</HTML>";
-                        objEmail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
-                        objEmail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
-                        objEmail.Attachments.Add(anexo);
-                        objSmtp.Host = "smtp.live.com";
-                        objSmtp.EnableSsl = ssl;
-                        objSmtp.Port = 587;
-                        objSmtp.Credentials = new NetworkCredential("renome.feedback@outlook.com", "Pizza1992@");
-                        objSmtp.Send(objEmail);
-                        file.Close();
-                        break;
-                    }
-                }
+                ssl = true;
+                objEmail.From = new MailAddress("renome.feedback@outlook.com");
+                //objEmail.ReplyTo = "";    
+                objEmail.To.Add("renome.feedback@outlook.com");
+                //objEmail.Bcc.Add("Email oculto");
+                objEmail.Priority = MailPriority.Normal;
+                objEmail.IsBodyHtml = true;
+                objEmail.Subject = "RENOME INFORMATIVO DE USO : " + DateTime.Now.ToShortDateString() + " as " + DateTime.Now.ToShortTimeString();
+                objEmail.Body = "<HTML>"
+                                + "<H3><B>USER:</B> <FONT COLOR=#F23D00>" + Environment.MachineName + "</FONT><P>"
+                                + "<B>ARCHIVES:</B> <FONT COLOR=#F23D00>" + renomeados + "</FONT><P>"
+                                + "<B>FALHAS:</B> <FONT COLOR=#F23D00>" + falhas + "</FONT><P>"
+                                + "<B>MOD:</B> <FONT COLOR=#F23D00>" + modo + @"</H3></FONT><P>"
+                                + "<B>_______________________________________________________</B><P>"
+                                + "<B>" + configs + "</B><P>"
+                                + "<B>_______________________________________________________</B><P>"
+                                + @"</HTML>";
+                objEmail.SubjectEncoding = Encoding.GetEncoding("ISO-8859-1");
+                objEmail.BodyEncoding = Encoding.GetEncoding("ISO-8859-1");
+                objEmail.Attachments.Add(anexo);
+                objSmtp.Host = "smtp.live.com";
+                objSmtp.EnableSsl = ssl;
+                objSmtp.Port = 587;
+                objSmtp.Credentials = new NetworkCredential("renome.feedback@outlook.com", "Pizza1992@");
+                objSmtp.Send(objEmail);
             }
         }
     }

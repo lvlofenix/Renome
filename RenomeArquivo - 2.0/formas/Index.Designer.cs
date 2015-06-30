@@ -76,7 +76,6 @@
             this.Tamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.gb_log = new System.Windows.Forms.GroupBox();
             this.log = new System.Windows.Forms.RichTextBox();
             this.gb_acao = new System.Windows.Forms.GroupBox();
@@ -862,7 +861,6 @@
             this.pb_logerro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_logerro.TabIndex = 49;
             this.pb_logerro.TabStop = false;
-            this.pb_logerro.Visible = false;
             this.pb_logerro.Click += new System.EventHandler(this.pb_logerro_Click);
             // 
             // pictureBox10
@@ -960,7 +958,6 @@
         private System.Windows.Forms.Label lb_falha;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label lb_configs;
-        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.ComboBox cb_aleatorio;
         private System.Windows.Forms.GroupBox gb_log;
         private System.Windows.Forms.GroupBox gb_acao;
