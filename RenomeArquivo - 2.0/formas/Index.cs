@@ -577,13 +577,23 @@ namespace RenomeArquivo___2._0
             lingua();
             nd_numerico.Value = 0;
             cb_alfa.Text = "A";
-            cb_data.Text = mensagens.MlDateI;
-            cb_tipo.Text = mensagens.MlTipI;
-            cb_aleatorio.Text = mensagens.MlRandI;
-            cb_tamanho.Text = mensagens.MlTamaMb;
             nd_alfa.Value = 0;
             tb_nome.Enabled = false;
             nd_nome.Value = 0;
+            //setando os data
+            cb_data.Items.Add(mensagens.MlDateI);
+            cb_data.Items.Add(mensagens.MlDateII);
+            //setando tipo
+            cb_tipo.Items.Add(mensagens.MlTipI);
+            cb_tipo.Items.Add(mensagens.MlTipII);
+            //setando tamanho
+            cb_tamanho.Items.Add(mensagens.MlTamaKb);
+            cb_tamanho.Items.Add(mensagens.MlTamaMb);
+            //setando aleatorio
+            cb_aleatorio.Items.Add(mensagens.MlRandI);
+            cb_aleatorio.Items.Add(mensagens.MlRandII);
+            cb_aleatorio.Items.Add(mensagens.MlRandIII);
+
         }
 
         //minetray
@@ -631,7 +641,11 @@ namespace RenomeArquivo___2._0
             gb_opcoes.Text = mensagens.Gopcoes;
             gb_acao.Text = mensagens.Gacao;
             gb_log.Text = mensagens.Glog;
-
+            //CAMPOS
+            cb_data.Text = mensagens.MlDateI;
+            cb_tipo.Text = mensagens.MlTipI;
+            cb_aleatorio.Text = mensagens.MlRandI;
+            cb_tamanho.Text = mensagens.MlTamaMb;
         }
 
         private void lb_carrega_arquivos_Click_1(object sender, EventArgs e)

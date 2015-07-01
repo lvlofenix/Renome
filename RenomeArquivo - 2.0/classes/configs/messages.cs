@@ -114,7 +114,7 @@ namespace RenomeArquivo___2._0.classes
                 //BOTOES
                 BtlabelCancelar = " CANCELAR";
                 BtlabelIniciar = "INICIAR";
-                BtlabelAbortar = "ABORTAR";
+                BtlabelAbortar = "PARAR";
                 BtLabelCarregar = "CARREGAR ARQUIVOS";
                 BtLabelLimpa = "LIMPAR CAMPOS E LOGS";
                 BtLabelConfig = "CONFIGURAÇÕES";
@@ -196,7 +196,7 @@ namespace RenomeArquivo___2._0.classes
                 BtLabelCarregar = "LOAD FILES";
                 BtLabelLimpa = "CLEAR CAMPS AND LOGS";
                 BtLabelConfig = "CONFIGURE";
-                BtLabelSobre = "ABOUT";
+                BtLabelSobre = "STOP";
                 //LABELS
                 LabelCarregados = "FILES LOADED: ";
                 LabelRenomes = "FILES RENAMED: ";

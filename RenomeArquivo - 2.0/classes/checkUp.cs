@@ -29,7 +29,6 @@ namespace RenomeArquivo___2._0.classes
             }
             catch
             {
-
             }
         }
     }

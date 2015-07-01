@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Text;
 using System.IO;
+using RenomeArquivo___2._0.classes.configs;
 
 namespace RenomeArquivo___2._0.classes
 {
     class rc_aleatorio
     {
         public string erro = "";
+        messages mensagens = new messages();
         public Boolean renome_aleatorio(string caminho, string arquivo, string tipo, string qual)
         {
             string novonome=null;
@@ -14,7 +16,7 @@ namespace RenomeArquivo___2._0.classes
             {
                 Random rd = new Random();
                 //aplicando o renome.
-                if (qual == "NUMEROS")
+                if (qual == mensagens.MlRandI)
                 {
                     char[] chars = new char[9];
                     chars = "0123456789".ToCharArray();
@@ -26,7 +28,7 @@ namespace RenomeArquivo___2._0.classes
                     return true;
 
                 }
-                else if (qual == "LETRAS")
+                else if (qual == mensagens.MlRandII)
                 {
                     char[] chars = new char[52];
                     chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
@@ -37,7 +39,7 @@ namespace RenomeArquivo___2._0.classes
                     File.Move(caminho + @"\" + arquivo, caminho + @"\" + novonome + tipo);
                     return true;
                 }
-                else if (qual == "NUMEROS E LETRAS")
+                else if (qual == mensagens.MlRandIII)
                 {
                     char[] chars = new char[56];
                     chars = "456abcdefgim5Nnopq789rsuvwxyzABCD0EFGH35IJKLMSTUVWXYZ123".ToCharArray();

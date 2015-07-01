@@ -78,7 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classes\checkUp.cs" />
-    <Compile Include="classes\configs\configuracoes.cs" />
+    <Compile Include="classes\configs\coreconfig.cs" />
     <Compile Include="classes\configs\email.cs" />
     <Compile Include="classes\configs\messages.cs" />
     <Compile Include="classes\core\rc_aleatorio.cs" />

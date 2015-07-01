@@ -18,7 +18,7 @@ namespace RenomeArquivo___2._0.formas
         string text = File.ReadAllText(@".\conf.cf");
         System.IO.StreamReader file = new System.IO.StreamReader(@".\conf.cf");
         messages mensagens = new messages();
-
+        coreconfig coreconfig = new coreconfig();
         public configuracoes()
         {
             InitializeComponent();
@@ -159,81 +159,61 @@ namespace RenomeArquivo___2._0.formas
 
         public void pb_email_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("EMAIL = FALSE") != -1)
+            if (coreconfig.ativa_email())
             {
                 pb_email.Image = Properties.Resources.lightbulb;
-                text = text.Replace("EMAIL = FALSE", "EMAIL = TRUE");
-                File.WriteAllText(@".\conf.cf", text);
             }
-            else if (text.IndexOf("EMAIL = TRUE") != -1)
+            else
             {
                 pb_email.Image = Properties.Resources.lightbulb_off;
-                text = text.Replace("EMAIL = TRUE", "EMAIL = FALSE");
-                File.WriteAllText(@".\conf.cf", text);
             }
         }
 
         private void pb_log_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("LOG = FALSE") != -1)
+            if (coreconfig.ativa_log())
             {
                 pb_log.Image = Properties.Resources.lightbulb;
-                text = text.Replace("LOG = FALSE", "LOG = TRUE");
-                File.WriteAllText(@".\conf.cf", text);
             }
-            else if (text.IndexOf("LOG = TRUE") != -1)
+            else
             {
                 pb_log.Image = Properties.Resources.lightbulb_off;
-                text = text.Replace("LOG = TRUE", "LOG = FALSE");
-                File.WriteAllText(@".\conf.cf", text);
             }
         }
 
         private void pb_tray_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("TRAY = FALSE") != -1)
+            if (coreconfig.ativa_tray())
             {
                 pb_tray.Image = Properties.Resources.lightbulb;
-                text = text.Replace("TRAY = FALSE", "TRAY = TRUE");
-                File.WriteAllText(@".\conf.cf", text);
             }
-            else if (text.IndexOf("TRAY = TRUE") != -1)
+            else
             {
                 pb_tray.Image = Properties.Resources.lightbulb_off;
-                text = text.Replace("TRAY = TRUE", "TRAY = FALSE");
-                File.WriteAllText(@".\conf.cf", text);
             }
         }
 
         private void pb_barra_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("BARRA = FALSE") != -1)
+            if (coreconfig.ativa_barra())
             {
                 pb_barra.Image = Properties.Resources.lightbulb;
-                text = text.Replace("BARRA = FALSE", "BARRA = TRUE");
-                File.WriteAllText(@".\conf.cf", text);
             }
-            else if (text.IndexOf("BARRA = TRUE") != -1)
+            else
             {
                 pb_barra.Image = Properties.Resources.lightbulb_off;
-                text = text.Replace("BARRA = TRUE", "BARRA = FALSE");
-                File.WriteAllText(@".\conf.cf", text);
             }
         }
 
         private void pb_cont_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("CONT = FALSE") != -1)
+            if (coreconfig.ativa_contadores())
             {
                 pb_cont.Image = Properties.Resources.lightbulb;
-                text = text.Replace("CONT = FALSE", "CONT = TRUE");
-                File.WriteAllText(@".\conf.cf", text);
             }
-            else if (text.IndexOf("CONT = TRUE") != -1)
+            else
             {
                 pb_cont.Image = Properties.Resources.lightbulb_off;
-                text = text.Replace("CONT = TRUE", "CONT = FALSE");
-                File.WriteAllText(@".\conf.cf", text);
             }
         }
 
@@ -243,45 +223,33 @@ namespace RenomeArquivo___2._0.formas
         }
         private void pb_eua_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("LANGUE = PTBR") != -1)
+            if (coreconfig.lingua_us())
             {
                 pb_br.Image = Properties.Resources.br;
                 pb_eua.Image = Properties.Resources.us;
-                text = text.Replace("LANGUE = PTBR", "LANGUE = INGL");
-                File.WriteAllText(@".\conf.cf", text);
                 MessageBox.Show(mensagens.Mbstradu);
             }
         }
 
         private void pb_br_Click(object sender, EventArgs e)
         {
-            if (text.IndexOf("LANGUE = INGL") != -1)
+            if (coreconfig.lingua_ptbr())
             {
                 pb_br.Image = Properties.Resources.br1;
                 pb_eua.Image = Properties.Resources.eua;
-                text = text.Replace("LANGUE = INGL", "LANGUE = PTBR");
-                file.Close();
-                File.WriteAllText(@".\conf.cf", text);
                 MessageBox.Show(mensagens.Mbstradu);
             }
         }
 
         private void pb_rela_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(text.IndexOf("RELAE = FALSE") + "");
-            MessageBox.Show(text.IndexOf("RELAE = TRUE") + "");
-            if (text.IndexOf("RELAE = FALSE") != -1)
+            if (coreconfig.ativa_relae())
             {
                 pb_rela.Image = Properties.Resources.lightbulb;
-                text = text.Replace("RELAE = FALSE", "RELAE = TRUE");
-                File.WriteAllText(@".\conf.cf", text);
             }
-                
-            else if (text.IndexOf("RELAE = TRUE") != -1)
+            else
             {
                 pb_rela.Image = Properties.Resources.lightbulb_off;
-                text = text.Replace("RELAE = TRUE", "RELAE = FALSE");
-                File.WriteAllText(@".\conf.cf", text);
             }
         }
     }

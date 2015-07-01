@@ -231,7 +231,7 @@
             this.gb_ferram.Controls.Add(this.pictureBox10);
             this.gb_ferram.Controls.Add(this.lb_verifiatua);
             this.gb_ferram.ForeColor = System.Drawing.Color.White;
-            this.gb_ferram.Location = new System.Drawing.Point(11, 258);
+            this.gb_ferram.Location = new System.Drawing.Point(11, 236);
             this.gb_ferram.Name = "gb_ferram";
             this.gb_ferram.Size = new System.Drawing.Size(332, 71);
             this.gb_ferram.TabIndex = 47;
@@ -301,7 +301,7 @@
             this.gb_idioma.Controls.Add(this.lb_ptbr);
             this.gb_idioma.Controls.Add(this.lb_us);
             this.gb_idioma.ForeColor = System.Drawing.Color.White;
-            this.gb_idioma.Location = new System.Drawing.Point(14, 335);
+            this.gb_idioma.Location = new System.Drawing.Point(14, 313);
             this.gb_idioma.Name = "gb_idioma";
             this.gb_idioma.Size = new System.Drawing.Size(332, 65);
             this.gb_idioma.TabIndex = 48;
@@ -355,7 +355,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RenomeArquivo___2._0.Properties.Resources.cancel;
-            this.pictureBox3.Location = new System.Drawing.Point(324, 411);
+            this.pictureBox3.Location = new System.Drawing.Point(327, 384);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(16, 16);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -368,7 +368,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(355, 454);
+            this.ClientSize = new System.Drawing.Size(355, 412);
             this.ControlBox = false;
             this.Controls.Add(this.gb_idioma);
             this.Controls.Add(this.gb_ferram);
