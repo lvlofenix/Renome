@@ -7,12 +7,14 @@ namespace RenomeArquivo___2._0.classes
     class rc_tamanho
     {
         public string erro = "";
+        messages mensagens = new messages();
         public Boolean renome_tamanho(string caminho, string arquivo, string tipo, string qual)
         {
+            mensagens.qualLang();
             try
             {
                 string peso = Convert.ToString(new FileInfo(caminho + @"\" + arquivo).Length);
-                if (qual == "POR KB'S")
+                if (qual == mensagens.MlTamaKb)
                 {
                     //aplicando o renome.
                     peso = Convert.ToInt64(peso) / 1024 + "";

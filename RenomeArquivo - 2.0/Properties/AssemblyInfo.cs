@@ -6,13 +6,13 @@ using System.Resources;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Renome 2.1 Beta")]
+[assembly: AssemblyTitle("Renome 1.0.1")]
 [assembly: AssemblyDescription("https://github.com/lvlofenix/Renome - lucas.vinicius@outlook.com")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Lucas Vinicius")]
-[assembly: AssemblyProduct("Renome 2.1 Beta")]
+[assembly: AssemblyProduct("Renome 1.0.1")]
 [assembly: AssemblyCopyright("GitHub")]
-[assembly: AssemblyTrademark("2.1")]
+[assembly: AssemblyTrademark("1.0.1")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -33,6 +33,6 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.1.0.0")]
-[assembly: AssemblyFileVersion("2.1.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]
 [assembly: NeutralResourcesLanguageAttribute("")]

@@ -196,7 +196,7 @@ namespace RenomeArquivo___2._0.classes
                 BtLabelCarregar = "LOAD FILES";
                 BtLabelLimpa = "CLEAR CAMPS AND LOGS";
                 BtLabelConfig = "CONFIGURE";
-                BtLabelSobre = "STOP";
+                BtLabelSobre = "ABOUT";
                 //LABELS
                 LabelCarregados = "FILES LOADED: ";
                 LabelRenomes = "FILES RENAMED: ";

@@ -14,6 +14,7 @@ namespace RenomeArquivo___2._0.classes
             string novonome=null;
             try
             {
+                mensagens.qualLang();
                 Random rd = new Random();
                 //aplicando o renome.
                 if (qual == mensagens.MlRandI)

@@ -772,7 +772,7 @@
             this.gb_acao.Controls.Add(this.lb_iniciar);
             this.gb_acao.Controls.Add(this.lb_limpa);
             this.gb_acao.ForeColor = System.Drawing.Color.White;
-            this.gb_acao.Location = new System.Drawing.Point(12, 402);
+            this.gb_acao.Location = new System.Drawing.Point(9, 402);
             this.gb_acao.Name = "gb_acao";
             this.gb_acao.Size = new System.Drawing.Size(270, 129);
             this.gb_acao.TabIndex = 56;
@@ -823,7 +823,7 @@
             this.lb_iniciar.AutoSize = true;
             this.lb_iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_iniciar.ForeColor = System.Drawing.Color.Green;
-            this.lb_iniciar.Location = new System.Drawing.Point(59, 81);
+            this.lb_iniciar.Location = new System.Drawing.Point(6, 81);
             this.lb_iniciar.Name = "lb_iniciar";
             this.lb_iniciar.Size = new System.Drawing.Size(158, 42);
             this.lb_iniciar.TabIndex = 42;
@@ -848,6 +848,7 @@
             this.pb_logerro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pb_logerro.TabIndex = 49;
             this.pb_logerro.TabStop = false;
+            this.pb_logerro.Visible = false;
             this.pb_logerro.Click += new System.EventHandler(this.pb_logerro_Click);
             // 
             // pictureBox10

@@ -4,7 +4,7 @@
   <description asmv2:iconFile="news_archive_icon (1).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="RenomeArquivo - 2.0" version="2.1.0.0" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="RenomeArquivo - 2.0" version="1.0.0.1" language="neutral" processorArchitecture="x86" />
     <commandLine file="RenomeArquivo - 2.0.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RenomeArquivo - 2.0.exe" size="344064">
-      <assemblyIdentity name="RenomeArquivo - 2.0" version="2.1.0.0" language="neutral" processorArchitecture="x86" />
+      <assemblyIdentity name="RenomeArquivo - 2.0" version="1.0.0.1" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>vZf5vcrq+5123odgJ9HJE1OuP8E=</dsig:DigestValue>
+        <dsig:DigestValue>R/PT5stxWCnOWWVBOQd2QytDH14=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -583,16 +583,20 @@ namespace RenomeArquivo___2._0
             //setando os data
             cb_data.Items.Add(mensagens.MlDateI);
             cb_data.Items.Add(mensagens.MlDateII);
+            cb_data.Text = mensagens.MlDateI;
             //setando tipo
             cb_tipo.Items.Add(mensagens.MlTipI);
             cb_tipo.Items.Add(mensagens.MlTipII);
+            cb_tipo.Text = mensagens.MlTipI;
             //setando tamanho
             cb_tamanho.Items.Add(mensagens.MlTamaKb);
             cb_tamanho.Items.Add(mensagens.MlTamaMb);
+            cb_tamanho.Text = mensagens.MlTamaKb;
             //setando aleatorio
             cb_aleatorio.Items.Add(mensagens.MlRandI);
             cb_aleatorio.Items.Add(mensagens.MlRandII);
             cb_aleatorio.Items.Add(mensagens.MlRandIII);
+            cb_aleatorio.Text = mensagens.MlRandI;
 
         }
 

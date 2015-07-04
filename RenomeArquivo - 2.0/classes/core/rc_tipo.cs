@@ -9,12 +9,14 @@ namespace RenomeArquivo___2._0.classes
     class rc_tipo
     {
         public string erro = "";
+        messages mensagens = new messages();
         public Boolean renome_tipo(string caminho, string arquivo,string qual, string tipo)
         {
+            mensagens.qualLang();
             //aplicando o renome.
             try
             {
-                if (qual == "COMPLETO")
+                if (qual == mensagens.MlTipII)
                 {
                     if (tipo == ".txt" || tipo == ".doc" || tipo == ".docx")
                     {
