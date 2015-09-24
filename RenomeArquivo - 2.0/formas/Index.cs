@@ -597,7 +597,12 @@ namespace RenomeArquivo___2._0
             cb_aleatorio.Items.Add(mensagens.MlRandII);
             cb_aleatorio.Items.Add(mensagens.MlRandIII);
             cb_aleatorio.Text = mensagens.MlRandI;
-
+            //buscando scripts
+            string[] itensScripts = check.verificaScripts();
+            for(int i =0; i  <= itensScripts.Length-1; i++)
+            {
+                cb_script.Items.Add(itensScripts[i]);
+            }
         }
 
         //minetray
@@ -679,6 +684,12 @@ namespace RenomeArquivo___2._0
         {
             telaerro = new VisuErro(griderro);
             telaerro.ShowDialog();
+        }
+
+        private void lb_scripts_Click(object sender, EventArgs e)
+        {
+            Scrip scripts = new Scrip();
+            scripts.ShowDialog();
         }
     }
 }

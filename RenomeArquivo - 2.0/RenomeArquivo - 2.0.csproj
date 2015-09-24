@@ -106,6 +106,12 @@
     <Compile Include="formas\Index.Designer.cs">
       <DependentUpon>Index.cs</DependentUpon>
     </Compile>
+    <Compile Include="formas\Scrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formas\Scrip.Designer.cs">
+      <DependentUpon>Scrip.cs</DependentUpon>
+    </Compile>
     <Compile Include="formas\VisuErro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formas\Index.resx">
       <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formas\Scrip.resx">
+      <DependentUpon>Scrip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formas\VisuErro.resx">
       <DependentUpon>VisuErro.cs</DependentUpon>
@@ -198,6 +207,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="news_archive_icon %281%29.ico" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\disk.png" />
+    <None Include="Resources\folder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
