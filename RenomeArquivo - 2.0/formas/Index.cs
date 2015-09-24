@@ -601,7 +601,7 @@ namespace RenomeArquivo___2._0
             string[] itensScripts = check.verificaScripts();
             for(int i =0; i  <= itensScripts.Length-1; i++)
             {
-                cb_script.Items.Add(itensScripts[i]);
+                cb_script.Items.Add(itensScripts[i].Replace(".script",""));
             }
         }
 
