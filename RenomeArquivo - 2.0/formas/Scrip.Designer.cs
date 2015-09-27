@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_opcoes = new System.Windows.Forms.GroupBox();
+            this.lb_scripts = new System.Windows.Forms.ListBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.cb_mod = new System.Windows.Forms.ComboBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -45,7 +46,6 @@
             this.lb_ajuda = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.lb_scripts = new System.Windows.Forms.ListBox();
             this.gb_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -82,6 +82,16 @@
             this.gb_opcoes.TabStop = false;
             this.gb_opcoes.Text = "Scripts";
             // 
+            // lb_scripts
+            // 
+            this.lb_scripts.FormattingEnabled = true;
+            this.lb_scripts.ItemHeight = 15;
+            this.lb_scripts.Location = new System.Drawing.Point(11, 206);
+            this.lb_scripts.Name = "lb_scripts";
+            this.lb_scripts.Size = new System.Drawing.Size(382, 139);
+            this.lb_scripts.TabIndex = 63;
+            this.lb_scripts.Click += new System.EventHandler(this.lb_scripts_Click);
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::RenomeArquivo___2._0.Properties.Resources.add;
@@ -102,11 +112,10 @@
             this.cb_mod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cb_mod.FormattingEnabled = true;
             this.cb_mod.Items.AddRange(new object[] {
-            "IMAGEM (PNG,GIF,JPG,BITMAP)",
-            "VIDEO (MP4,AVI,FLV,WMV)",
-            "SOM (MP3,FLAC,M4A,WAV)",
-            "TEXTO (TXT,DOC,XLS,DOCX)",
-            "OUTROS"});
+            "PNG,GIF,JPG,BITMAP",
+            "MP4,AVI,FLV,WMV",
+            "MP3,FLAC,M4A,WAV",
+            "TXT,DOC,XLS,DOCX"});
             this.cb_mod.Location = new System.Drawing.Point(11, 147);
             this.cb_mod.Name = "cb_mod";
             this.cb_mod.Size = new System.Drawing.Size(358, 23);
@@ -262,15 +271,6 @@
             this.openFileDialog1.DefaultExt = "scr";
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.InitialDirectory = ".\\scr";
-            // 
-            // lb_scripts
-            // 
-            this.lb_scripts.FormattingEnabled = true;
-            this.lb_scripts.ItemHeight = 15;
-            this.lb_scripts.Location = new System.Drawing.Point(11, 206);
-            this.lb_scripts.Name = "lb_scripts";
-            this.lb_scripts.Size = new System.Drawing.Size(382, 139);
-            this.lb_scripts.TabIndex = 63;
             // 
             // Scrip
             // 

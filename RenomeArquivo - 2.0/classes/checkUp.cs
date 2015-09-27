@@ -27,6 +27,10 @@ namespace RenomeArquivo___2._0.classes
                 {
                     System.IO.Directory.CreateDirectory(@".\scr");
                 }
+                if (!System.IO.Directory.Exists(@".\cmod"))
+                {
+                    System.IO.Directory.CreateDirectory(@".\cmod");
+                }
             }
             catch
             {
