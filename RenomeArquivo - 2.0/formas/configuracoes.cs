@@ -66,19 +66,6 @@ namespace RenomeArquivo___2._0.formas
                     }
                 }
 
-                //ATIVAR BARRA - ATIVAO OU DESATIVA A BARRA DE STATUS.
-                else if (line.Substring(0, 5) == "BARRA")
-                {
-                    if (line.Substring(8) == "FALSE")
-                    {
-                        pb_barra.Image = Properties.Resources.lightbulb_off;
-                    }
-                    else
-                    {
-                        pb_barra.Image = Properties.Resources.lightbulb;
-                    }
-                }
-
                 //ATIVAR TRAY - ATIVAO OU DESATIVA TRAY AUTOMATICO.
                 else if (line.Substring(0, 4) == "TRAY")
                 {
@@ -141,7 +128,6 @@ namespace RenomeArquivo___2._0.formas
             gb_opcoes.Text = mensagens.Gopsvisu;
             lb_ativcont.Text = mensagens.Labelativacont;
             lb_geralog.Text = mensagens.LabelGeraLog;
-            lb_ativabarr.Text = mensagens.LabelAtivBarra;
             lb_desamin.Text = mensagens.LabelDesamini;
             gb_ferram.Text = mensagens.Gferra;
             lb_enviaesta.Text = mensagens.LabelEnvia;
@@ -190,18 +176,6 @@ namespace RenomeArquivo___2._0.formas
             else
             {
                 pb_tray.Image = Properties.Resources.lightbulb_off;
-            }
-        }
-
-        private void pb_barra_Click(object sender, EventArgs e)
-        {
-            if (coreconfig.ativa_barra())
-            {
-                pb_barra.Image = Properties.Resources.lightbulb;
-            }
-            else
-            {
-                pb_barra.Image = Properties.Resources.lightbulb_off;
             }
         }
 

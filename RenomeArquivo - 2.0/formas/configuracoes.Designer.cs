@@ -37,8 +37,6 @@
             this.lb_ativcont = new System.Windows.Forms.Label();
             this.pb_tray = new System.Windows.Forms.PictureBox();
             this.lb_desamin = new System.Windows.Forms.Label();
-            this.pb_barra = new System.Windows.Forms.PictureBox();
-            this.lb_ativabarr = new System.Windows.Forms.Label();
             this.pb_log = new System.Windows.Forms.PictureBox();
             this.lb_geralog = new System.Windows.Forms.Label();
             this.gb_ferram = new System.Windows.Forms.GroupBox();
@@ -52,13 +50,11 @@
             this.pb_eua = new System.Windows.Forms.PictureBox();
             this.lb_ptbr = new System.Windows.Forms.Label();
             this.lb_us = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gb_opcoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_rela)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_log)).BeginInit();
             this.gb_ferram.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -67,7 +63,6 @@
             this.gb_idioma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_br)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_eua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lb_ajuda
@@ -90,14 +85,12 @@
             this.gb_opcoes.Controls.Add(this.lb_ativcont);
             this.gb_opcoes.Controls.Add(this.pb_tray);
             this.gb_opcoes.Controls.Add(this.lb_desamin);
-            this.gb_opcoes.Controls.Add(this.pb_barra);
-            this.gb_opcoes.Controls.Add(this.lb_ativabarr);
             this.gb_opcoes.Controls.Add(this.pb_log);
             this.gb_opcoes.Controls.Add(this.lb_geralog);
             this.gb_opcoes.ForeColor = System.Drawing.Color.White;
             this.gb_opcoes.Location = new System.Drawing.Point(14, 43);
             this.gb_opcoes.Name = "gb_opcoes";
-            this.gb_opcoes.Size = new System.Drawing.Size(332, 187);
+            this.gb_opcoes.Size = new System.Drawing.Size(332, 150);
             this.gb_opcoes.TabIndex = 41;
             this.gb_opcoes.TabStop = false;
             this.gb_opcoes.Text = "Opções Visuais";
@@ -105,7 +98,7 @@
             // pb_rela
             // 
             this.pb_rela.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_rela.Location = new System.Drawing.Point(22, 156);
+            this.pb_rela.Location = new System.Drawing.Point(22, 119);
             this.pb_rela.Name = "pb_rela";
             this.pb_rela.Size = new System.Drawing.Size(16, 16);
             this.pb_rela.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -118,7 +111,7 @@
             this.lb_reporterro.AutoSize = true;
             this.lb_reporterro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_reporterro.ForeColor = System.Drawing.Color.White;
-            this.lb_reporterro.Location = new System.Drawing.Point(44, 156);
+            this.lb_reporterro.Location = new System.Drawing.Point(44, 119);
             this.lb_reporterro.Name = "lb_reporterro";
             this.lb_reporterro.Size = new System.Drawing.Size(161, 15);
             this.lb_reporterro.TabIndex = 49;
@@ -160,7 +153,7 @@
             // pb_tray
             // 
             this.pb_tray.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_tray.Location = new System.Drawing.Point(22, 123);
+            this.pb_tray.Location = new System.Drawing.Point(22, 86);
             this.pb_tray.Name = "pb_tray";
             this.pb_tray.Size = new System.Drawing.Size(16, 16);
             this.pb_tray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -173,33 +166,11 @@
             this.lb_desamin.AutoSize = true;
             this.lb_desamin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_desamin.ForeColor = System.Drawing.Color.White;
-            this.lb_desamin.Location = new System.Drawing.Point(44, 124);
+            this.lb_desamin.Location = new System.Drawing.Point(44, 87);
             this.lb_desamin.Name = "lb_desamin";
             this.lb_desamin.Size = new System.Drawing.Size(207, 15);
             this.lb_desamin.TabIndex = 41;
             this.lb_desamin.Text = "Ativar minimização automatica.";
-            // 
-            // pb_barra
-            // 
-            this.pb_barra.Image = global::RenomeArquivo___2._0.Properties.Resources.lightbulb_off;
-            this.pb_barra.Location = new System.Drawing.Point(22, 90);
-            this.pb_barra.Name = "pb_barra";
-            this.pb_barra.Size = new System.Drawing.Size(16, 16);
-            this.pb_barra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pb_barra.TabIndex = 40;
-            this.pb_barra.TabStop = false;
-            this.pb_barra.Click += new System.EventHandler(this.pb_barra_Click);
-            // 
-            // lb_ativabarr
-            // 
-            this.lb_ativabarr.AutoSize = true;
-            this.lb_ativabarr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ativabarr.ForeColor = System.Drawing.Color.White;
-            this.lb_ativabarr.Location = new System.Drawing.Point(44, 90);
-            this.lb_ativabarr.Name = "lb_ativabarr";
-            this.lb_ativabarr.Size = new System.Drawing.Size(168, 15);
-            this.lb_ativabarr.TabIndex = 39;
-            this.lb_ativabarr.Text = "Ativar barra de progresso";
             // 
             // pb_log
             // 
@@ -231,7 +202,7 @@
             this.gb_ferram.Controls.Add(this.pictureBox10);
             this.gb_ferram.Controls.Add(this.lb_verifiatua);
             this.gb_ferram.ForeColor = System.Drawing.Color.White;
-            this.gb_ferram.Location = new System.Drawing.Point(11, 236);
+            this.gb_ferram.Location = new System.Drawing.Point(11, 201);
             this.gb_ferram.Name = "gb_ferram";
             this.gb_ferram.Size = new System.Drawing.Size(332, 71);
             this.gb_ferram.TabIndex = 47;
@@ -301,7 +272,7 @@
             this.gb_idioma.Controls.Add(this.lb_ptbr);
             this.gb_idioma.Controls.Add(this.lb_us);
             this.gb_idioma.ForeColor = System.Drawing.Color.White;
-            this.gb_idioma.Location = new System.Drawing.Point(14, 313);
+            this.gb_idioma.Location = new System.Drawing.Point(14, 280);
             this.gb_idioma.Name = "gb_idioma";
             this.gb_idioma.Size = new System.Drawing.Size(332, 65);
             this.gb_idioma.TabIndex = 48;
@@ -352,27 +323,14 @@
             this.lb_us.TabIndex = 48;
             this.lb_us.Text = "Ingles";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::RenomeArquivo___2._0.Properties.Resources.cancel;
-            this.pictureBox3.Location = new System.Drawing.Point(327, 384);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 39;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // configuracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(355, 412);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(355, 379);
             this.Controls.Add(this.gb_idioma);
             this.Controls.Add(this.gb_ferram);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.gb_opcoes);
             this.Controls.Add(this.lb_ajuda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -392,7 +350,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cont)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_tray)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_barra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_log)).EndInit();
             this.gb_ferram.ResumeLayout(false);
             this.gb_ferram.PerformLayout();
@@ -403,7 +360,6 @@
             this.gb_idioma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_br)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_eua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,9 +371,6 @@
         private System.Windows.Forms.GroupBox gb_opcoes;
         private System.Windows.Forms.PictureBox pb_log;
         private System.Windows.Forms.Label lb_geralog;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pb_barra;
-        private System.Windows.Forms.Label lb_ativabarr;
         private System.Windows.Forms.PictureBox pb_cont;
         private System.Windows.Forms.Label lb_ativcont;
         private System.Windows.Forms.PictureBox pb_tray;

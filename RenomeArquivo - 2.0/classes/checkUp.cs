@@ -16,7 +16,6 @@ namespace RenomeArquivo___2._0.classes
                     "TURBO = FALSE" + Environment.NewLine +
                     "CONT = TRUE" + Environment.NewLine +
                     "LOG = TRUE" + Environment.NewLine +
-                    "BARRA = TRUE" + Environment.NewLine +
                     "TRAY = TRUE" + Environment.NewLine +
                     "EMAIL = TRUE" + Environment.NewLine +
                     "LANGUE = PTBR" + Environment.NewLine +
@@ -32,8 +31,9 @@ namespace RenomeArquivo___2._0.classes
                     System.IO.Directory.CreateDirectory(@".\cmod");
                 }
             }
-            catch
+            catch(Exception err)
             {
+                MessageBox.Show(err.Message);
             }
         }
 
@@ -48,7 +48,7 @@ namespace RenomeArquivo___2._0.classes
                 i++;
                 caminhos[i] = f.Name.ToString();
             }
-                return caminhos;
+            return caminhos;
         }
     }
 }

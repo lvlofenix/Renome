@@ -284,6 +284,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Scrip";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Scrip";
             this.Load += new System.EventHandler(this.Scrip_Load);
             this.gb_opcoes.ResumeLayout(false);
